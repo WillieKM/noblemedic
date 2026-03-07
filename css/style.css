@@ -400,3 +400,39 @@ grid-template-columns:1fr;
 }
 
 }
+.facility-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:20px;
+margin-top:30px;
+}
+
+.referral-section{
+background:#eef4f8;
+padding:60px 20px;
+margin-top:40px;
+}
+
+.referral-section form{
+max-width:600px;
+margin:auto;
+display:flex;
+flex-direction:column;
+gap:12px;
+}
+
+.referral-section input,
+.referral-section textarea{
+padding:10px;
+border:1px solid #ccc;
+border-radius:6px;
+}
+
+.referral-section button{
+background:#0f4c5c;
+color:white;
+border:none;
+padding:12px;
+border-radius:6px;
+cursor:pointer;
+}
