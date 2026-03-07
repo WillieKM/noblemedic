@@ -260,3 +260,57 @@ margin-top:15px;
 .about-list li{
 padding:6px 0;
 }
+.estimate-box{
+background:white;
+padding:40px;
+border-radius:10px;
+max-width:1000px;
+margin:auto;
+box-shadow:0 6px 20px rgba(0,0,0,.08);
+}
+
+.estimate-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+gap:15px;
+align-items:end;
+}
+
+.estimate-btn{
+background:#0f4c5c;
+color:white;
+padding:12px 20px;
+border:none;
+border-radius:6px;
+cursor:pointer;
+}
+
+.estimate-result{
+margin-top:15px;
+font-weight:600;
+}
+
+.book-link{
+display:inline-block;
+margin-top:10px;
+color:#1a8fe3;
+}
+
+.booking-box{
+margin-top:40px;
+}
+
+.booking-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:15px;
+}
+
+.submit-btn{
+margin-top:20px;
+background:#0f4c5c;
+color:white;
+padding:12px 20px;
+border:none;
+border-radius:6px;
+}
