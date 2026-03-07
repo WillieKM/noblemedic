@@ -10,21 +10,10 @@
 
 <link rel="stylesheet" href="css/style.css">
 
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+
 </head>
-<script>
 
-function toggleMenu(){
-let menu = document.getElementById("nav-menu");
-menu.classList.toggle("active");
-}
-
-</script
-
- <a href="booking.html" class="sticky-book">
-Book Ride
- <a href="tel:+12535551234" class="call-button">
-📞 Call Now
-</a> 
 <body>
 
 <header>
@@ -59,19 +48,16 @@ Safe and dependable transportation for medical appointments,
 dialysis visits and hospital discharge rides.
 </p>
 
-<a class="hero-btn" href="booking.html">
-Book Transportation
-</a>
+<a class="hero-btn" href="booking.html">Book Transportation</a>
 
 </div>
 
 </section>
 
 
-
 <!-- SERVICES -->
 
-<section class="container">
+<section class="container fade">
 
 <h2>Our Services</h2>
 
@@ -84,7 +70,7 @@ Book Transportation
 
 <div class="card">
 <h3>Ambulatory Transportation</h3>
-<p>Comfortable rides for patients who can travel without assistance.</p>
+<p>Comfortable rides for patients who can travel independently.</p>
 </div>
 
 <div class="card">
@@ -102,36 +88,11 @@ Book Transportation
 </section>
 
 
-
 <!-- VEHICLES -->
 
-<section class="vehicles">
+<section class="vehicles fade">
 
 <div class="container">
-
-<h2>Our Medical Transport Vehicles</h2>
-
-<div class="vehicle-grid">
-
-<div class="vehicle-card">
-<img src="images/vehicle1.jpg">
-<h3>Wheelchair Accessible Vans</h3>
-<p>Equipped for safe and comfortable patient transportation.</p>
-</div>
-
-<div class="vehicle-card">
-<img src="images/vehicle2.jpg">
-<h3>Clean & Comfortable Vehicles</h3>
-<p>Maintained to provide dependable medical transportation.</p>
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-<section class="container">
 
 <h2>Our Transportation Fleet</h2>
 
@@ -144,11 +105,14 @@ Book Transportation
 
 </div>
 
+</div>
+
 </section>
+
 
 <!-- MAP -->
 
-<section class="container">
+<section class="container fade">
 
 <h2>Areas We Serve</h2>
 
@@ -161,10 +125,9 @@ src="https://maps.google.com/maps?q=King%20County%20Washington&t=&z=9&ie=UTF8&iw
 </section>
 
 
-
 <!-- CITY LINKS -->
 
-<section class="city-section">
+<section class="city-section fade">
 
 <div class="container">
 
@@ -172,29 +135,10 @@ src="https://maps.google.com/maps?q=King%20County%20Washington&t=&z=9&ie=UTF8&iw
 
 <div class="city-grid">
 
-<div class="city-card">
-<a href="seattle-medical-transportation.html">
-Seattle Medical Transportation
-</a>
-</div>
-
-<div class="city-card">
-<a href="auburn-medical-transportation.html">
-Auburn Medical Transportation
-</a>
-</div>
-
-<div class="city-card">
-<a href="tacoma-medical-transportation.html">
-Tacoma Medical Transportation
-</a>
-</div>
-
-<div class="city-card">
-<a href="kent-medical-transportation.html">
-Kent Medical Transportation
-</a>
-</div>
+<div class="city-card"><a href="#">Seattle Medical Transportation</a></div>
+<div class="city-card"><a href="#">Auburn Medical Transportation</a></div>
+<div class="city-card"><a href="#">Tacoma Medical Transportation</a></div>
+<div class="city-card"><a href="#">Kent Medical Transportation</a></div>
 
 </div>
 
@@ -208,10 +152,9 @@ Leave a Google Review
 </section>
 
 
-
 <!-- FACILITY FORM -->
 
-<section class="form-section">
+<section class="form-section fade">
 
 <div class="container">
 
@@ -236,36 +179,6 @@ placeholder="Tell us about your transportation needs"></textarea>
 
 </section>
 
-<section class="trust">
-
-<div class="container">
-
-<h2>Why Choose Noble Medic Wheels</h2>
-
-<div class="service-grid">
-
-<div class="card">
-<h3>Professional Drivers</h3>
-<p>Trained drivers focused on safe patient transportation.</p>
-</div>
-
-<div class="card">
-<h3>Reliable Scheduling</h3>
-<p>Dependable transportation for medical appointments.</p>
-</div>
-
-<div class="card">
-<h3>Clean Vehicles</h3>
-<p>Well maintained vehicles for comfortable transport.</p>
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-<!-- FOOTER -->
 
 <footer>
 
@@ -274,6 +187,25 @@ placeholder="Tell us about your transportation needs"></textarea>
 <p>© Noble Medic Wheels</p>
 
 </footer>
+
+
+<!-- STICKY BUTTONS -->
+
+<a href="booking.html" class="sticky-book">Book Ride</a>
+
+<a href="tel:+12535551234" class="call-button">📞 Call Now</a>
+
+
+<script>
+
+function toggleMenu(){
+
+let menu = document.getElementById("nav-menu");
+menu.classList.toggle("active");
+
+}
+
+</script>
 
 
 </body>
