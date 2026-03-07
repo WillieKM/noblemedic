@@ -1,21 +1,57 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Medical Transportation Services | Noble Medic Wheels</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">Noble Medic Wheels</div>
+
+<div class="menu-toggle" onclick="toggleMenu()">☰</div>
+
+<nav id="nav-menu">
+
+<a href="index.html">Home</a> <a href="services.html">Services</a> <a href="booking.html">Book Ride</a> <a href="facilities.html">Facilities</a> <a href="contact.html">Contact</a>
+
+</nav>
+
+</header>
+
 <section class="container">
 
 <h1>Medical Transportation Services</h1>
 
-<p>
+<p class="page-intro">
 
-Noble Medic Wheels provides professional non-emergency
-medical transportation services for patients who require
-safe transportation to healthcare facilities.
+Noble Medic Wheels provides professional non-emergency medical transportation
+services designed to safely transport patients to healthcare facilities,
+appointments, dialysis treatments, and hospital discharge locations.
 
 </p>
 
 </section>
 
-
 <section class="container">
 
-<h2>Wheelchair Transportation</h2>
+<div class="service-grid">
+
+<div class="card">
+
+<h3>♿ Wheelchair Transportation</h3>
 
 <p>
 
@@ -25,12 +61,11 @@ wheelchair support when traveling to medical appointments.
 
 </p>
 
-</section>
+</div>
 
+<div class="card">
 
-<section class="container">
-
-<h2>Ambulatory Transportation</h2>
+<h3>🚶 Ambulatory Transportation</h3>
 
 <p>
 
@@ -40,12 +75,11 @@ to medical appointments and treatments.
 
 </p>
 
-</section>
+</div>
 
+<div class="card">
 
-<section class="container">
-
-<h2>Dialysis Transportation</h2>
+<h3>🩺 Dialysis Transportation</h3>
 
 <p>
 
@@ -55,20 +89,76 @@ centers several times per week.
 
 </p>
 
-</section>
+</div>
 
+<div class="card">
 
-<section class="container">
-
-<h2>Hospital Discharge Transportation</h2>
+<h3>🏥 Hospital Discharge Transportation</h3>
 
 <p>
 
 Our hospital discharge transportation service ensures patients
-are safely transported from hospitals or medical facilities
-to their home, rehabilitation center or assisted living
-facility.
+are safely transported from hospitals or medical facilities to
+their home, rehabilitation center or assisted living facility.
 
 </p>
 
+</div>
+
+</div>
+
 </section>
+
+<section class="cta-section">
+
+<div class="container">
+
+<h2>Need Medical Transportation?</h2>
+
+<p>
+
+Schedule dependable transportation with Noble Medic Wheels.
+
+</p>
+
+<a href="booking.html" class="hero-btn">
+
+Book Transportation
+
+</a>
+
+</div>
+
+</section>
+
+<footer>
+
+<div class="container">
+
+<p>Serving King County • Snohomish County • Pierce County</p>
+
+<p>© Noble Medic Wheels</p>
+
+<p class="creator">
+
+Website created by <a href="https://cyber-node.com">Cyber-Node</a>
+
+</p>
+
+</div>
+
+</footer>
+
+<script>
+
+function toggleMenu(){
+
+let menu=document.getElementById("nav-menu");
+menu.classList.toggle("active");
+
+}
+
+</script>
+
+</body>
+</html>
