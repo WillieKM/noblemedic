@@ -43,6 +43,34 @@ and request medical transportation.
 </p>
 
 </section>
+<section class="map-box">
+
+<h2>Select Pickup and Destination</h2>
+
+<div id="map"></div>
+
+<div class="map-inputs">
+
+<input id="pickupLocation" type="text" placeholder="Enter pickup location">
+
+<input id="dropLocation" type="text" placeholder="Enter destination">
+
+<select id="transportType">
+
+<option value="3">Ambulatory</option>
+<option value="4">Wheelchair</option>
+
+</select>
+
+<button onclick="calculateRoute()">Calculate Ride</button>
+
+</div>
+
+<p id="distanceResult"></p>
+
+<p id="fareResult"></p>
+
+</section>
 
 <section class="estimate-box">
 
@@ -173,6 +201,94 @@ document.getElementById("fareResult").innerHTML=
 }
 
 </script>
+<script>
 
+let map;
+let directionsService;
+let directionsRenderer;
+let autocompletePickup;
+let autocompleteDrop;
+
+function initMap(){
+
+map = new google.maps.Map(document.getElementById("map"), {
+center: { lat: 47.6062, lng: -122.3321 },
+zoom: 10
+});
+
+directionsService = new google.maps.DirectionsService();
+directionsRenderer = new google.maps.DirectionsRenderer();
+
+directionsRenderer.setMap(map);
+
+autocompletePickup =
+new google.maps.places.Autocomplete(
+document.getElementById("pickupLocation")
+);
+
+autocompleteDrop =
+new google.maps.places.Autocomplete(
+document.getElementById("dropLocation")
+);
+
+}
+
+
+function calculateRoute(){
+
+let start =
+document.getElementById("pickupLocation").value;
+
+let end =
+document.getElementById("dropLocation").value;
+
+directionsService.route({
+
+origin:start,
+destination:end,
+travelMode:'DRIVING'
+
+}, function(result,status){
+
+if(status === 'OK'){
+
+directionsRenderer.setDirections(result);
+
+let meters =
+result.routes[0].legs[0].distance.value;
+
+let miles =
+meters * 0.000621371;
+
+document.getElementById("distanceResult").innerHTML =
+"Distance: " + miles.toFixed(2) + " miles";
+
+calculateFare(miles);
+
+}
+
+});
+
+}
+
+
+function calculateFare(miles){
+
+let rate =
+document.getElementById("transportType").value;
+
+let base = 30;
+
+let total = base + (miles * rate);
+
+document.getElementById("fareResult").innerHTML =
+"Estimated Fare: $" + total.toFixed(2);
+
+}
+
+</script>
+<script async
+src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&libraries=places&callback=initMap">
+</script>
 </body>
 </html>
