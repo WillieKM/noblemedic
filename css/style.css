@@ -5,6 +5,16 @@ background:#eef2f6;
 color:#333;
 }
 
+/* TOP BAR */
+
+.top-bar{
+background:#083842;
+color:white;
+text-align:center;
+padding:6px;
+font-size:14px;
+}
+
 /* HEADER */
 
 .main-header{
@@ -14,14 +24,25 @@ display:flex;
 justify-content:space-between;
 align-items:center;
 padding:15px 40px;
+position:sticky;
+top:0;
+z-index:1000;
+box-shadow:0 4px 12px rgba(0,0,0,0.15);
+}
+
+.logo{
+font-size:22px;
+font-weight:700;
 }
 
 .main-nav a{
 color:white;
-margin:0 12px;
+margin:0 14px;
 text-decoration:none;
 font-weight:500;
 }
+
+.main-nav a:hover
 
 .header-cta{
 display:flex;
@@ -32,6 +53,7 @@ align-items:center;
 .header-phone{
 color:white;
 text-decoration:none;
+font-weight:500;
 }
 
 .header-book{
@@ -40,20 +62,22 @@ padding:8px 16px;
 border-radius:6px;
 color:white;
 text-decoration:none;
+font-weight:600;
 }
 
 /* HERO */
 
-.page-hero{
-background:#e9edf1;
-padding:120px 20px;
+.hero{
+background:url('../images/hero.jpg') center/cover no-repeat;
+height:520px;
 display:flex;
+align-items:center;
 justify-content:center;
 }
 
 .hero-overlay{
-background:#6f6f6f;
-padding:50px 70px;
+background:rgba(0,0,0,0.55);
+padding:60px 70px;
 border-radius:12px;
 text-align:center;
 color:white;
@@ -61,7 +85,7 @@ max-width:700px;
 }
 
 .hero-overlay h1{
-font-size:36px;
+font-size:38px;
 margin-bottom:15px;
 }
 
@@ -71,9 +95,26 @@ color:white;
 padding:12px 28px;
 border-radius:6px;
 text-decoration:none;
-font-weight:600;
 display:inline-block;
-margin-top:15px;
+margin-top:20px;
+}
+
+/* PAGE HERO */
+
+.page-hero{
+background:#e9edf1;
+padding:120px 20px;
+display:flex;
+justify-content:center;
+}
+
+.page-overlay{
+background:#6f6f6f;
+padding:50px 70px;
+border-radius:12px;
+text-align:center;
+color:white;
+max-width:700px;
 }
 
 /* CONTENT */
