@@ -1,11 +1,17 @@
 <!DOCTYPE html>
-<html>
+
+<html lang="en">
 
 <head>
 
-<title>Healthcare Facility Transportation Partnerships</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Healthcare Facility Partnerships | Noble Medic Wheels</title>
 
 <link rel="stylesheet" href="css/style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
 
 </head>
 
@@ -13,133 +19,176 @@
 
 <header>
 
-<h1>Noble Medic Wheels</h1>
+<div class="logo">Noble Medic Wheels</div>
 
-<nav>
+<div class="menu-toggle" onclick="toggleMenu()">☰</div>
 
-<a href="index.html">Home</a>
-<a href="services.html">Services</a>
-<a href="booking.html">Book Ride</a>
-<a href="facilities.html">Facilities</a>
-<a href="contact.html">Contact</a>
+<nav id="nav-menu">
+
+<a href="index.html">Home</a> <a href="services.html">Services</a> <a href="booking.html">Book Ride</a> <a href="facilities.html">Facilities</a> <a href="contact.html">Contact</a>
 
 </nav>
 
 </header>
 
-<section>
+<section class="container">
 
-<h2>Healthcare Facility Transportation Partnerships</h2>
+<h1>Healthcare Facility Transportation Partnerships</h1>
 
-<p>
+<p class="page-intro">
 
-Noble Medic Wheels partners with healthcare facilities to provide
-reliable non-emergency medical transportation for patients
-requiring transportation to medical appointments,
-dialysis treatments and hospital discharges.
-
-</p>
-
-</section>
-
-<section>
-
-<h3>Facilities We Work With</h3>
-
-<ul>
-
-<li>Hospitals</li>
-<li>Dialysis Centers</li>
-<li>Rehabilitation Clinics</li>
-<li>Assisted Living Facilities</li>
-<li>Skilled Nursing Facilities</li>
-
-</ul>
-
-</section>
-
-<section>
-
-<h3>Transportation Services for Facilities</h3>
-
-<ul>
-
-<li>Hospital discharge transportation</li>
-<li>Dialysis patient transportation</li>
-<li>Wheelchair transportation</li>
-<li>Scheduled recurring medical transportation</li>
-
-</ul>
-
-</section>
-
-<section>
-
-<h3>Partner With Noble Medic Wheels</h3>
-
-<p>
-
-If your facility requires dependable transportation
-services for patients, contact us to discuss
-transportation partnerships.
+Noble Medic Wheels partners with healthcare facilities to
+provide reliable non-emergency medical transportation for
+patients traveling to medical appointments, dialysis treatments
+and hospital discharge destinations.
 
 </p>
 
-<a class="cta" href="referral.html">
+</section>
 
-Submit Patient Referral
+<section class="container">
 
-</a>
+<h2>Facilities We Work With</h2>
+
+<div class="facility-grid">
+
+<div class="card">🏥 Hospitals</div>
+
+<div class="card">🩺 Dialysis Centers</div>
+
+<div class="card">🏨 Rehabilitation Clinics</div>
+
+<div class="card">🏡 Assisted Living Facilities</div>
+
+<div class="card">🏢 Skilled Nursing Facilities</div>
+
+</div>
 
 </section>
+
+<section class="container">
+
+<h2>Transportation Services for Facilities</h2>
+
+<div class="service-grid">
+
+<div class="card">
+
+<h3>Hospital Discharge Transportation</h3>
+
+<p>
+
+Safe patient transportation from hospitals to home,
+rehabilitation centers or assisted living facilities.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>Dialysis Patient Transportation</h3>
+
+<p>
+
+Reliable recurring transportation services for dialysis
+patients requiring treatment several times per week.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>Wheelchair Transportation</h3>
+
+<p>
+
+Accessible vehicles designed for safe wheelchair
+transportation to healthcare appointments.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>Scheduled Medical Transportation</h3>
+
+<p>
+
+Dependable scheduled transportation for recurring
+medical visits and treatments.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="referral-section">
+
+<div class="container">
+
+<h2>Partner With Noble Medic Wheels</h2>
+
+<p>
+
+If your healthcare facility requires dependable transportation
+services for patients, submit a referral request below.
+
+</p>
+
 <form action="https://formsubmit.co/YOUR_EMAIL" method="POST">
 
 <input type="text" name="facility" placeholder="Facility Name" required>
 
-<input type="text" name="contact" placeholder="Contact Person">
+<input type="text" name="contact" placeholder="Contact Person" required>
 
-<input type="email" name="email" placeholder="Email Address">
+<input type="email" name="email" placeholder="Email Address" required>
 
 <textarea name="message"
-placeholder="Tell us about your transportation needs"></textarea>
+placeholder="Tell us about your transportation needs"
+rows="5"></textarea>
 
-<button type="submit">Request Partnership Info</button>
+<button type="submit">Submit Patient Referral</button>
 
 </form>
+
+</div>
+
+</section>
+
+<footer>
+
+<div class="container">
+
+<p>Serving King County • Snohomish County • Pierce County</p>
+
+<p>© Noble Medic Wheels</p>
+
+<p class="creator">
+
+Website created by <a href="https://cyber-node.com">Cyber-Node</a>
+
+</p>
+
+</div>
+
+</footer>
+
+<script>
+
+function toggleMenu(){
+
+let menu=document.getElementById("nav-menu");
+menu.classList.toggle("active");
+
+}
+
+</script>
+
 </body>
-<section class="container">
-
-<h2>Why Healthcare Facilities Choose Noble Medic Wheels</h2>
-
-<ul>
-
-<li>Reliable patient transportation</li>
-<li>Wheelchair accessible vehicles</li>
-<li>Professional and courteous drivers</li>
-<li>Dependable scheduling for recurring trips</li>
-
-</ul>
-
-</section>
-  <section class="container">
-
-<h2>Transportation for Healthcare Providers</h2>
-
-<p>
-
-Noble Medic Wheels partners with hospitals, dialysis centers,
-rehabilitation clinics and assisted living communities to
-provide dependable patient transportation services.
-
-</p>
-
-<p>
-
-Our team works closely with healthcare staff to ensure
-patients are transported safely and on time to their
-medical appointments and treatments.
-
-</p>
-
-</section>
 </html>
