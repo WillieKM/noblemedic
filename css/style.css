@@ -253,3 +253,10 @@ text-align:left;
 .faq h3{
 margin-top:20px;
 }
+.about-list{
+margin-top:15px;
+}
+
+.about-list li{
+padding:6px 0;
+}
