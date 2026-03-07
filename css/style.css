@@ -2,7 +2,10 @@ body{
 font-family:Arial;
 margin:0;
 line-height:1.6;
+background:#f7f9fc;
 }
+
+/* HEADER */
 
 header{
 background:#0b3c6f;
@@ -17,43 +20,49 @@ nav a{
 color:white;
 margin-left:20px;
 text-decoration:none;
-font-weight:500;
-}
-.hero{
-background:#f5f7fb;
-text-align:center;
-padding:80px 20px;
 }
 
-.hero h1{
-font-size:36px;
-margin-bottom:15px;
-}
+/* CONTAINER */
 
-.hero p{
-font-size:18px;
-color:#555;
-max-width:600px;
+.container{
+max-width:1100px;
 margin:auto;
-}
-
-.cta{
-background:#007bff;
-color:white;
-padding:12px 25px;
-border-radius:6px;
-text-decoration:none;
-}
-
-.services{
 padding:60px 20px;
 text-align:center;
 }
 
+/* HERO */
+
+.hero{
+height:500px;
+background:url("../images/medical-transport.jpg") center/cover no-repeat;
+display:flex;
+align-items:center;
+justify-content:center;
+}
+
+.hero-overlay{
+background:rgba(0,0,0,0.55);
+padding:40px;
+border-radius:10px;
+color:white;
+text-align:center;
+}
+
+.hero-btn{
+background:#1a73e8;
+color:white;
+padding:14px 28px;
+border-radius:6px;
+text-decoration:none;
+}
+
+/* SERVICES */
+
 .service-grid{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:25px;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
 margin-top:40px;
 }
 
@@ -61,69 +70,15 @@ margin-top:40px;
 background:white;
 padding:25px;
 border-radius:10px;
-box-shadow:0 5px 15px rgba(0,0,0,0.08);
-text-align:center;
+box-shadow:0 4px 10px rgba(0,0,0,0.1);
 }
+
+/* VEHICLES */
 
 .vehicles{
-padding:60px 20px;
-background:#f4f6f9;
+background:#eef3f8;
 }
 
-.service-area iframe{
-width:100%;
-height:350px;
-border-radius:10px;
-margin-top:20px;
-}
-
-.trust{
-padding:60px 20px;
-background:#003366;
-color:white;
-}
-
-.booking{
-padding:60px 20px;
-max-width:700px;
-margin:auto;
-}
-
-form{
-display:flex;
-flex-direction:column;
-gap:15px;
-margin-top:20px;
-}
-
-input, textarea, select{
-padding:12px;
-font-size:16px;
-border:1px solid #ccc;
-border-radius:6px;
-}
-
-button{
-background:#007bff;
-color:white;
-padding:12px;
-border:none;
-border-radius:6px;
-font-size:16px;
-cursor:pointer;
-}
-
-footer{
-background:#0b3c6f;
-color:white;
-text-align:center;
-padding:40px 20px;
-margin-top:60px;
-}
-
-footer p{
-margin:5px 0;
-}
 .vehicle-grid{
 display:grid;
 grid-template-columns:1fr 1fr;
@@ -133,66 +88,56 @@ margin-top:40px;
 
 .vehicle-card img{
 width:100%;
-border-radius:10px;
-margin-bottom:10px;
-}
-
-.vehicle-card img{
-width:100%;
 border-radius:8px;
 }
 
-.review-grid{
+/* MAP */
+
+iframe{
+width:100%;
+height:350px;
+border:none;
+border-radius:10px;
+margin-top:20px;
+}
+
+/* CITY LINKS */
+
+.city-section{
+background:#f4f7fb;
+}
+
+.city-grid{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
 gap:20px;
 margin-top:30px;
 }
 
-.review{
-background:#f4f6f9;
+.city-card{
+background:white;
 padding:20px;
 border-radius:8px;
-}
-.quote-tool{
-padding:50px 20px;
-background:#f5f7fb;
-max-width:700px;
-margin:auto;
-border-radius:8px;
+box-shadow:0 4px 10px rgba(0,0,0,0.1);
 }
 
-.quote-tool input,
-.quote-tool select{
-width:100%;
-padding:12px;
-margin:10px 0;
-border:1px solid #ccc;
-border-radius:6px;
-}
-
-.quote-tool button{
-background:#0077cc;
+.review-btn{
+display:inline-block;
+margin-top:30px;
+padding:12px 25px;
+background:#1a73e8;
 color:white;
-border:none;
-padding:12px 20px;
 border-radius:6px;
-cursor:pointer;
+text-decoration:none;
 }
 
-.quote-tool button:hover{
-background:#005fa3;
-}
-section h2{
-text-align:center;
-margin-bottom:20px;
-font-size:28px;
-}
+/* FORM */
+
 .form-section{
-padding:60px 20px;
+background:white;
 }
 
-.facility-form{
+form{
 max-width:600px;
 margin:auto;
 display:flex;
@@ -200,18 +145,26 @@ flex-direction:column;
 gap:15px;
 }
 
-.facility-form input,
-.facility-form textarea{
+input, textarea{
 padding:12px;
 border:1px solid #ccc;
 border-radius:6px;
 }
 
-.facility-form button{
+button{
 background:#0b3c6f;
 color:white;
 padding:12px;
 border:none;
 border-radius:6px;
-cursor:pointer;
+}
+
+/* FOOTER */
+
+footer{
+background:#0b3c6f;
+color:white;
+text-align:center;
+padding:30px;
+margin-top:60px;
 }
