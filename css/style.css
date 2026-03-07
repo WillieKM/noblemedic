@@ -216,3 +216,15 @@ padding:14px 22px;
 border-radius:30px;
 text-decoration:none;
 }
+.page-intro{
+max-width:700px;
+margin:auto;
+font-size:18px;
+margin-top:10px;
+}
+
+.cta-section{
+background:#eef4f8;
+text-align:center;
+padding:70px 20px;
+}
