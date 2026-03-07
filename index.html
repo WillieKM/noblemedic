@@ -11,23 +11,33 @@
 <link rel="stylesheet" href="css/style.css">
 
 </head>
+<script>
 
+function toggleMenu(){
+let menu = document.getElementById("nav-menu");
+menu.classList.toggle("active");
+}
+
+</script>
 <body>
 
 <header>
 
 <div class="logo">Noble Medic Wheels</div>
 
-<nav>
+<div class="menu-toggle" onclick="toggleMenu()">☰</div>
+
+<nav id="nav-menu">
+
 <a href="index.html">Home</a>
 <a href="services.html">Services</a>
 <a href="booking.html">Book Ride</a>
 <a href="facilities.html">Facilities</a>
 <a href="contact.html">Contact</a>
+
 </nav>
 
 </header>
-
 
 
 <!-- HERO -->
