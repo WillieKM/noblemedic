@@ -88,7 +88,28 @@
 </form>
 
 </section>
+<script>
 
+function calculateRide(){
+
+let miles = document.getElementById("distance").value;
+let transport = document.getElementById("transportType").value;
+
+let baseFare = 50;
+let perMile = 3.50;
+
+if(transport === "wheelchair"){
+perMile = 4;
+}
+
+let total = baseFare + (miles * perMile);
+
+document.getElementById("quoteOutput").innerHTML =
+"Estimated Transportation Cost: $" + total;
+
+}
+
+</script>
 </body>
 
 </html>
