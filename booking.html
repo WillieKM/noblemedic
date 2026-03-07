@@ -26,7 +26,33 @@
 </nav>
 
 </header>
+<section class="quote-tool">
 
+<h2>Instant Ride Estimate</h2>
+
+<p>Enter trip details to see an estimated transportation cost.</p>
+
+<label>Pickup Address</label>
+<input type="text" id="pickupLocation" placeholder="Enter pickup location">
+
+<label>Destination</label>
+<input type="text" id="dropLocation" placeholder="Enter destination">
+
+<label>Distance (miles)</label>
+<input type="number" id="distance" placeholder="Enter distance">
+
+<label>Transport Type</label>
+
+<select id="transportType">
+<option value="ambulatory">Ambulatory</option>
+<option value="wheelchair">Wheelchair Accessible</option>
+</select>
+
+<button onclick="calculateRide()">Calculate Estimate</button>
+
+<p id="quoteOutput"></p>
+
+</section>
 
 <section class="booking">
 
