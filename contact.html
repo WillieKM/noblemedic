@@ -1,99 +1,46 @@
 <!DOCTYPE html>
 
-<html lang="en">
-
+<html>
 <head>
-
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>Contact Noble Medic Wheels</title>
-
 <link rel="stylesheet" href="css/style.css">
-
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
-
 </head>
 
 <body>
 
-<header>
+<div class="top-bar">
+Serving King County • Snohomish County • Pierce County
+</div>
+
+<header class="main-header">
 
 <div class="logo">Noble Medic Wheels</div>
 
-<div class="menu-toggle" onclick="toggleMenu()">☰</div>
-<nav class="main-nav" id="nav-menu">
-
-<a href="index.html">Home</a> <a href="services.html">Services</a>
-   <a href="about.html">About</a>
-  <a href="booking.html">Book Ride</a>
-  <a href="facilities.html">Facilities</a>
- 
-  <a href="contact.html">Contact</a>
-
+<nav class="main-nav">
+<a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a href="services.html">Services</a>
+<a href="booking.html">Book Ride</a>
+<a href="facilities.html">Facilities</a>
+<a href="contact.html">Contact</a>
 </nav>
+
+<div class="header-cta">
+<a href="tel:2533749087" class="header-phone">📞 (253) 374-9087</a>
+<a href="booking.html" class="header-book">Book Ride</a>
+</div>
 
 </header>
 
-<section class="container">
+<section class="hero">
+
+<div class="hero-overlay">
 
 <h1>Contact Noble Medic Wheels</h1>
 
-<p class="page-intro">
+<p>Questions about transportation services?</p>
 
-If you have questions about our medical transportation services
-or need assistance scheduling transportation, please contact us
-using the information below.
-
-</p>
-
-</section>
-
-<section class="contact-grid">
-
-<div class="contact-info">
-
-<h2>Contact Information</h2>
-
-<p><strong>Phone:</strong> (253) 000-0000</p>
-
-<p><strong>Email:</strong> info@noblemedicwheels.com</p>
-
-<p><strong>Service Area:</strong></p>
-
-<ul>
-
-<li>King County</li>
-<li>Pierce County</li>
-<li>Snohomish County</li>
-
-</ul>
-
-<h3>Business Hours</h3>
-
-<p>Monday – Friday: 6:00 AM – 8:00 PM</p>
-<p>Saturday: 7:00 AM – 6:00 PM</p>
-<p>Sunday: By Appointment</p>
-
-</div>
-
-<div class="contact-form">
-
-<h2>Send Us a Message</h2>
-
-<form action="https://formsubmit.co/YOUR_EMAIL" method="POST">
-
-<input type="text" name="name" placeholder="Your Name" required>
-
-<input type="email" name="email" placeholder="Email Address" required>
-
-<input type="tel" name="phone" placeholder="Phone Number">
-
-<textarea name="message" placeholder="How can we help you?" rows="5"></textarea>
-
-<button type="submit">Send Message</button>
-
-</form>
+<a href="booking.html" class="hero-btn">Book a Ride</a>
 
 </div>
 
@@ -101,27 +48,21 @@ using the information below.
 
 <section class="container">
 
-<h2>Our Service Area</h2>
+<form>
 
-<p>
+<input type="text" placeholder="Name">
 
-Noble Medic Wheels provides dependable medical transportation
-services throughout the region including Seattle, Auburn,
-Tacoma, Kent and surrounding communities.
+<input type="email" placeholder="Email">
 
-</p>
+<textarea placeholder="Message"></textarea>
 
-<iframe
-src="https://maps.google.com/maps?q=King%20County%20Washington&t=&z=9&ie=UTF8&iwloc=&output=embed">
-</iframe>
+<button>Send Message</button>
+
+</form>
 
 </section>
 
 <footer>
-
-<div class="container">
-
-<p>Serving King County • Snohomish County • Pierce County</p>
 
 <p>© Noble Medic Wheels</p>
 
@@ -130,20 +71,7 @@ Website created by
 <a href="https://cyber-node.com">Cyber-Node</a>
 </p>
 
-</div>
-
 </footer>
-
-<script>
-
-function toggleMenu(){
-
-let menu=document.getElementById("nav-menu");
-menu.classList.toggle("active");
-
-}
-
-</script>
 
 </body>
 </html>
