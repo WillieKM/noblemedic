@@ -1,5 +1,5 @@
 body{
-font-family:'Inter',sans-serif;
+font-family: Arial, sans-serif;
 margin:0;
 background:#eef2f6;
 color:#333;
@@ -27,12 +27,12 @@ padding:15px 40px;
 position:sticky;
 top:0;
 z-index:1000;
-box-shadow:0 4px 12px rgba(0,0,0,0.15);
+box-shadow:0 4px 10px rgba(0,0,0,.15);
 }
 
 .logo{
 font-size:22px;
-font-weight:700;
+font-weight:bold;
 }
 
 .main-nav a{
@@ -53,7 +53,6 @@ align-items:center;
 .header-phone{
 color:white;
 text-decoration:none;
-font-weight:500;
 }
 
 .header-book{
@@ -68,16 +67,15 @@ font-weight:600;
 /* HERO */
 
 .hero{
-background:url('../images/hero.jpg') center/cover no-repeat;
-height:520px;
+background:#e9edf1;
+padding:120px 20px;
 display:flex;
-align-items:center;
 justify-content:center;
 }
 
 .hero-overlay{
-background:rgba(0,0,0,0.55);
-padding:60px 70px;
+background:#6f6f6f;
+padding:50px 70px;
 border-radius:12px;
 text-align:center;
 color:white;
@@ -85,7 +83,7 @@ max-width:700px;
 }
 
 .hero-overlay h1{
-font-size:38px;
+font-size:36px;
 margin-bottom:15px;
 }
 
@@ -97,24 +95,6 @@ border-radius:6px;
 text-decoration:none;
 display:inline-block;
 margin-top:20px;
-}
-
-/* PAGE HERO */
-
-.page-hero{
-background:#e9edf1;
-padding:120px 20px;
-display:flex;
-justify-content:center;
-}
-
-.page-overlay{
-background:#6f6f6f;
-padding:50px 70px;
-border-radius:12px;
-text-align:center;
-color:white;
-max-width:700px;
 }
 
 /* CONTENT */
@@ -150,7 +130,7 @@ flex-direction:column;
 gap:12px;
 }
 
-input, textarea, select{
+input, textarea{
 padding:10px;
 border:1px solid #ccc;
 border-radius:6px;
