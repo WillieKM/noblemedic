@@ -1,52 +1,12 @@
 <!DOCTYPE html>
 
-<html lang="en">
-
+<html>
 <head>
-
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>Noble Medic Wheels</title>
-
 <link rel="stylesheet" href="css/style.css">
-
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
-
 </head>
 
 <body>
-
-<header class="main-header">
-
-<div class="logo">
-Noble Medic Wheels
-</div>
-
-<nav class="main-nav" id="nav-menu">
-
-<a href="index.html">Home</a> <a href="services.html">Services</a> <a href="booking.html">Book Ride</a> <a href="facilities.html">Facilities</a> <a href="about.html">About</a> <a href="contact.html">Contact</a>
-
-</nav>
-
-<div class="header-cta">
-
-<a href="tel:+12533749087" class="header-phone">
-📞 (253) 374-9087
-</a>
-
-<a href="booking.html" class="header-book">
-Book Ride
-</a>
-
-</div>
-
-<div class="menu-toggle" onclick="toggleMenu()">☰</div>
-
-</header>
-
-
-</header>
 
 <div class="top-bar">
 Serving King County • Snohomish County • Pierce County
@@ -57,52 +17,43 @@ Serving King County • Snohomish County • Pierce County
 <div class="logo">Noble Medic Wheels</div>
 
 <nav class="main-nav">
-
 <a href="index.html">Home</a>
-
 <a href="about.html">About</a>
-
 <a href="services.html">Services</a>
-
 <a href="booking.html">Book Ride</a>
-
 <a href="facilities.html">Facilities</a>
-
 <a href="contact.html">Contact</a>
-
 </nav>
 
 <div class="header-cta">
-
-<a href="tel:2533749087" class="header-phone">
-📞 (253) 374-9087
-</a>
-
-<a href="booking.html" class="header-book">
-Book Ride
-</a>
-
+<a href="tel:2533749087" class="header-phone">📞 (253) 374-9087</a>
+<a href="booking.html" class="header-book">Book Ride</a>
 </div>
 
 </header>
 
-</section>
+<section class="hero">
 
-<section class="container">
+<div class="hero-overlay">
 
-<h2>Trusted Medical Transportation</h2>
+<h1>Reliable Non-Emergency Medical Transportation</h1>
 
 <p>
-Noble Medic Wheels provides dependable non-emergency medical
-transportation services for patients who need safe and reliable
-transportation to healthcare facilities.
+Safe transportation for medical appointments,
+dialysis visits and hospital discharge rides.
 </p>
+
+<a href="booking.html" class="hero-btn">
+Book Transportation
+</a>
+
+</div>
 
 </section>
 
 <section class="container">
 
-<h2>Our Services</h2>
+<h2>Our Transportation Services</h2>
 
 <div class="service-grid">
 
@@ -113,7 +64,7 @@ transportation to healthcare facilities.
 
 <div class="card">
 <h3>Ambulatory Transportation</h3>
-<p>Comfortable transportation for patients who can travel independently.</p>
+<p>Transportation for patients able to walk independently.</p>
 </div>
 
 <div class="card">
@@ -123,106 +74,25 @@ transportation to healthcare facilities.
 
 <div class="card">
 <h3>Hospital Discharge</h3>
-<p>Safe transportation home after hospital visits.</p>
+<p>Safe transportation from hospital to home or care facility.</p>
 </div>
 
 </div>
-
-</section>
-
-<section class="container">
-
-<h2>Our Transportation Fleet</h2>
-
-<div class="gallery">
-
-<img src="images/van1.jpg">
-<img src="images/van2.jpg">
-<img src="images/van3.jpg">
-<img src="images/van4.jpg">
-
-</div>
-
-</section>
-
-<section class="container">
-
-<h2>Areas We Serve</h2>
-
-<p>Serving King County • Snohomish County • Pierce County</p>
-
-<iframe
-src="https://maps.google.com/maps?q=King%20County%20Washington&t=&z=9&ie=UTF8&iwloc=&output=embed">
-</iframe>
-
-</section>
-
-<section class="container">
-
-<h2>Medical Transportation by City</h2>
-
-<div class="city-grid">
-
-<div class="city-card">Seattle Medical Transportation</div>
-<div class="city-card">Auburn Medical Transportation</div>
-<div class="city-card">Tacoma Medical Transportation</div>
-<div class="city-card">Kent Medical Transportation</div>
-
-</div>
-
-</section>
-
-<section class="container">
-
-<h2>Facility Transportation Inquiry</h2>
-
-<form action="https://formsubmit.co/YOUR_EMAIL" method="POST">
-
-<input type="text" name="facility" placeholder="Facility Name">
-
-<input type="text" name="contact" placeholder="Contact Person">
-
-<input type="email" name="email" placeholder="Email Address">
-
-<textarea name="message"
-placeholder="Tell us about your transportation needs"></textarea>
-
-<button type="submit">Submit Request</button>
-
-</form>
 
 </section>
 
 <footer>
-
-<div class="footer-content">
 
 <p>Serving King County • Snohomish County • Pierce County</p>
 
 <p>© Noble Medic Wheels</p>
 
 <p class="creator">
-Website created by <a href="https://cyber-node.com">Cyber-Node</a>
+Website created by
+<a href="https://cyber-node.com">Cyber-Node</a>
 </p>
 
-</div>
-
 </footer>
-
-<a href="booking.html" class="sticky-book">Book Ride</a>
-
-<a href="tel:+12535551234" class="call-button">📞 Call Now</a>
-
-<script>
-
-function toggleMenu(){
-
-let menu=document.getElementById("nav-menu");
-menu.classList.toggle("active");
-
-}
-
-</script>
 
 </body>
 </html>
