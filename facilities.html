@@ -1,89 +1,65 @@
 <!DOCTYPE html>
 
-<html lang="en">
+<html>
 
 <head>
-
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Healthcare Facility Partnerships | Noble Medic Wheels</title>
-
+<title>Healthcare Facility Partnerships</title>
 <link rel="stylesheet" href="css/style.css">
-
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
-
 </head>
 
 <body>
 
-<header>
+<div class="top-bar">
+Serving King County • Snohomish County • Pierce County
+</div>
+
+<header class="main-header">
 
 <div class="logo">Noble Medic Wheels</div>
 
-<div class="menu-toggle" onclick="toggleMenu()">☰</div>
+<nav class="main-nav">
 
-<nav id="nav-menu">
-
-<nav class="main-nav" id="nav-menu">
-
-<a href="index.html">Home</a> <a href="services.html">Services</a>
-   <a href="about.html">About</a>
-  <a href="booking.html">Book Ride</a>
-  <a href="facilities.html">Facilities</a>
- 
-  <a href="contact.html">Contact</a>
+<a href="index.html">Home</a> <a href="about.html">About</a> <a href="services.html">Services</a> <a href="booking.html">Book Ride</a> <a href="facilities.html">Facilities</a> <a href="contact.html">Contact</a>
 
 </nav>
+
+<div class="header-cta">
+<a href="tel:2533749087" class="header-phone">📞 (253) 374-9087</a>
+<a href="booking.html" class="header-book">Book Ride</a>
+</div>
+
 </header>
 
-<section class="container">
-
-<h1>Healthcare Facility Transportation Partnerships</h1>
-
-<p class="page-intro">
-
-Noble Medic Wheels partners with healthcare facilities to
-provide reliable non-emergency medical transportation for
-patients traveling to medical appointments, dialysis treatments
-and hospital discharge destinations.
-
-</p>
-<section class="page-hero">
+<section class="hero">
 
 <div class="hero-overlay">
 
-<h1>Healthcare Facility Partnerships</h1>
+<h1>Healthcare Facility Transportation Partnerships</h1>
 
 <p>
 Reliable patient transportation for hospitals,
-dialysis centers, and healthcare providers.
+dialysis centers and healthcare providers.
 </p>
-
-<a href="contact.html" class="hero-btn">
-Partner With Us
-</a>
 
 </div>
 
-</section>
 </section>
 
 <section class="container">
 
 <h2>Facilities We Work With</h2>
 
-<div class="facility-grid">
+<div class="service-grid">
 
-<div class="card">🏥 Hospitals</div>
+<div class="card">Hospitals</div>
 
-<div class="card">🩺 Dialysis Centers</div>
+<div class="card">Dialysis Centers</div>
 
-<div class="card">🏨 Rehabilitation Clinics</div>
+<div class="card">Rehabilitation Clinics</div>
 
-<div class="card">🏡 Assisted Living Facilities</div>
+<div class="card">Assisted Living Facilities</div>
 
-<div class="card">🏢 Skilled Nursing Facilities</div>
+<div class="card">Skilled Nursing Facilities</div>
 
 </div>
 
@@ -96,89 +72,20 @@ Partner With Us
 <div class="service-grid">
 
 <div class="card">
-
-<h3>Hospital Discharge Transportation</h3>
-
-<p>
-
-Safe patient transportation from hospitals to home,
-rehabilitation centers or assisted living facilities.
-
-</p>
-
+Hospital discharge transportation
 </div>
 
 <div class="card">
-
-<h3>Dialysis Patient Transportation</h3>
-
-<p>
-
-Reliable recurring transportation services for dialysis
-patients requiring treatment several times per week.
-
-</p>
-
+Dialysis patient transportation
 </div>
 
 <div class="card">
-
-<h3>Wheelchair Transportation</h3>
-
-<p>
-
-Accessible vehicles designed for safe wheelchair
-transportation to healthcare appointments.
-
-</p>
-
+Wheelchair transportation
 </div>
 
 <div class="card">
-
-<h3>Scheduled Medical Transportation</h3>
-
-<p>
-
-Dependable scheduled transportation for recurring
-medical visits and treatments.
-
-</p>
-
+Recurring medical transportation
 </div>
-
-</div>
-
-</section>
-
-<section class="referral-section">
-
-<div class="container">
-
-<h2>Partner With Noble Medic Wheels</h2>
-
-<p>
-
-If your healthcare facility requires dependable transportation
-services for patients, submit a referral request below.
-
-</p>
-
-<form action="https://formsubmit.co/YOUR_EMAIL" method="POST">
-
-<input type="text" name="facility" placeholder="Facility Name" required>
-
-<input type="text" name="contact" placeholder="Contact Person" required>
-
-<input type="email" name="email" placeholder="Email Address" required>
-
-<textarea name="message"
-placeholder="Tell us about your transportation needs"
-rows="5"></textarea>
-
-<button type="submit">Submit Patient Referral</button>
-
-</form>
 
 </div>
 
@@ -186,32 +93,14 @@ rows="5"></textarea>
 
 <footer>
 
-<div class="container">
-
-<p>Serving King County • Snohomish County • Pierce County</p>
-
 <p>© Noble Medic Wheels</p>
 
 <p class="creator">
-
-Website created by <a href="https://cyber-node.com">Cyber-Node</a>
-
+Website created by
+<a href="https://cyber-node.com">Cyber-Node</a>
 </p>
 
-</div>
-
 </footer>
-
-<script>
-
-function toggleMenu(){
-
-let menu=document.getElementById("nav-menu");
-menu.classList.toggle("active");
-
-}
-
-</script>
 
 </body>
 </html>
