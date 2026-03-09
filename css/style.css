@@ -110,19 +110,39 @@ transition:.3s;
 /* HERO SECTION */
 
 .hero{
+width:100%;
+min-height:520px;
+
 background:linear-gradient(135deg,var(--sky),white);
-padding:120px 20px;
+
 display:flex;
+align-items:center;
 justify-content:center;
+
+padding:120px 20px;
+box-sizing:border-box;
 }
 
+/* HERO CONTENT BOX */
+
 .hero-overlay{
+
 background:rgba(0,0,0,.65);
+
 padding:60px 70px;
+
 border-radius:12px;
+
 text-align:center;
+
 color:white;
-max-width:700px;
+
+max-width:750px;
+
+width:100%;
+
+margin:auto;
+
 }
 
 .hero-btn{
