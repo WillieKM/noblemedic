@@ -1,7 +1,7 @@
-/* GLOBAL COLORS */
-body{
-background:red;
-}
+/* =========================
+GLOBAL COLORS
+========================= */
+
 :root{
 
 --primary:#2D8FE3;
@@ -15,20 +15,26 @@ background:red;
 
 }
 
-/* GLOBAL SETTINGS */
+
+/* =========================
+GLOBAL SETTINGS
+========================= */
 
 html{
 scroll-behavior:smooth;
 }
 
 body{
-font-family:Arial,sans-serif;
+font-family:Arial, sans-serif;
 margin:0;
 background:var(--bg-light);
 color:var(--text-dark);
 }
 
-/* TOP BAR */
+
+/* =========================
+TOP BAR
+========================= */
 
 .top-bar{
 background:var(--secondary);
@@ -38,9 +44,13 @@ padding:6px;
 font-size:14px;
 }
 
-/* HEADER */
+
+/* =========================
+HEADER
+========================= */
 
 .main-header{
+
 background:var(--secondary);
 color:white;
 
@@ -58,6 +68,7 @@ z-index:1000;
 box-shadow:0 3px 8px rgba(0,0,0,.15);
 
 border-bottom:1px solid rgba(255,255,255,.1);
+
 }
 
 .logo{
@@ -66,7 +77,10 @@ font-weight:bold;
 letter-spacing:.5px;
 }
 
-/* NAVIGATION */
+
+/* =========================
+NAVIGATION
+========================= */
 
 .main-nav a{
 color:white;
@@ -91,7 +105,10 @@ transition:.3s;
 width:100%;
 }
 
-/* HEADER BUTTONS */
+
+/* =========================
+HEADER BUTTONS
+========================= */
 
 .header-cta{
 display:flex;
@@ -114,11 +131,17 @@ font-weight:600;
 transition:.3s;
 }
 
-.header-book:hover
+.header-book:hover{
+background:#1e78c6;
+}
 
-/* HERO SECTION */
+
+/* =========================
+HERO SECTION
+========================= */
 
 .hero{
+
 margin-top:30px;
 min-height:420px;
 
@@ -134,16 +157,12 @@ align-items:center;
 justify-content:center;
 
 padding:60px 20px;
-}
-
-box-sizing:border-box;
 
 }
 
 .hero-overlay{
 
 background:rgba(0,0,0,.65);
-
 padding:45px 55px;
 
 border-radius:12px;
@@ -153,14 +172,14 @@ text-align:center;
 color:white;
 
 max-width:650px;
-
 width:100%;
-
-margin:auto;
 
 }
 
-/* HERO BUTTON */
+
+/* =========================
+HERO BUTTON
+========================= */
 
 .hero-btn{
 background:var(--primary);
@@ -178,7 +197,10 @@ background:#1e78c6;
 transform:translateY(-2px);
 }
 
-/* CONTENT CONTAINER */
+
+/* =========================
+CONTENT CONTAINER
+========================= */
 
 .container{
 max-width:1100px;
@@ -187,7 +209,10 @@ padding:50px 20px;
 text-align:center;
 }
 
-/* SERVICE GRID */
+
+/* =========================
+SERVICE GRID
+========================= */
 
 .service-grid{
 display:grid;
@@ -196,24 +221,38 @@ gap:25px;
 margin-top:40px;
 }
 
-/* SERVICE CARDS */
+
+/* =========================
+SERVICE CARDS
+========================= */
 
 .card{
+
 background:white;
 padding:30px;
 border-radius:12px;
+
 box-shadow:0 8px 25px rgba(0,0,0,.08);
+
 transition:.3s;
+
 cursor:pointer;
+
 border-top:4px solid var(--primary);
+
 }
 
 .card:hover{
+
 transform:translateY(-8px);
 box-shadow:0 12px 30px rgba(0,0,0,.15);
+
 }
 
-/* ICONS */
+
+/* =========================
+SERVICE ICONS
+========================= */
 
 .service-icon{
 font-size:42px;
@@ -222,7 +261,10 @@ margin-bottom:15px;
 display:block;
 }
 
-/* FORMS */
+
+/* =========================
+FORMS
+========================= */
 
 form{
 max-width:600px;
@@ -232,54 +274,83 @@ flex-direction:column;
 gap:12px;
 }
 
-input,textarea,select{
-padding:10px;
+input, textarea, select{
+
+padding:12px;
 border:1px solid #ccc;
 border-radius:6px;
+
 }
 
 button{
+
 background:var(--secondary);
 color:white;
+
 border:none;
+
 padding:12px;
+
 border-radius:6px;
+
 cursor:pointer;
+
 transition:.3s;
+
 }
 
-button:hover
+button:hover{
+background:#0b3a45;
+}
 
-/* FLEET GRID */
+
+/* =========================
+FLEET GRID
+========================= */
 
 .fleet-grid{
+
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+
 gap:25px;
+
 margin-top:40px;
+
 }
 
 .fleet-card{
+
 background:white;
+
 border-radius:12px;
+
 overflow:hidden;
+
 box-shadow:0 6px 20px rgba(0,0,0,.08);
+
 transition:.3s;
+
 }
 
 .fleet-card:hover{
 transform:translateY(-6px);
 }
 
-/* FLEET IMAGE */
+
+/* =========================
+FLEET IMAGE
+========================= */
 
 .fleet-card img{
+
 width:100%;
 height:220px;
+
 object-fit:cover;
-border-top-left-radius:12px;
-border-top-right-radius:12px;
+
 transition:transform .4s ease;
+
 }
 
 .fleet-card:hover img{
@@ -294,37 +365,63 @@ margin:15px;
 margin:0 15px 20px 15px;
 }
 
-/* FLOATING BUTTONS */
+
+/* =========================
+FLOATING BUTTONS
+========================= */
 
 .floating-call{
+
 position:fixed;
+
 bottom:20px;
 left:20px;
+
 background:var(--accent);
 color:white;
+
 padding:14px 20px;
+
 border-radius:30px;
+
 text-decoration:none;
+
 font-weight:600;
+
 box-shadow:0 4px 10px rgba(0,0,0,.3);
+
 z-index:1000;
+
 }
 
 .floating-book{
+
 position:fixed;
+
 bottom:20px;
 right:20px;
+
 background:var(--primary);
 color:white;
+
 padding:14px 22px;
+
 border-radius:30px;
+
 text-decoration:none;
+
 font-weight:600;
+
 box-shadow:0 4px 10px rgba(0,0,0,.3);
+
 z-index:1000;
+
 }
 
-/* BUTTON PULSE ANIMATION */
+
+/* =========================
+BUTTON PULSE ANIMATION
+========================= */
 
 .floating-call,
 .floating-book{
@@ -332,124 +429,170 @@ animation:pulse 2.5s infinite;
 }
 
 @keyframes pulse{
+
 0%{box-shadow:0 0 0 0 rgba(45,143,227,.5);}
 70%{box-shadow:0 0 0 12px rgba(45,143,227,0);}
 100%{box-shadow:0 0 0 0 rgba(45,143,227,0);}
+
 }
 
-/* FOOTER */
 
-footer{
-background:var(--secondary);
-color:white;
-text-align:center;
-padding:40px;
-margin-top:60px;
-}
+/* =========================
+MAP SECTION
+========================= */
 
-.creator a{
-color:#9fd6ff;
-text-decoration:none;
-}
-<div class="review-stars">
-<i class="fa-solid fa-star"></i>
-<i class="fa-solid fa-star"></i>
-<i class="fa-solid fa-star"></i>
-<i class="fa-solid fa-star"></i>
-<i class="fa-solid fa-star"></i>
-</div>
 .service-area{
 background:#f2f7fb;
 padding:80px 20px;
 }
 
 .map-container{
+
 margin-top:30px;
+
 border-radius:12px;
+
 overflow:hidden;
+
 box-shadow:0 10px 25px rgba(0,0,0,.1);
+
 }
 
 .map-container iframe{
+
 width:100%;
 height:420px;
+
 border:0;
+
 }
+
+
+/* =========================
+CONTACT CARDS
+========================= */
+
 .contact-grid{
+
 display:grid;
+
 grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+
 gap:25px;
+
 margin-top:40px;
+
 }
 
 .contact-card{
-background:white;
-padding:25px;
-border-radius:10px;
-box-shadow:0 6px 20px rgba(0,0,0,.08);
-text-align:center;
-}
 
-.map-container iframe{
-width:100%;
-height:400px;
-border:0;
+background:white;
+
+padding:25px;
+
 border-radius:10px;
+
+box-shadow:0 6px 20px rgba(0,0,0,.08);
+
+text-align:center;
+
 }
 
 .contact-card h3{
 margin-bottom:10px;
-color:#0f4c5c;
+color:var(--secondary);
 }
+
+
+/* =========================
+QUICK BOOK SECTION
+========================= */
+
 .quick-book{
+
 background:white;
+
 margin-top:-60px;
+
 max-width:1100px;
+
 margin-left:auto;
 margin-right:auto;
+
 padding:30px;
+
 border-radius:10px;
+
 box-shadow:0 10px 30px rgba(0,0,0,.1);
+
 text-align:center;
+
 }
 
 .quick-book-form{
+
 display:grid;
+
 grid-template-columns:repeat(auto-fit,minmax(160px,1fr));
+
 gap:10px;
+
 margin-top:20px;
+
 }
 
 .quick-book-form input,
 .quick-book-form select{
+
 padding:12px;
+
 border:1px solid #ccc;
+
 border-radius:6px;
+
 }
 
 .quick-book-form button{
-background:#2d8fe3;
+
+background:var(--primary);
+
 color:white;
+
 border:none;
+
 padding:12px;
+
 border-radius:6px;
+
 font-weight:bold;
+
 cursor:pointer;
+
 }
-.hero{
-margin-top:30px;
-min-height:420px;
 
-background:
-linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
-url("https://images.unsplash.com/photo-1588776814546-ec7eac7e1c2b?auto=format&fit=crop&w=1600&q=80");
 
-background-size:cover;
-background-position:center;
+/* =========================
+FOOTER
+========================= */
 
-display:flex;
-align-items:center;
-justify-content:center;
+footer{
 
-padding:60px 20px;
+background:var(--secondary);
+
+color:white;
+
+text-align:center;
+
+padding:40px;
+
+margin-top:60px;
+
+}
+
+.creator a{
+
+color:#9fd6ff;
+
+text-decoration:none;
+
 }
