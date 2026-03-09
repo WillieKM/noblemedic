@@ -198,3 +198,9 @@ font-weight:600;
 box-shadow:0 4px 10px rgba(0,0,0,.3);
 z-index:1000;
 }
+.service-icon{
+font-size:40px;
+color:#2d8fe3;
+margin-bottom:15px;
+display:block;
+}
