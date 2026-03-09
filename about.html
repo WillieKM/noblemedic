@@ -186,7 +186,21 @@ Website created by <a href="https://cyber-node.com">Cyber-Node</a>
 <a href="booking.html" class="floating-book">
 Book Ride
 </a>
+<script>
+const elements = document.querySelectorAll(".fade-in");
 
+const observer = new IntersectionObserver(entries=>{
+entries.forEach(entry=>{
+if(entry.isIntersecting){
+entry.target.classList.add("show");
+}
+});
+});
+
+elements.forEach(el=>{
+observer.observe(el);
+});
+</script>
 </body>
 
 </html>
