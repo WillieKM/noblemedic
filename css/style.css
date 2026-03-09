@@ -38,19 +38,18 @@ font-size:14px;
 
 /* HEADER */
 .hero{
-margin-top:10;
-}
-.main-header{
-background:var(--secondary);
-color:white;
+margin-top:25px;
+width:100%;
+min-height:420px;
+
+background:linear-gradient(135deg,var(--sky),white);
+
 display:flex;
-justify-content:space-between;
 align-items:center;
-padding:15px 40px;
-position:sticky;
-top:0;
-z-index:1000;
-box-shadow:0 4px 12px rgba(0,0,0,.15);
+justify-content:center;
+
+padding:60px 20px;
+box-sizing:border-box;
 }
 
 .logo{
