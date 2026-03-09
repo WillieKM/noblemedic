@@ -1,5 +1,7 @@
 /* GLOBAL COLORS */
-
+body{
+background:red;
+}
 :root{
 
 --primary:#2D8FE3;
