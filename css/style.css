@@ -38,7 +38,7 @@ font-size:14px;
 
 /* HEADER */
 .hero{
-margin-top:0;
+margin-top:10;
 }
 .main-header{
 background:var(--secondary);
