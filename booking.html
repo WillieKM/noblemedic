@@ -1,175 +1,121 @@
 <!DOCTYPE html>
 
-<html lang="en">
+<html>
 
 <head>
-
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Book Medical Transportation | Noble Medic Wheels</title>
-
+<title>Schedule Medical Transportation</title>
 <link rel="stylesheet" href="css/style.css">
-
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
-
 </head>
 
 <body>
 
-<header>
+<div class="top-bar">
+Serving King County • Snohomish County • Pierce County
+</div>
+
+<header class="main-header">
 
 <div class="logo">Noble Medic Wheels</div>
 
-<div class="menu-toggle" onclick="toggleMenu()">☰</div>
+<nav class="main-nav">
 
-<nav class="main-nav" id="nav-menu">
+<a href="index.html">Home</a> <a href="about.html">About</a> <a href="services.html">Services</a> <a href="booking.html">Book Ride</a> <a href="facilities.html">Facilities</a> <a href="contact.html">Contact</a>
 
-<a href="index.html">Home</a> <a href="services.html">Services</a>
-   <a href="about.html">About</a>
-  <a href="booking.html">Book Ride</a>
-  <a href="facilities.html">Facilities</a>
- 
-  <a href="contact.html">Contact</a>
+</nav>
 
-</nav>>
+<div class="header-cta">
+<a href="tel:2533749087" class="header-phone">📞 (253) 374-9087</a>
+<a href="booking.html" class="header-book">Book Ride</a>
+</div>
 
 </header>
 
-<section class="container">
+<section class="hero">
+
+<div class="hero-overlay">
 
 <h1>Schedule Medical Transportation</h1>
 
-<p class="page-intro">
-
+<p>
 Use the tools below to estimate transportation costs
 and request medical transportation.
-
 </p>
 
+</div>
+
 </section>
-<section class="map-box">
+
+<section class="container">
 
 <h2>Select Pickup and Destination</h2>
 
-<div id="map"></div>
+<div class="card">
 
-<div class="map-inputs">
+<input type="text" placeholder="Enter pickup location">
 
-<input id="pickupLocation" type="text" placeholder="Enter pickup location">
+<input type="text" placeholder="Enter destination">
 
-<input id="dropLocation" type="text" placeholder="Enter destination">
-
-<select id="transportType">
-
-<option value="3">Ambulatory</option>
-<option value="4">Wheelchair</option>
-
+<select>
+<option>Ambulatory</option>
+<option>Wheelchair</option>
 </select>
 
-<button onclick="calculateRoute()">Calculate Ride</button>
+<button>Calculate Ride</button>
 
 </div>
 
-<p id="distanceResult"></p>
-
-<p id="fareResult"></p>
-
 </section>
 
-<section class="estimate-box">
+<section class="container">
 
 <h2>Instant Ride Estimate</h2>
 
-<div class="estimate-grid">
+<div class="card">
 
-<div>
-<label>Pickup Address</label>
-<input type="text" id="pickup" placeholder="Enter pickup location">
-</div>
+<input type="text" placeholder="Pickup Address">
 
-<div>
-<label>Destination</label>
-<input type="text" id="destination" placeholder="Enter destination">
-</div>
+<input type="text" placeholder="Destination">
 
-<div>
-<label>Distance (miles)</label>
-<input type="number" id="miles" placeholder="Enter distance">
-</div>
+<input type="text" placeholder="Distance (miles)">
 
-<div>
-<label>Transport Type</label>
-
-<select id="transportType">
-
-<option value="3">Ambulatory</option>
-<option value="4">Wheelchair</option>
-
+<select>
+<option>Ambulatory</option>
+<option>Wheelchair</option>
 </select>
 
-</div>
-
-<button onclick="calculateFare()" class="estimate-btn">
-Calculate Estimate
-</button>
+<button>Calculate Estimate</button>
 
 </div>
-
-<p id="fareResult" class="estimate-result"></p>
-
-<a href="#bookingForm" class="book-link">
-Book This Ride
-</a>
 
 </section>
 
-<section class="booking-box">
+<section class="container">
 
 <h2>Request Transportation</h2>
 
-<form id="bookingForm" action="https://formsubmit.co/YOUR_EMAIL" method="POST">
+<form>
 
-<div class="booking-grid">
+<input type="text" placeholder="Patient Name">
 
-<input type="text" name="name" placeholder="Patient Name">
+<input type="text" placeholder="Phone Number">
 
-<input type="tel" name="phone" placeholder="Phone Number">
+<input type="date">
 
-<input type="date" name="date">
+<input type="time">
 
-<input type="time" name="time">
+<input type="text" placeholder="Pickup Address">
 
-<input type="text" name="pickup" placeholder="Pickup Address">
+<input type="text" placeholder="Drop-off Address">
 
-<input type="text" name="dropoff" placeholder="Drop-off Address">
+<textarea placeholder="Additional Notes"></textarea>
 
-<select name="transport">
-
-<option>Wheelchair Transportation</option>
-<option>Ambulatory Transportation</option>
-<option>Dialysis Transportation</option>
-<option>Hospital Discharge</option>
-
-</select>
-
-<textarea name="notes" placeholder="Additional Notes"></textarea>
-
-</div>
-
-<button type="submit" class="submit-btn">
-Submit Request
-</button>
+<button>Submit Request</button>
 
 </form>
 
 </section>
 
 <footer>
-
-<div class="container">
-
-<p>Serving King County • Snohomish County • Pierce County</p>
 
 <p>© Noble Medic Wheels</p>
 
@@ -178,122 +124,7 @@ Website created by
 <a href="https://cyber-node.com">Cyber-Node</a>
 </p>
 
-</div>
-
 </footer>
 
-<script>
-
-function toggleMenu(){
-
-let menu=document.getElementById("nav-menu");
-menu.classList.toggle("active");
-
-}
-
-function calculateFare(){
-
-let miles=document.getElementById("miles").value;
-let rate=document.getElementById("transportType").value;
-
-let base=30;
-
-let total=base+(miles*rate);
-
-document.getElementById("fareResult").innerHTML=
-"Estimated Transportation Cost: $"+total;
-
-}
-
-</script>
-<script>
-
-let map;
-let directionsService;
-let directionsRenderer;
-let autocompletePickup;
-let autocompleteDrop;
-
-function initMap(){
-
-map = new google.maps.Map(document.getElementById("map"), {
-center: { lat: 47.6062, lng: -122.3321 },
-zoom: 10
-});
-
-directionsService = new google.maps.DirectionsService();
-directionsRenderer = new google.maps.DirectionsRenderer();
-
-directionsRenderer.setMap(map);
-
-autocompletePickup =
-new google.maps.places.Autocomplete(
-document.getElementById("pickupLocation")
-);
-
-autocompleteDrop =
-new google.maps.places.Autocomplete(
-document.getElementById("dropLocation")
-);
-
-}
-
-
-function calculateRoute(){
-
-let start =
-document.getElementById("pickupLocation").value;
-
-let end =
-document.getElementById("dropLocation").value;
-
-directionsService.route({
-
-origin:start,
-destination:end,
-travelMode:'DRIVING'
-
-}, function(result,status){
-
-if(status === 'OK'){
-
-directionsRenderer.setDirections(result);
-
-let meters =
-result.routes[0].legs[0].distance.value;
-
-let miles =
-meters * 0.000621371;
-
-document.getElementById("distanceResult").innerHTML =
-"Distance: " + miles.toFixed(2) + " miles";
-
-calculateFare(miles);
-
-}
-
-});
-
-}
-
-
-function calculateFare(miles){
-
-let rate =
-document.getElementById("transportType").value;
-
-let base = 30;
-
-let total = base + (miles * rate);
-
-document.getElementById("fareResult").innerHTML =
-"Estimated Fare: $" + total.toFixed(2);
-
-}
-
-</script>
-<script async
-src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&libraries=places&callback=initMap">
-</script>
 </body>
 </html>
