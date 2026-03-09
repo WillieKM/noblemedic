@@ -142,3 +142,30 @@ margin-top:60px;
 color:#9fd6ff;
 text-decoration:none;
 }
+.fleet-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:25px;
+margin-top:40px;
+}
+
+.fleet-card{
+background:white;
+border-radius:10px;
+overflow:hidden;
+box-shadow:0 5px 20px rgba(0,0,0,.08);
+}
+
+.fleet-card img{
+width:100%;
+height:200px;
+object-fit:cover;
+}
+
+.fleet-card h3{
+margin:15px;
+}
+
+.fleet-card p{
+margin:0 15px 20px 15px;
+}
