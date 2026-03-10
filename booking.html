@@ -1,20 +1,32 @@
 <!DOCTYPE html>
-
-<html>
+<html lang="en">
 
 <head>
-<title>Schedule Medical Transportation</title>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Book Medical Transportation | Noble Medic Wheels</title>
+
 <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet"
+
+<link rel="stylesheet"
 href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 </head>
 
+
 <body>
+
+
+<!-- TOP BAR -->
 
 <div class="top-bar">
 Serving King County • Snohomish County • Pierce County
 </div>
+
+
+<!-- HEADER -->
 
 <header class="main-header">
 
@@ -22,122 +34,182 @@ Serving King County • Snohomish County • Pierce County
 
 <nav class="main-nav">
 
-<a href="index.html">Home</a> <a href="about.html">About</a> <a href="services.html">Services</a> <a href="booking.html">Book Ride</a> <a href="facilities.html">Facilities</a> <a href="contact.html">Contact</a>
+<a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a href="services.html">Services</a>
+<a href="booking.html">Book Ride</a>
+<a href="facilities.html">Facilities</a>
+<a href="contact.html">Contact</a>
 
 </nav>
 
 <div class="header-cta">
-<a href="tel:2533749087" class="header-phone">📞 (253) 374-9087</a>
-<a href="booking.html" class="header-book">Book Ride</a>
+
+<a href="tel:2533749087" class="header-phone">
+📞 (253) 374-9087
+</a>
+
+<a href="booking.html" class="header-book">
+Book Ride
+</a>
+
 </div>
 
 </header>
 
-<section class="hero">
+
+
+<!-- HERO -->
+
+<section class="hero booking-hero">
 
 <div class="hero-overlay">
 
 <h1>Schedule Medical Transportation</h1>
 
 <p>
-Use the tools below to estimate transportation costs
-and request medical transportation.
+Quickly request safe and reliable transportation
+for medical appointments, dialysis treatments,
+hospital discharges, and senior care.
 </p>
 
 </div>
 
 </section>
 
+
+
+<!-- HOW BOOKING WORKS -->
+
 <section class="container">
 
-<h2>Select Pickup and Destination</h2>
+<h2>How Booking Works</h2>
 
-<div class="card">
+<div class="booking-steps">
 
-<input type="text" placeholder="Enter pickup location">
+<div class="step">
+<i class="fa-solid fa-phone"></i>
+<h3>Request a Ride</h3>
+<p>Fill out the transportation request form below or call our dispatch team.</p>
+</div>
 
-<input type="text" placeholder="Enter destination">
+<div class="step">
+<i class="fa-solid fa-calendar-check"></i>
+<h3>Confirm Appointment</h3>
+<p>Our dispatcher confirms pickup time, location, and transportation type.</p>
+</div>
 
-<select>
-<option>Ambulatory</option>
-<option>Wheelchair</option>
-</select>
-
-<button>Calculate Ride</button>
+<div class="step">
+<i class="fa-solid fa-van-shuttle"></i>
+<h3>Safe Transportation</h3>
+<p>Our trained driver transports the passenger safely and comfortably.</p>
+</div>
 
 </div>
 
 </section>
 
+
+
+<!-- RIDE ESTIMATE -->
+
 <section class="container">
 
-<h2>Instant Ride Estimate</h2>
+<h2>Ride Estimate</h2>
 
 <div class="card">
 
 <input type="text" placeholder="Pickup Address">
 
-<input type="text" placeholder="Destination">
+<input type="text" placeholder="Destination Address">
 
-<input type="text" placeholder="Distance (miles)">
+<input type="number" placeholder="Distance (miles)">
 
 <select>
+<option>Transportation Type</option>
 <option>Ambulatory</option>
 <option>Wheelchair</option>
 </select>
 
-<button>Calculate Estimate</button>
+<button class="btn-primary">
+Calculate Estimate
+</button>
 
 </div>
 
 </section>
+
+
+
+<!-- BOOKING FORM -->
 
 <section class="container">
 
 <h2>Request Transportation</h2>
 
-<form>
+<form class="booking-form">
 
-<input type="text" placeholder="Patient Name">
+<input type="text" placeholder="Patient Name" required>
 
-<input type="text" placeholder="Phone Number">
+<input type="tel" placeholder="Phone Number" required>
 
-<input type="date">
+<input type="date" required>
 
-<input type="time">
+<input type="time" required>
 
-<input type="text" placeholder="Pickup Address">
+<select required>
+<option>Transportation Type</option>
+<option>Wheelchair</option>
+<option>Ambulatory</option>
+</select>
 
-<input type="text" placeholder="Drop-off Address">
+<input type="text" placeholder="Pickup Address" required>
 
-<textarea placeholder="Additional Notes"></textarea>
+<input type="text" placeholder="Destination Address" required>
 
-<button>Submit Request</button>
+<textarea placeholder="Additional Notes (Optional)"></textarea>
+
+<button type="submit" class="btn-primary">
+Submit Ride Request
+</button>
 
 </form>
 
 </section>
 
-<footer>
 
-<p>© Noble Medic Wheels</p>
 
-<p class="creator">
-Website created by
-<a href="https://cyber-node.com">Cyber-Node</a>
-</p>
+<!-- CALL SECTION -->
+
+<section class="call-section">
+
+<h2>Need Immediate Transportation?</h2>
+
+<p>Call our dispatch team to schedule transportation quickly.</p>
+
+<a href="tel:2533749087" class="call-btn">
+📞 Call (253) 374-9087
+</a>
+
+</section>
+
+
+
+<!-- FOOTER -->
+
 <footer class="site-footer">
 
 <div class="footer-container">
+
 
 <div class="footer-col">
 
 <h3>Noble Medic Wheels</h3>
 
 <p>
-Safe and reliable non-emergency medical transportation for
-patients traveling to healthcare appointments, dialysis treatments,
-and hospital visits.
+Reliable non-emergency medical transportation
+for patients traveling to healthcare appointments,
+dialysis treatments, and hospital visits.
 </p>
 
 <div class="review-stars">
@@ -146,35 +218,55 @@ and hospital visits.
 
 </div>
 
+
+
 <div class="footer-col">
 
 <h4>Transportation Services</h4>
 
 <ul>
+
 <li>Wheelchair Transportation</li>
+
 <li>Ambulatory Transportation</li>
+
 <li>Dialysis Transportation</li>
+
 <li>Hospital Discharge</li>
+
 <li>Medical Appointments</li>
+
 </ul>
 
 </div>
+
+
 
 <div class="footer-col">
 
 <h4>Service Areas</h4>
 
 <ul>
+
 <li>Seattle</li>
+
 <li>Tacoma</li>
+
 <li>Auburn</li>
+
 <li>Kent</li>
+
 <li>Federal Way</li>
+
 <li>Renton</li>
+
 <li>Bellevue</li>
+
 </ul>
 
 </div>
+
+
 
 <div class="footer-col">
 
@@ -184,11 +276,15 @@ and hospital visits.
 
 <p>Serving King County • Snohomish County • Pierce County</p>
 
-<a class="footer-btn" href="booking.html">Book Transportation</a>
+<a class="footer-btn" href="booking.html">
+Book Transportation
+</a>
 
 </div>
 
 </div>
+
+
 
 <div class="footer-map">
 
@@ -198,6 +294,8 @@ loading="lazy">
 </iframe>
 
 </div>
+
+
 
 <div class="footer-bottom">
 
@@ -205,125 +303,19 @@ loading="lazy">
 
 <p class="creator">
 Website created by
-<a href="https://cyber-node.com" target="_blank">Cyber-Node</a>
+<a href="https://cyber-node.com" target="_blank">
+Cyber-Node
+</a>
 </p>
 
 </div>
 
 </footer>
-<footer class="site-footer">
 
-<div class="footer-container">
 
-<div class="footer-col">
 
-<h3>Noble Medic Wheels</h3>
+<!-- FLOATING BUTTONS -->
 
-<p>
-Safe and reliable non-emergency medical transportation for
-patients traveling to healthcare appointments, dialysis treatments,
-and hospital visits.
-</p>
-
-<div class="review-stars">
-★★★★★ <span>Trusted Transportation</span>
-</div>
-
-</div>
-
-<div class="footer-col">
-
-<h4>Transportation Services</h4>
-
-<ul>
-<li>Wheelchair Transportation</li>
-<li>Ambulatory Transportation</li>
-<li>Dialysis Transportation</li>
-<li>Hospital Discharge</li>
-<li>Medical Appointments</li>
-</ul>
-
-</div>
-
-<div class="footer-col">
-
-<h4>Service Areas</h4>
-
-<ul>
-<li>Seattle</li>
-<li>Tacoma</li>
-<li>Auburn</li>
-<li>Kent</li>
-<li>Federal Way</li>
-<li>Renton</li>
-<li>Bellevue</li>
-</ul>
-
-</div>
-
-<div class="footer-col">
-
-<h4>Contact</h4>
-
-<p>📞 (253) 374-9087</p>
-
-<p>Serving King County • Snohomish County • Pierce County</p>
-
-<a class="footer-btn" href="booking.html">Book Transportation</a>
-
-</div>
-
-</div>
-
-<div class="footer-map">
-
-<iframe
-src="https://www.google.com/maps?q=Seattle+Washington&output=embed"
-loading="lazy">
-</iframe>
-
-</div>
-
-<footer class="footer">
-
-<div class="footer-grid">
-
-<div>
-<h3>Noble Medic Wheels</h3>
-<p>Reliable Non-Emergency Medical Transportation serving Western Washington.</p>
-</div>
-
-<div>
-<h4>Quick Links</h4>
-<a href="/">Home</a>
-<a href="/services">Services</a>
-<a href="/book">Book Ride</a>
-<a href="/contact">Contact</a>
-</div>
-
-<div>
-<h4>Service Areas</h4>
-<p>King County</p>
-<p>Pierce County</p>
-<p>Snohomish County</p>
-</div>
-
-<div>
-<h4>Contact</h4>
-<p>(253) 374-9087</p>
-<p>info@noblemedicwheels.com</p>
-</div>
-
-</div>
-
-<p class="copyright">
-© 2026 Noble Medic Wheels
-</p>
-
-</footer>
-</footer>
-
-</footer>
 <a href="tel:2533749087" class="floating-call">
 📞 Call Now
 </a>
@@ -331,6 +323,7 @@ loading="lazy">
 <a href="booking.html" class="floating-book">
 Book Ride
 </a>
+
 
 </body>
 </html>
