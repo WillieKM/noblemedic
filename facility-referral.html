@@ -1,22 +1,35 @@
 <!DOCTYPE html>
-
-<html>
+<html lang="en">
 
 <head>
 
-<title>Facility Referral Portal | Noble Medic Wheels</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Facility Referral | Noble Medic Wheels</title>
+
+<meta name="description"
+content="Healthcare facilities can submit patient transportation referrals for non-emergency medical transportation services.">
 
 <link rel="stylesheet" href="css/style.css">
 
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 </head>
 
 <body>
 
+
+<!-- TOP BAR -->
+
 <div class="top-bar">
 Serving King County • Snohomish County • Pierce County
 </div>
+
+
+
+<!-- HEADER -->
 
 <header class="main-header">
 
@@ -24,7 +37,12 @@ Serving King County • Snohomish County • Pierce County
 
 <nav class="main-nav">
 
-<a href="index.html">Home</a> <a href="about.html">About</a> <a href="services.html">Services</a> <a href="booking.html">Book Ride</a> <a href="facilities.html">Facilities</a> <a href="contact.html">Contact</a>
+<a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a href="services.html">Services</a>
+<a href="booking.html">Book Ride</a>
+<a href="facilities.html">Facilities</a>
+<a href="contact.html">Contact</a>
 
 </nav>
 
@@ -42,6 +60,10 @@ Book Ride
 
 </header>
 
+
+
+<!-- HERO -->
+
 <section class="hero">
 
 <div class="hero-overlay">
@@ -49,75 +71,256 @@ Book Ride
 <h1>Healthcare Facility Referral Portal</h1>
 
 <p>
-
-Hospitals, dialysis centers and healthcare facilities can
-submit patient transportation requests using the form below.
-
+Hospitals, Adult Family Homes, dialysis centers,
+and healthcare providers can submit patient
+transportation requests using the form below.
 </p>
 
 </div>
 
 </section>
 
+
+
+<!-- REFERRAL FORM -->
+
 <section class="container">
 
 <h2>Submit Patient Transportation Request</h2>
 
-<p>
+<form class="booking-form">
 
-Use this form to request non-emergency medical transportation
-for patients needing transport to or from healthcare facilities.
-
-</p>
-
-<form>
+<h3>Facility Information</h3>
 
 <input type="text" placeholder="Facility Name" required>
 
-<input type="text" placeholder="Contact Person">
+<input type="text" placeholder="Facility Contact Person">
 
-<input type="tel" placeholder="Phone Number">
+<input type="tel" placeholder="Facility Phone Number">
 
-<input type="text" placeholder="Patient Name">
+<input type="email" placeholder="Facility Email Address">
 
-<input type="text" placeholder="Pickup Address">
 
-<input type="text" placeholder="Drop-off Address">
+<h3>Patient Information</h3>
 
-<input type="date">
+<input type="text" placeholder="Patient Name" required>
 
-<input type="time">
+<input type="date" placeholder="Appointment Date" required>
 
-<select>
+<input type="time" placeholder="Appointment Time">
 
-<option>Wheelchair Transportation</option>
-<option>Ambulatory Transportation</option>
-<option>Dialysis Transportation</option>
-<option>Hospital Discharge</option>
+
+<select required>
+
+<option value="">Mobility Type</option>
+<option>Ambulatory</option>
+<option>Wheelchair</option>
 
 </select>
 
-<textarea placeholder="Additional Notes"></textarea>
 
-<button type="submit">
-Submit Referral
+<h3>Transportation Details</h3>
+
+<input type="text" placeholder="Pickup Location" required>
+
+<input type="text" placeholder="Destination (Clinic / Hospital)" required>
+
+
+<select>
+
+<option>Trip Type</option>
+<option>One Way</option>
+<option>Round Trip</option>
+<option>Recurring Transportation</option>
+
+</select>
+
+
+<textarea rows="4"
+placeholder="Additional Notes (special instructions, assistance needed, etc.)">
+</textarea>
+
+
+<button type="submit" class="hero-btn">
+
+Submit Patient Referral
+
 </button>
 
 </form>
 
 </section>
 
-<footer>
 
-<p>© Noble Medic Wheels</p>
 
-<p class="creator">
+<!-- FACILITY TYPES -->
 
-Website created by <a href="https://cyber-node.com">Cyber-Node</a>
+<section class="container">
 
+<h2>Facilities We Partner With</h2>
+
+<div class="service-grid">
+
+<div class="card">
+<i class="fa-solid fa-hospital service-icon"></i>
+<h3>Hospitals</h3>
+</div>
+
+<div class="card">
+<i class="fa-solid fa-heart-pulse service-icon"></i>
+<h3>Dialysis Centers</h3>
+</div>
+
+<div class="card">
+<i class="fa-solid fa-house-medical service-icon"></i>
+<h3>Adult Family Homes (AFH)</h3>
+</div>
+
+<div class="card">
+<i class="fa-solid fa-bed-pulse service-icon"></i>
+<h3>Skilled Nursing Facilities</h3>
+</div>
+
+<div class="card">
+<i class="fa-solid fa-building-user service-icon"></i>
+<h3>Assisted Living Communities</h3>
+</div>
+
+<div class="card">
+<i class="fa-solid fa-user-nurse service-icon"></i>
+<h3>Rehabilitation Clinics</h3>
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- CALL TO ACTION -->
+
+<section class="call-section">
+
+<h2>Need Immediate Transportation?</h2>
+
+<p>
+Call our dispatch team to schedule transportation quickly.
 </p>
 
+<a href="tel:2533749087" class="hero-btn">
+
+📞 Call (253) 374-9087
+
+</a>
+
+</section>
+
+
+
+<!-- FOOTER -->
+
+<footer class="site-footer">
+
+<div class="footer-container">
+
+<div class="footer-col">
+
+<h3>Noble Medic Wheels</h3>
+
+<p>
+Reliable non-emergency medical transportation
+serving King County, Pierce County, and Snohomish County.
+</p>
+
+<div class="review-stars">
+★★★★★ Trusted Transportation
+</div>
+
+</div>
+
+
+
+<div class="footer-col">
+
+<h4>Transportation Services</h4>
+
+<ul>
+
+<li>Wheelchair Transportation</li>
+<li>Ambulatory Transportation</li>
+<li>Dialysis Transportation</li>
+<li>Hospital Discharge</li>
+<li>Medical Appointments</li>
+
+</ul>
+
+</div>
+
+
+
+<div class="footer-col">
+
+<h4>Service Areas</h4>
+
+<ul>
+
+<li>Seattle</li>
+<li>Tacoma</li>
+<li>Auburn</li>
+<li>Kent</li>
+<li>Federal Way</li>
+<li>Renton</li>
+<li>Bellevue</li>
+
+</ul>
+
+</div>
+
+
+
+<div class="footer-col">
+
+<h4>Contact</h4>
+
+<p>📞 (253) 374-9087</p>
+
+<p>Serving King County • Snohomish County • Pierce County</p>
+
+<a class="footer-btn" href="booking.html">
+Book Transportation
+</a>
+
+</div>
+
+</div>
+
+
+
+<div class="footer-bottom">
+
+<p>© 2026 Noble Medic Wheels</p>
+
+<p class="creator">
+Website created by
+<a href="https://cyber-node.com" target="_blank">Cyber-Node</a>
+</p>
+
+</div>
+
 </footer>
+
+
+
+<!-- FLOATING BUTTONS -->
+
+<a href="tel:2533749087" class="floating-call">
+📞 Call Now
+</a>
+
+<a href="booking.html" class="floating-book">
+Book Ride
+</a>
+
 
 </body>
 </html>
