@@ -6,7 +6,10 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Book Medical Transportation | Noble Medic Wheels</title>
+<title>Schedule Medical Transportation | Noble Medic Wheels</title>
+
+<meta name="description"
+content="Schedule non-emergency medical transportation for medical appointments, dialysis, and hospital discharge across King County, Pierce County, and Snohomish County.">
 
 <link rel="stylesheet" href="css/style.css">
 
@@ -30,7 +33,9 @@ Serving King County • Snohomish County • Pierce County
 
 <header class="main-header">
 
-<div class="logo">Noble Medic Wheels</div>
+<div class="logo">
+Noble Medic Wheels
+</div>
 
 <nav class="main-nav">
 
@@ -68,10 +73,13 @@ Book Ride
 <h1>Schedule Medical Transportation</h1>
 
 <p>
-Quickly request safe and reliable transportation
-for medical appointments, dialysis treatments,
-hospital discharges, and senior care.
+Safe and dependable transportation for medical appointments,
+dialysis treatments, hospital discharges, and senior care.
 </p>
+
+<a class="hero-btn" href="#booking-form">
+Request Transportation
+</a>
 
 </div>
 
@@ -79,7 +87,7 @@ hospital discharges, and senior care.
 
 
 
-<!-- HOW BOOKING WORKS -->
+<!-- HOW IT WORKS -->
 
 <section class="container">
 
@@ -88,21 +96,35 @@ hospital discharges, and senior care.
 <div class="booking-steps">
 
 <div class="step">
+
 <i class="fa-solid fa-phone"></i>
-<h3>Request a Ride</h3>
-<p>Fill out the transportation request form below or call our dispatch team.</p>
+
+<h3>Submit Request</h3>
+
+<p>Complete the booking form or call our dispatch team.</p>
+
 </div>
 
+
 <div class="step">
+
 <i class="fa-solid fa-calendar-check"></i>
-<h3>Confirm Appointment</h3>
-<p>Our dispatcher confirms pickup time, location, and transportation type.</p>
+
+<h3>Ride Confirmation</h3>
+
+<p>We confirm pickup time, location, and transportation type.</p>
+
 </div>
 
+
 <div class="step">
+
 <i class="fa-solid fa-van-shuttle"></i>
+
 <h3>Safe Transportation</h3>
-<p>Our trained driver transports the passenger safely and comfortably.</p>
+
+<p>A trained driver provides reliable transportation to your destination.</p>
+
 </div>
 
 </div>
@@ -111,29 +133,35 @@ hospital discharges, and senior care.
 
 
 
-<!-- RIDE ESTIMATE -->
+<!-- ESTIMATE SECTION -->
 
 <section class="container">
 
-<h2>Ride Estimate</h2>
+<h2>Transportation Cost Estimate</h2>
 
-<div class="card">
+<p class="center-text">
+Use the estimate tool below to get a quick transportation cost estimate.
+</p>
 
-<input type="text" placeholder="Pickup Address">
+<div class="card estimate-card">
 
-<input type="text" placeholder="Destination Address">
+<input id="distance" type="number" placeholder="Distance (miles)">
 
-<input type="number" placeholder="Distance (miles)">
+<select id="rideType">
 
-<select>
-<option>Transportation Type</option>
-<option>Ambulatory</option>
-<option>Wheelchair</option>
+<option value="">Transportation Type</option>
+
+<option value="ambulatory">Ambulatory</option>
+
+<option value="wheelchair">Wheelchair</option>
+
 </select>
 
-<button class="btn-primary">
+<button onclick="calculateEstimate()" class="btn-primary">
 Calculate Estimate
 </button>
+
+<p id="estimate-result"></p>
 
 </div>
 
@@ -143,31 +171,49 @@ Calculate Estimate
 
 <!-- BOOKING FORM -->
 
-<section class="container">
+<section id="booking-form" class="container">
 
 <h2>Request Transportation</h2>
 
 <form class="booking-form">
 
-<input type="text" placeholder="Patient Name" required>
+<label>Patient Name</label>
+<input type="text" required>
 
-<input type="tel" placeholder="Phone Number" required>
+<label>Phone Number</label>
+<input type="tel" required>
 
+<label>Appointment Date</label>
 <input type="date" required>
 
+<label>Appointment Time</label>
 <input type="time" required>
 
+<label>Transportation Type</label>
+
 <select required>
-<option>Transportation Type</option>
+
+<option value="">Select Transportation Type</option>
+
 <option>Wheelchair</option>
+
 <option>Ambulatory</option>
+
 </select>
 
-<input type="text" placeholder="Pickup Address" required>
 
-<input type="text" placeholder="Destination Address" required>
+<label>Pickup Address</label>
+<input type="text" required>
 
-<textarea placeholder="Additional Notes (Optional)"></textarea>
+
+<label>Destination Address</label>
+<input type="text" required>
+
+
+<label>Additional Notes</label>
+
+<textarea rows="4"></textarea>
+
 
 <button type="submit" class="btn-primary">
 Submit Ride Request
@@ -179,13 +225,15 @@ Submit Ride Request
 
 
 
-<!-- CALL SECTION -->
+<!-- CALL TO ACTION -->
 
 <section class="call-section">
 
 <h2>Need Immediate Transportation?</h2>
 
-<p>Call our dispatch team to schedule transportation quickly.</p>
+<p>
+Call our dispatch team to quickly schedule transportation.
+</p>
 
 <a href="tel:2533749087" class="call-btn">
 📞 Call (253) 374-9087
@@ -207,8 +255,8 @@ Submit Ride Request
 <h3>Noble Medic Wheels</h3>
 
 <p>
-Reliable non-emergency medical transportation
-for patients traveling to healthcare appointments,
+Reliable non-emergency medical transportation for
+patients traveling to healthcare appointments,
 dialysis treatments, and hospital visits.
 </p>
 
@@ -303,9 +351,7 @@ loading="lazy">
 
 <p class="creator">
 Website created by
-<a href="https://cyber-node.com" target="_blank">
-Cyber-Node
-</a>
+<a href="https://cyber-node.com" target="_blank">Cyber-Node</a>
 </p>
 
 </div>
@@ -323,6 +369,43 @@ Cyber-Node
 <a href="booking.html" class="floating-book">
 Book Ride
 </a>
+
+
+
+<!-- ESTIMATE SCRIPT -->
+
+<script>
+
+function calculateEstimate() {
+
+let distance = document.getElementById("distance").value;
+let rideType = document.getElementById("rideType").value;
+let result = document.getElementById("estimate-result");
+
+if(distance === "" || rideType === ""){
+result.innerHTML = "Please enter distance and transportation type.";
+return;
+}
+
+let pricePerMile = 0;
+
+if(rideType === "ambulatory"){
+pricePerMile = 3.50;
+}
+
+if(rideType === "wheelchair"){
+pricePerMile = 4.75;
+}
+
+let total = distance * pricePerMile;
+
+result.innerHTML =
+"Estimated Cost: $" + total.toFixed(2);
+
+}
+
+</script>
+
 
 
 </body>
