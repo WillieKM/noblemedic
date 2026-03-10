@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html lang="en">
 
 <head>
@@ -11,13 +10,22 @@
 
 <link rel="stylesheet" href="/css/style.css">
 
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 </head>
 
 <body>
 
+
+<!-- TOP BAR -->
+
 <div class="top-bar">
 Serving King County • Snohomish County • Pierce County
 </div>
+
+
+<!-- HEADER -->
 
 <header class="main-header">
 
@@ -26,12 +34,14 @@ Noble Medic Wheels
 </div>
 
 <nav class="main-nav">
+
 <a href="index.html">Home</a>
 <a href="about.html">About</a>
 <a href="services.html">Services</a>
 <a href="booking.html">Book Ride</a>
 <a href="facilities.html">Facilities</a>
 <a href="contact.html">Contact</a>
+
 </nav>
 
 <div class="header-cta">
@@ -48,14 +58,19 @@ Book Ride
 
 </header>
 
-<section class="hero">
+
+
+<!-- HERO -->
+
+<section class="hero contact-hero">
 
 <div class="hero-overlay">
 
 <h1>Contact Noble Medic Wheels</h1>
 
 <p>
-Questions about transportation services or scheduling a ride? Our team is ready to assist you.
+Have questions about medical transportation services or scheduling a ride?
+Our team is ready to assist you.
 </p>
 
 <a class="hero-btn" href="booking.html">
@@ -66,25 +81,52 @@ Schedule Transportation
 
 </section>
 
+
+
+<!-- CONTACT INFO -->
+
 <section class="container">
 
-<h2>Get In Touch</h2>
+<h2>Contact Information</h2>
 
 <div class="contact-grid">
 
+
 <div class="contact-card">
 
-<h3>📞 Phone</h3>
+<i class="fa-solid fa-phone"></i>
+
+<h3>Phone</h3>
 
 <p>(253) 374-9087</p>
 
-<p>Available for ride scheduling and general questions.</p>
+<p>Call to schedule transportation or ask questions.</p>
 
 </div>
 
+
+
 <div class="contact-card">
 
-<h3>📍 Service Area</h3>
+<i class="fa-solid fa-clock"></i>
+
+<h3>Service Hours</h3>
+
+<p>
+Monday – Friday: 6:00 AM – 8:00 PM<br>
+Saturday: 7:00 AM – 6:00 PM<br>
+Sunday: By Appointment
+</p>
+
+</div>
+
+
+
+<div class="contact-card">
+
+<i class="fa-solid fa-map-location-dot"></i>
+
+<h3>Service Areas</h3>
 
 <p>
 King County<br>
@@ -94,27 +136,19 @@ Snohomish County
 
 </div>
 
-<div class="contact-card">
-
-<h3>⏰ Hours</h3>
-
-<p>
-Monday – Friday: 6:00 AM – 8:00 PM<br>
-Saturday: 7:00 AM – 6:00 PM<br>
-Sunday: By appointment
-</p>
-
-</div>
-
 </div>
 
 </section>
+
+
+
+<!-- CONTACT FORM -->
 
 <section class="container">
 
 <h2>Send Us a Message</h2>
 
-<form>
+<form class="contact-form">
 
 <input type="text" placeholder="Full Name" required>
 
@@ -122,15 +156,71 @@ Sunday: By appointment
 
 <input type="tel" placeholder="Phone Number">
 
-<textarea placeholder="How can we help?" rows="5"></textarea>
+<select>
 
-<button type="submit">
+<option>Reason for Contact</option>
+<option>Schedule Transportation</option>
+<option>General Question</option>
+<option>Healthcare Partnership</option>
+<option>Billing Question</option>
+
+</select>
+
+<textarea placeholder="How can we assist you?" rows="5"></textarea>
+
+<button type="submit" class="btn-primary">
 Send Message
 </button>
 
 </form>
 
 </section>
+
+
+
+<!-- HEALTHCARE PARTNERS -->
+
+<section class="container">
+
+<h2>Healthcare Partnerships</h2>
+
+<p class="center-text">
+
+Noble Medic Wheels partners with hospitals, dialysis centers,
+assisted living communities, and healthcare providers
+to deliver reliable patient transportation services.
+
+</p>
+
+<div class="partner-grid">
+
+<div class="partner-card">
+<i class="fa-solid fa-hospital"></i>
+<p>Hospitals</p>
+</div>
+
+<div class="partner-card">
+<i class="fa-solid fa-bed-pulse"></i>
+<p>Dialysis Centers</p>
+</div>
+
+<div class="partner-card">
+<i class="fa-solid fa-house-medical"></i>
+<p>Assisted Living</p>
+</div>
+
+<div class="partner-card">
+<i class="fa-solid fa-user-nurse"></i>
+<p>Home Healthcare</p>
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- MAP -->
 
 <section class="container">
 
@@ -148,27 +238,39 @@ allowfullscreen>
 
 </section>
 
-<footer>
 
-<p>© Noble Medic Wheels</p>
 
-<p class="creator">
-Website created by <a href="https://cyber-node.com">Cyber-Node</a>
-</p>
+<!-- CALL SECTION -->
 
-</footer>
+<section class="call-section">
+
+<h2>Need Immediate Transportation?</h2>
+
+<p>Call our dispatch team to schedule transportation quickly.</p>
+
+<a href="tel:2533749087" class="call-btn">
+📞 Call (253) 374-9087
+</a>
+
+</section>
+
+
+
+<!-- FOOTER -->
+
 <footer class="site-footer">
 
 <div class="footer-container">
+
 
 <div class="footer-col">
 
 <h3>Noble Medic Wheels</h3>
 
 <p>
-Safe and reliable non-emergency medical transportation for
-patients traveling to healthcare appointments, dialysis treatments,
-and hospital visits.
+Reliable non-emergency medical transportation
+for patients traveling to healthcare appointments,
+dialysis treatments, and hospital visits.
 </p>
 
 <div class="review-stars">
@@ -177,25 +279,32 @@ and hospital visits.
 
 </div>
 
+
+
 <div class="footer-col">
 
 <h4>Transportation Services</h4>
 
 <ul>
+
 <li>Wheelchair Transportation</li>
 <li>Ambulatory Transportation</li>
 <li>Dialysis Transportation</li>
 <li>Hospital Discharge</li>
 <li>Medical Appointments</li>
+
 </ul>
 
 </div>
+
+
 
 <div class="footer-col">
 
 <h4>Service Areas</h4>
 
 <ul>
+
 <li>Seattle</li>
 <li>Tacoma</li>
 <li>Auburn</li>
@@ -203,9 +312,12 @@ and hospital visits.
 <li>Federal Way</li>
 <li>Renton</li>
 <li>Bellevue</li>
+
 </ul>
 
 </div>
+
+
 
 <div class="footer-col">
 
@@ -215,11 +327,15 @@ and hospital visits.
 
 <p>Serving King County • Snohomish County • Pierce County</p>
 
-<a class="footer-btn" href="booking.html">Book Transportation</a>
+<a class="footer-btn" href="booking.html">
+Book Transportation
+</a>
 
 </div>
 
 </div>
+
+
 
 <div class="footer-map">
 
@@ -229,6 +345,8 @@ loading="lazy">
 </iframe>
 
 </div>
+
+
 
 <div class="footer-bottom">
 
@@ -243,6 +361,10 @@ Website created by
 
 </footer>
 
+
+
+<!-- FLOATING BUTTONS -->
+
 <a class="floating-call" href="tel:2533749087">
 📞 Call Now
 </a>
@@ -250,6 +372,7 @@ Website created by
 <a class="floating-book" href="booking.html">
 Book Ride
 </a>
+
 
 </body>
 </html>
