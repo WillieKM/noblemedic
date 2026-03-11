@@ -1,18 +1,4 @@
-/* =========================
-GLOBAL VARIABLES
-========================= */
-
-:root{
---primary:#2D8FE3;
---secondary:#0F4C5C;
---accent:#2BB673;
---bg-light:#F5F8FC;
---text-dark:#2A2A2A;
-}
-
-/* =========================
-GLOBAL SETTINGS
-========================= */
+/* GLOBAL */
 
 *{
 box-sizing:border-box;
@@ -20,55 +6,41 @@ margin:0;
 padding:0;
 }
 
-html{
-scroll-behavior:smooth;
-}
-
 body{
-font-family:Arial, sans-serif;
-background:var(--bg-light);
-color:var(--text-dark);
-line-height:1.6;
+font-family:Arial,sans-serif;
+background:#F5F8FC;
+color:#2A2A2A;
 }
 
-/* =========================
-TOP BAR
-========================= */
+/* PAGE WRAPPER */
+
+.page-wrapper{
+width:100%;
+max-width:1400px;
+margin:auto;
+}
+
+/* TOP BAR */
 
 .top-bar{
-background:var(--secondary);
+background:#0F4C5C;
 color:white;
 text-align:center;
 padding:6px;
 font-size:14px;
 }
 
-/* =========================
-HEADER
-========================= */
+/* HEADER */
 
 .main-header{
-background:var(--secondary);
+background:#0F4C5C;
 color:white;
 display:flex;
 justify-content:space-between;
 align-items:center;
 padding:15px 40px;
-position:sticky;
-top:0;
-z-index:1000;
-box-shadow:0 4px 10px rgba(0,0,0,.15);
 flex-wrap:wrap;
 }
-
-.logo{
-font-size:22px;
-font-weight:bold;
-}
-
-/* =========================
-NAVIGATION
-========================= */
 
 .main-nav{
 display:flex;
@@ -78,60 +50,11 @@ justify-content:center;
 
 .main-nav a{
 color:white;
+text-decoration:none;
 margin:0 14px;
-text-decoration:none;
-font-weight:500;
-position:relative;
 }
 
-.main-nav a::after{
-content:'';
-position:absolute;
-width:0;
-height:2px;
-background:var(--primary);
-left:0;
-bottom:-5px;
-transition:.3s;
-}
-
-.main-nav a:hover::after{
-width:100%;
-}
-
-/* =========================
-HEADER BUTTONS
-========================= */
-
-.header-cta{
-display:flex;
-gap:15px;
-align-items:center;
-}
-
-.header-phone{
-color:white;
-text-decoration:none;
-font-weight:500;
-}
-
-.header-book{
-background:var(--primary);
-padding:8px 16px;
-border-radius:6px;
-color:white;
-text-decoration:none;
-font-weight:600;
-transition:.3s;
-}
-
-.header-book:hover{
-background:#1e78c6;
-}
-
-/* =========================
-HERO
-========================= */
+/* HERO */
 
 .hero{
 min-height:420px;
@@ -151,33 +74,24 @@ padding:60px 20px;
 
 .hero-overlay{
 background:rgba(0,0,0,.65);
-padding:45px 55px;
+padding:40px;
 border-radius:12px;
-text-align:center;
 color:white;
+text-align:center;
 max-width:650px;
-width:100%;
 }
 
 .hero-btn{
-background:var(--primary);
-color:white;
+background:#2D8FE3;
 padding:14px 30px;
-border-radius:8px;
+color:white;
 text-decoration:none;
+border-radius:8px;
 display:inline-block;
 margin-top:20px;
-transition:.3s;
 }
 
-.hero-btn:hover{
-background:#1e78c6;
-transform:translateY(-2px);
-}
-
-/* =========================
-CONTENT CONTAINER
-========================= */
+/* CONTAINER */
 
 .container{
 max-width:1100px;
@@ -186,9 +100,7 @@ padding:60px 20px;
 text-align:center;
 }
 
-/* =========================
-SERVICE GRID
-========================= */
+/* GRID */
 
 .service-grid{
 display:grid;
@@ -197,151 +109,22 @@ gap:25px;
 margin-top:40px;
 }
 
-/* =========================
-CARDS
-========================= */
+/* CARDS */
 
 .card{
 background:white;
 padding:30px;
 border-radius:12px;
 box-shadow:0 8px 25px rgba(0,0,0,.08);
-transition:.3s;
-border-top:4px solid var(--primary);
 }
 
-.card:hover{
-transform:translateY(-6px);
-box-shadow:0 12px 30px rgba(0,0,0,.15);
-}
-
-/* =========================
-ICONS
-========================= */
-
-.service-icon{
-font-size:40px;
-color:var(--primary);
-margin-bottom:15px;
-}
-
-/* =========================
-FLEET
-========================= */
-
-.fleet-grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-gap:25px;
-margin-top:40px;
-}
-
-.fleet-card{
-background:white;
-border-radius:12px;
-overflow:hidden;
-box-shadow:0 6px 20px rgba(0,0,0,.08);
-}
-
-.fleet-card img{
-width:100%;
-height:220px;
-object-fit:cover;
-}
-
-.fleet-card h3{
-margin:15px;
-}
-
-.fleet-card p{
-margin:0 15px 20px;
-}
-
-/* =========================
-FORMS
-========================= */
-
-form{
-max-width:600px;
-margin:auto;
-display:flex;
-flex-direction:column;
-gap:12px;
-}
-
-input, textarea, select{
-padding:12px;
-border:1px solid #ccc;
-border-radius:6px;
-font-size:14px;
-}
-
-button{
-background:var(--secondary);
-color:white;
-border:none;
-padding:12px;
-border-radius:6px;
-cursor:pointer;
-transition:.3s;
-}
-
-button:hover{
-background:#083842;
-}
-
-/* =========================
-CONTACT GRID
-========================= */
-
-.contact-grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:30px;
-max-width:1100px;
-margin:auto;
-}
-
-.contact-card{
-background:white;
-padding:25px;
-border-radius:10px;
-box-shadow:0 6px 20px rgba(0,0,0,.08);
-text-align:center;
-}
-
-/* =========================
-PARTNER GRID
-========================= */
-
-.partner-grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
-gap:25px;
-max-width:1100px;
-margin:auto;
-}
-
-.partner-card{
-background:white;
-padding:20px;
-border-radius:10px;
-box-shadow:0 6px 20px rgba(0,0,0,.08);
-text-align:center;
-}
-
-/* =========================
-MAP
-========================= */
+/* MAP */
 
 .map-container{
-margin-top:30px;
+max-width:1100px;
+margin:40px auto;
 border-radius:12px;
 overflow:hidden;
-box-shadow:0 10px 25px rgba(0,0,0,.1);
-max-width:1100px;
-margin-left:auto;
-margin-right:auto;
 }
 
 .map-container iframe{
@@ -350,46 +133,12 @@ height:420px;
 border:0;
 }
 
-/* =========================
-FLOATING BUTTONS
-========================= */
-
-.floating-call{
-position:fixed;
-bottom:20px;
-left:20px;
-background:var(--accent);
-color:white;
-padding:14px 20px;
-border-radius:30px;
-text-decoration:none;
-font-weight:600;
-box-shadow:0 4px 10px rgba(0,0,0,.3);
-z-index:1000;
-}
-
-.floating-book{
-position:fixed;
-bottom:20px;
-right:20px;
-background:var(--primary);
-color:white;
-padding:14px 22px;
-border-radius:30px;
-text-decoration:none;
-font-weight:600;
-box-shadow:0 4px 10px rgba(0,0,0,.3);
-z-index:1000;
-}
-
-/* =========================
-FOOTER
-========================= */
+/* FOOTER */
 
 .site-footer{
 background:#145a63;
 color:white;
-padding:60px 20px 20px;
+padding:60px 20px;
 }
 
 .footer-container{
@@ -400,44 +149,36 @@ grid-template-columns:repeat(4,1fr);
 gap:40px;
 }
 
-.footer-col h3,
-.footer-col h4{
-margin-bottom:15px;
-}
-
-.footer-col p{
-margin:6px 0;
-}
-
-.footer-col a{
-color:white;
-text-decoration:none;
-display:block;
-margin-bottom:6px;
-}
-
-.footer-map{
-max-width:1200px;
-margin:40px auto;
-}
-
-.footer-map iframe{
-width:100%;
-height:250px;
-border:0;
-border-radius:8px;
-}
-
 .footer-bottom{
 text-align:center;
 margin-top:20px;
-font-size:14px;
-opacity:.9;
 }
 
-/* =========================
-MOBILE
-========================= */
+/* FLOATING BUTTONS */
+
+.floating-call{
+position:fixed;
+bottom:20px;
+left:20px;
+background:#2BB673;
+color:white;
+padding:14px 20px;
+border-radius:30px;
+text-decoration:none;
+}
+
+.floating-book{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#2D8FE3;
+color:white;
+padding:14px 22px;
+border-radius:30px;
+text-decoration:none;
+}
+
+/* MOBILE */
 
 @media(max-width:900px){
 
@@ -452,10 +193,6 @@ grid-template-columns:1fr 1fr;
 .footer-container{
 grid-template-columns:1fr;
 text-align:center;
-}
-
-.contact-grid{
-grid-template-columns:1fr;
 }
 
 }
