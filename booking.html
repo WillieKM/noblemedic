@@ -89,55 +89,37 @@ Request Transportation
 
 <!-- HOW IT WORKS -->
 
-<section class="container">
+/* BOOKING STEPS */
 
-<h2>How Booking Works</h2>
+.booking-steps{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+margin-top:40px;
+max-width:1100px;
+margin-left:auto;
+margin-right:auto;
+}
 
-<div class="booking-steps">
+.booking-card{
+background:white;
+padding:30px;
+border-radius:12px;
+box-shadow:0 10px 30px rgba(0,0,0,.08);
+text-align:center;
+transition:.3s;
+}
 
-<div class="booking-card">
+.booking-card:hover{
+transform:translateY(-6px);
+box-shadow:0 15px 40px rgba(0,0,0,.15);
+}
 
-<i class="fa-solid fa-phone booking-icon"></i>
-
-<h3>Submit Request</h3>
-
-<p>
-Complete the booking form or call our dispatch team.
-</p>
-
-</div>
-
-
-<div class="booking-card">
-
-<i class="fa-solid fa-calendar-check booking-icon"></i>
-
-<h3>Ride Confirmation</h3>
-
-<p>
-We confirm pickup time, location, and transportation type.
-</p>
-
-</div>
-
-
-<div class="booking-card">
-
-<i class="fa-solid fa-van-shuttle booking-icon"></i>
-
-<h3>Safe Transportation</h3>
-
-<p>
-A trained driver provides reliable transportation to your destination.
-</p>
-
-</div>
-
-</div>
-
-</section>
-
-
+.booking-icon{
+font-size:36px;
+color:#2D8FE3;
+margin-bottom:15px;
+}
 <!-- ESTIMATE SECTION -->
 
 <section class="container">
