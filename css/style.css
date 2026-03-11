@@ -427,3 +427,54 @@ display:none;
 display:flex !important;
 justify-content:center !important;
 }
+/* CTA SECTION */
+
+.cta-section{
+background:#f3f6fb;
+padding:80px 20px;
+display:flex;
+justify-content:center;
+}
+
+.cta-container{
+max-width:1100px;
+text-align:center;
+}
+
+.cta-container h2{
+margin-bottom:10px;
+}
+
+.cta-buttons{
+margin-top:25px;
+display:flex;
+justify-content:center;
+gap:20px;
+flex-wrap:wrap;
+}
+
+.cta-call{
+background:#2BB673;
+color:white;
+padding:14px 30px;
+border-radius:8px;
+text-decoration:none;
+font-weight:600;
+}
+
+.cta-book{
+background:#2D8FE3;
+color:white;
+padding:14px 30px;
+border-radius:8px;
+text-decoration:none;
+font-weight:600;
+}
+
+.cta-call:hover{
+background:#23985c;
+}
+
+.cta-book:hover{
+background:#1e78c6;
+}
