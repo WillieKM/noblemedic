@@ -564,3 +564,9 @@ color:white;
 .logo span{
 color:#2BB673;
 }
+.logo{
+color:#ffffff;
+font-weight:700;
+font-size:22px;
+text-shadow:0 2px 8px rgba(0,0,0,.4);
+}
