@@ -555,3 +555,12 @@ direction:ltr;
 }
 
 }
+.logo{
+font-size:22px;
+font-weight:700;
+color:white;
+}
+
+.logo span{
+color:#2BB673;
+}
