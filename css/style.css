@@ -422,3 +422,12 @@ text-align:center;
 }
 
 }
+.logo img{
+height:70px;
+width:auto;
+display:block;
+}
+.logo{
+display:flex;
+align-items:center;
+}
