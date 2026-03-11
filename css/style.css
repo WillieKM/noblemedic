@@ -32,14 +32,105 @@ font-size:14px;
 
 /* HEADER */
 
+/* HEADER */
+
 .main-header{
 background:#0F4C5C;
-color:white;
+position:sticky;
+top:0;
+z-index:1000;
+box-shadow:0 4px 12px rgba(0,0,0,.15);
+}
+
+.nav-container{
+max-width:1200px;
+margin:auto;
 display:flex;
-justify-content:space-between;
 align-items:center;
-padding:15px 40px;
-flex-wrap:wrap;
+justify-content:space-between;
+padding:14px 20px;
+}
+
+/* LOGO */
+
+.logo{
+color:white;
+font-size:22px;
+font-weight:700;
+}
+
+/* NAV */
+
+.main-nav{
+display:flex;
+gap:25px;
+align-items:center;
+}
+
+.main-nav a{
+color:white;
+text-decoration:none;
+font-weight:500;
+position:relative;
+transition:.3s;
+}
+
+/* HOVER LINE */
+
+.main-nav a::after{
+content:"";
+position:absolute;
+left:0;
+bottom:-6px;
+width:0;
+height:2px;
+background:#2D8FE3;
+transition:.3s;
+}
+
+.main-nav a:hover::after{
+width:100%;
+}
+
+/* ACTIVE PAGE */
+
+.main-nav a.active{
+font-weight:700;
+}
+
+.main-nav a.active::after{
+width:100%;
+}
+
+/* CTA AREA */
+
+.nav-cta{
+display:flex;
+gap:18px;
+align-items:center;
+}
+
+.nav-phone{
+color:white;
+text-decoration:none;
+font-weight:500;
+}
+
+/* BOOK BUTTON */
+
+.nav-book{
+background:#2D8FE3;
+color:white;
+padding:8px 16px;
+border-radius:6px;
+text-decoration:none;
+font-weight:600;
+transition:.3s;
+}
+
+.nav-book:hover{
+background:#1e78c6;
+transform:translateY(-2px);
 }
 
 .main-nav{
