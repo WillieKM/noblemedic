@@ -70,9 +70,10 @@ align-items:center;
 }
 
 .logo img{
-height:130px;
+height:110px;
 width:auto;
-display:block;
+transform:scale(2.2);
+transform-origin:left center;
 }
 
 /* =========================
