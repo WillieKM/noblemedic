@@ -52,23 +52,42 @@ font-size:14px;
 /* =========================
 HEADER
 ========================= */
+<header class="main-header">
 
-.main-header{
-background:var(--secondary);
-position:sticky;
-top:0;
-z-index:1000;
-box-shadow:0 4px 12px rgba(0,0,0,.15);
-}
+<div class="nav-container">
 
-.nav-container{
-max-width:1200px;
-margin:auto;
-display:flex;
-align-items:center;
-justify-content:space-between;
-padding:14px 20px;
-}
+<div class="logo">
+<a href="index.html">
+<img src="images/logo.png" alt="Noble Medic Wheels Logo">
+</a>
+</div>
+
+<nav class="main-nav">
+
+<a href="index.html" class="nav-link">Home</a>
+<a href="about.html" class="nav-link">About</a>
+<a href="services.html" class="nav-link">Services</a>
+<a href="booking.html" class="nav-link">Book Ride</a>
+<a href="facilities.html" class="nav-link">Facilities</a>
+<a href="contact.html" class="nav-link">Contact</a>
+
+</nav>
+
+<div class="nav-cta">
+
+<a href="tel:2533749087" class="nav-phone">
+📞 (253) 374-9087
+</a>
+
+<a href="booking.html" class="nav-book">
+Book Ride
+</a>
+
+</div>
+
+</div>
+
+</header>
 
 /* LOGO */
 
