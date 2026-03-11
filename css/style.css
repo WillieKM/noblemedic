@@ -424,3 +424,10 @@ padding:25px;
 }
 
 }
+/* GLOBAL PAGE LAYOUT */
+
+main{
+max-width:1100px;
+margin:0 auto;
+padding:60px 20px;
+}
