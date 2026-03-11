@@ -440,82 +440,50 @@ grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
 gap:30px;
 margin-top:40px;
 }
+/* FLEET GRID */
 
-.fleet-card{
-background:white;
-border-radius:12px;
-overflow:hidden;
-box-shadow:0 10px 30px rgba(0,0,0,.08);
-transition:.3s;
-}
-
-.fleet-card:hover{
-transform:translateY(-6px);
-box-shadow:0 15px 35px rgba(0,0,0,.15);
-}
-
-.fleet-card img{
-width:100%;
-height:200px;
-object-fit:cover;
-}
-
-.fleet-card h3{
-padding:15px 20px 5px;
-color:#0F4C5C;
-}
-
-.fleet-card p{
-padding:0 20px 20px;
-font-size:14px;
-}
-.reviews-grid{
-display:grid;
-grid-template-columns:repeat(auto-fit, minmax(280px, 1fr));
-gap:25px;
-margin-top:40px;
-align-items:stretch;
-}
-.reviews-grid{
-display:grid !important;
-grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-gap:25px;
-}
-.review-card:hover{
-transform:translateY(-6px);
-box-shadow:0 12px 30px rgba(0,0,0,.15);
-}
 .fleet-grid{
 display:grid;
-grid-template-columns:repeat(auto-fit, minmax(280px, 1fr));
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
 gap:30px;
 margin-top:40px;
 }
 
+/* CARD */
+
 .fleet-card{
 background:white;
 border-radius:12px;
 overflow:hidden;
 box-shadow:0 10px 30px rgba(0,0,0,.08);
 transition:.3s;
+display:flex;
+flex-direction:column;
 }
+
+/* IMAGE FIX */
 
 .fleet-card img{
 width:100%;
-height:200px;
+height:220px;
 object-fit:cover;
 display:block;
 }
 
+/* TEXT */
+
 .fleet-card h3{
 padding:15px 20px 5px;
 color:#0F4C5C;
+font-size:18px;
 }
 
 .fleet-card p{
 padding:0 20px 20px;
 font-size:14px;
 }
+
+/* HOVER */
 
 .fleet-card:hover{
 transform:translateY(-6px);
