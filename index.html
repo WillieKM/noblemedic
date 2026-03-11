@@ -3,139 +3,31 @@
 <html lang="en">
 
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Noble Medic Wheels | Medical Transportation</title>
 
-<style>
+<meta name="description"
+content="Reliable non-emergency medical transportation serving King County, Pierce County, and Snohomish County. Wheelchair transport, dialysis rides, hospital discharge transportation and more.">
 
-body{
-font-family:Arial, Helvetica, sans-serif;
-margin:0;
-background:#f4f7fb;
-color:#2A2A2A;
-}
+<link rel="stylesheet" href="css/style.css">
 
-header{
-background:#0F4C5C;
-color:white;
-padding:20px;
-}
-
-nav{
-display:flex;
-justify-content:space-between;
-align-items:center;
-max-width:1100px;
-margin:auto;
-}
-
-nav a{
-color:white;
-text-decoration:none;
-margin-left:20px;
-font-weight:500;
-}
-
-.hero{
-background:linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)),
-url('https://images.unsplash.com/photo-1580281657527-47f249e5a5c3');
-background-size:cover;
-background-position:center;
-color:white;
-text-align:center;
-padding:120px 20px;
-}
-
-.hero h1{
-font-size:42px;
-margin-bottom:10px;
-}
-
-.hero p{
-font-size:18px;
-margin-bottom:25px;
-}
-
-.btn{
-background:#2D8FE3;
-color:white;
-padding:14px 28px;
-border-radius:6px;
-text-decoration:none;
-margin:5px;
-display:inline-block;
-}
-
-.btn2{
-background:#2BB673;
-}
-
-.section{
-max-width:1100px;
-margin:auto;
-padding:60px 20px;
-}
-
-.services{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
-gap:25px;
-}
-
-.card{
-background:white;
-padding:25px;
-border-radius:10px;
-box-shadow:0 5px 20px rgba(0,0,0,.05);
-text-align:center;
-}
-
-.service-title{
-color:#0F4C5C;
-font-weight:bold;
-margin-bottom:10px;
-}
-
-.area{
-background:#eaf3fb;
-padding:50px 20px;
-text-align:center;
-}
-
-.testimonials{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-gap:20px;
-}
-
-.testimonial{
-background:white;
-padding:20px;
-border-radius:10px;
-box-shadow:0 5px 20px rgba(0,0,0,.05);
-}
-
-.cta{
-background:#2BB673;
-color:white;
-text-align:center;
-padding:60px 20px;
-}
-
-footer{
-background:#0F4C5C;
-color:white;
-text-align:center;
-padding:30px;
-margin-top:40px;
-}
-
-</style>
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 </head>
 
 <body>
+
+<!-- TOP BAR -->
+
+<div class="top-bar">
+Serving King County • Snohomish County • Pierce County
+</div>
+
+<!-- HEADER -->
 
 <header class="main-header">
 
@@ -144,13 +36,9 @@ margin-top:40px;
 <div class="logo">Noble Medic Wheels</div>
 
 <nav class="main-nav">
-<a href="index.html">Home</a>
-<a href="about.html">About</a>
-<a href="services.html">Services</a>
-<a href="booking.html">Book Ride</a>
-<a href="facilities.html">Facilities</a>
-<a href="contact.html">Contact</a>
-<a href="career.html">Careers</a>
+
+<a href="index.html">Home</a> <a href="about.html">About</a> <a href="services.html">Services</a> <a href="booking.html">Book Ride</a> <a href="facilities.html">Facilities</a> <a href="contact.html">Contact</a> <a href="career.html">Careers</a>
+
 </nav>
 
 <div class="nav-cta">
@@ -169,7 +57,11 @@ Book Ride
 
 </header>
 
+<!-- HERO -->
+
 <section class="hero">
+
+<div class="hero-overlay">
 
 <h1>Reliable Non-Emergency Medical Transportation</h1>
 
@@ -177,55 +69,79 @@ Book Ride
 Safe • On-Time • Wheelchair Accessible Medical Transportation
 </p>
 
-<a class="btn" href="booking.html">Book a Ride</a>
+<div class="cta-buttons">
 
-<a class="btn btn2" href="tel:1234567890">Call Now</a>
+<a class="hero-btn" href="booking.html">
+Book a Ride
+</a>
+
+<a class="call-btn" href="tel:2533749087">
+Call Now
+</a>
+
+</div>
+
+</div>
 
 </section>
+
+<!-- SERVICES -->
 
 <section class="section">
 
-<h2 style="text-align:center;margin-bottom:40px;">
-Our Transportation Services
-</h2>
+<div class="container">
 
-<div class="services">
+<h2>Our Transportation Services</h2>
+
+<div class="service-grid">
 
 <div class="card">
-<div class="service-title">Medical Appointments</div>
-Transportation to clinics and hospitals for scheduled visits.
+<i class="fa-solid fa-calendar-check service-icon"></i>
+<h3>Medical Appointments</h3>
+<p>Transportation to clinics and hospitals for scheduled visits.</p>
 </div>
 
 <div class="card">
-<div class="service-title">Dialysis Transport</div>
-Reliable transportation for recurring dialysis treatments.
+<i class="fa-solid fa-heart-pulse service-icon"></i>
+<h3>Dialysis Transport</h3>
+<p>Reliable transportation for recurring dialysis treatments.</p>
 </div>
 
 <div class="card">
-<div class="service-title">Hospital Discharge</div>
-Safe transport from hospitals back home or to facilities.
+<i class="fa-solid fa-hospital service-icon"></i>
+<h3>Hospital Discharge</h3>
+<p>Safe transport from hospitals back home or to care facilities.</p>
 </div>
 
 <div class="card">
-<div class="service-title">Wheelchair Transport</div>
-Accessible vehicles with ramps and secure seating.
+<i class="fa-solid fa-wheelchair service-icon"></i>
+<h3>Wheelchair Transportation</h3>
+<p>Accessible vehicles with ramps and secure seating.</p>
 </div>
 
 <div class="card">
-<div class="service-title">Rehabilitation Visits</div>
-Transportation to physical therapy and recovery programs.
+<i class="fa-solid fa-user-nurse service-icon"></i>
+<h3>Rehabilitation Visits</h3>
+<p>Transportation to therapy and rehabilitation programs.</p>
 </div>
 
 <div class="card">
-<div class="service-title">Senior Transportation</div>
-Comfortable rides for elderly patients and caregivers.
+<i class="fa-solid fa-house-medical service-icon"></i>
+<h3>Senior Transportation</h3>
+<p>Comfortable rides for elderly patients and caregivers.</p>
+</div>
+
 </div>
 
 </div>
 
 </section>
 
-<section class="area">
+<!-- SERVICE AREAS -->
+
+<section class="section section-gray">
+
+<div class="container">
 
 <h2>Areas We Serve</h2>
 
@@ -237,64 +153,151 @@ King County • Pierce County • Snohomish County
 Seattle • Tacoma • Everett • Auburn • Kent • Federal Way
 </p>
 
+</div>
+
 </section>
+
+<!-- TESTIMONIALS -->
 
 <section class="section">
 
-<h2 style="text-align:center;margin-bottom:40px;">Patient Testimonials</h2>
+<div class="container">
 
-<div class="testimonials">
+<h2>Patient Testimonials</h2>
 
-<div class="testimonial">
+<div class="service-grid">
+
+<div class="card">
 ★★★★★  
-"Noble Medic Wheels always gets my father to dialysis on time. The drivers are very kind."
+<p>
+"Noble Medic Wheels always gets my father to dialysis on time.
+The drivers are very kind."
+</p>
 </div>
 
-<div class="testimonial">
+<div class="card">
 ★★★★★  
-"Reliable transportation for medical appointments. Highly recommended."
+<p>
+"Reliable transportation for medical appointments.
+Highly recommended."
+</p>
 </div>
 
-<div class="testimonial">
+<div class="card">
 ★★★★★  
+<p>
 "Very professional service and clean vehicles."
+</p>
+</div>
+
 </div>
 
 </div>
 
 </section>
 
-<section class="cta">
+<!-- CTA -->
+
+<section class="section section-gray">
+
+<div class="container">
 
 <h2>Need Transportation Today?</h2>
 
 <p>Book a ride or speak with our dispatch team.</p>
 
-<a class="btn" href="booking.html">Schedule a Ride</a>
+<div class="cta-buttons">
 
-<a class="btn btn2" href="tel:1234567890">Call Now</a>
+<a class="hero-btn" href="booking.html">
+Schedule Transportation
+</a>
+
+<a class="call-btn" href="tel:2533749087">
+Call Dispatch
+</a>
+
+</div>
+
+</div>
 
 </section>
 
-<footer>
+<!-- FOOTER -->
+
+<footer class="site-footer">
+
+<div class="footer-container">
+
+<div class="footer-col">
+
+<h3>Noble Medic Wheels</h3>
 
 <p>
-Noble Medic Wheels
+Reliable non-emergency medical transportation
+serving King County, Pierce County and Snohomish County.
 </p>
 
-<p>
-Non-Emergency Medical Transportation
-</p>
+</div>
 
-<p>
-Serving King • Pierce • Snohomish Counties
-</p>
+<div class="footer-col">
 
-<p>
-Call: (123) 456-7890
-</p>
+<h4>Transportation Services</h4>
+
+<ul>
+<li>Wheelchair Transportation</li>
+<li>Ambulatory Transportation</li>
+<li>Dialysis Transportation</li>
+<li>Hospital Discharge</li>
+<li>Medical Appointments</li>
+</ul>
+
+</div>
+
+<div class="footer-col">
+
+<h4>Service Areas</h4>
+
+<ul>
+<li>Seattle</li>
+<li>Tacoma</li>
+<li>Auburn</li>
+<li>Kent</li>
+<li>Federal Way</li>
+<li>Renton</li>
+<li>Bellevue</li>
+</ul>
+
+</div>
+
+<div class="footer-col">
+
+<h4>Contact</h4>
+
+<p>📞 (253) 374-9087</p>
+
+<a class="footer-btn" href="booking.html">
+Book Transportation
+</a>
+
+</div>
+
+</div>
+
+<div class="footer-bottom">
+<p>© 2026 Noble Medic Wheels</p>
+</div>
 
 </footer>
+
+<!-- FLOATING BUTTONS -->
+
+<a href="tel:2533749087" class="floating-call">
+📞 Call Now
+</a>
+
+<a href="booking.html" class="floating-book">
+Book Ride
+</a>
 
 </body>
 </html>
