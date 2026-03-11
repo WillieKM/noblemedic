@@ -390,4 +390,9 @@ grid-template-columns:1fr;
 text-align:center;
 }
 
+}.logo img{
+height:100px;
+width:auto;
+display:block;
+object-fit:contain;
 }
