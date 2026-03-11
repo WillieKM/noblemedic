@@ -1,411 +1,266 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Book a Ride | Noble Medic Wheels</title>
 
-<title>Schedule Medical Transportation | Noble Medic Wheels</title>
+<style>
 
-<meta name="description"
-content="Schedule non-emergency medical transportation for medical appointments, dialysis, and hospital discharge across King County, Pierce County, and Snohomish County.">
+body{
+font-family: Arial, Helvetica, sans-serif;
+background:#f4f7fb;
+margin:0;
+padding:0;
+color:#2A2A2A;
+}
 
-<link rel="stylesheet" href="css/style.css">
+.container{
+max-width:900px;
+margin:auto;
+padding:40px 20px;
+}
 
-<link rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+h1{
+text-align:center;
+color:#0F4C5C;
+}
 
+.subtitle{
+text-align:center;
+margin-bottom:30px;
+color:#666;
+}
+
+.badges{
+display:flex;
+justify-content:center;
+gap:20px;
+flex-wrap:wrap;
+margin-bottom:30px;
+}
+
+.badge{
+background:#e9f4ff;
+padding:8px 14px;
+border-radius:20px;
+font-size:14px;
+}
+
+form{
+background:white;
+padding:30px;
+border-radius:10px;
+box-shadow:0 5px 20px rgba(0,0,0,0.05);
+}
+
+.section{
+margin-bottom:25px;
+}
+
+.section h3{
+margin-bottom:10px;
+color:#0F4C5C;
+}
+
+input,select,textarea{
+width:100%;
+padding:12px;
+margin-bottom:12px;
+border:1px solid #ddd;
+border-radius:6px;
+font-size:14px;
+}
+
+textarea{
+height:90px;
+}
+
+button{
+width:100%;
+background:#2D8FE3;
+color:white;
+padding:14px;
+font-size:16px;
+border:none;
+border-radius:6px;
+cursor:pointer;
+}
+
+button:hover{
+background:#2477be;
+}
+
+.trust{
+margin-top:40px;
+background:white;
+padding:25px;
+border-radius:10px;
+box-shadow:0 5px 20px rgba(0,0,0,0.05);
+}
+
+.trust ul{
+padding-left:20px;
+}
+
+.callbox{
+margin-top:30px;
+text-align:center;
+background:#2BB673;
+color:white;
+padding:20px;
+border-radius:10px;
+}
+
+.callbox a{
+color:white;
+font-weight:bold;
+font-size:18px;
+text-decoration:none;
+}
+
+.confirmation{
+display:none;
+background:#e8fff1;
+padding:20px;
+border-radius:8px;
+margin-top:20px;
+}
+
+</style>
 </head>
-
 
 <body>
 
+<div class="container">
 
-<!-- TOP BAR -->
+<h1>Book a Medical Ride</h1>
 
-<div class="top-bar">
-Serving King County • Snohomish County • Pierce County
-</div>
-
-
-<!-- HEADER -->
-
-<header class="main-header">
-
-<div class="logo">
-Noble Medic Wheels
-</div>
-
-<nav class="main-nav">
-
-<a href="index.html">Home</a>
-<a href="about.html">About</a>
-<a href="services.html">Services</a>
-<a href="booking.html">Book Ride</a>
-<a href="facilities.html">Facilities</a>
-<a href="contact.html">Contact</a>
-
-</nav>
-
-<div class="header-cta">
-
-<a href="tel:2533749087" class="header-phone">
-📞 (253) 374-9087
-</a>
-
-<a href="booking.html" class="header-book">
-Book Ride
-</a>
-
-</div>
-
-</header>
-
-
-
-<!-- HERO -->
-
-<section class="hero booking-hero">
-
-<div class="hero-overlay">
-
-<h1>Schedule Medical Transportation</h1>
-
-<p>
-Safe and dependable transportation for medical appointments,
-dialysis treatments, hospital discharges, and senior care.
+<p class="subtitle">
+Schedule safe and reliable transportation to your medical appointments.
 </p>
 
-<a class="hero-btn" href="#booking-form">
-Request Transportation
-</a>
-
+<div class="badges">
+<div class="badge">Wheelchair Accessible</div>
+<div class="badge">Licensed Drivers</div>
+<div class="badge">On-Time Pickup</div>
 </div>
 
-</section>
+<form id="bookingForm">
 
+<div class="section">
+<h3>Rider Information</h3>
 
+<input type="text" placeholder="Full Name" required>
 
-<!-- HOW IT WORKS -->
+<input type="tel" placeholder="Phone Number" required>
 
-/* BOOKING STEPS */
-
-.booking-steps{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:25px;
-margin-top:40px;
-max-width:1100px;
-margin-left:auto;
-margin-right:auto;
-}
-
-.booking-card{
-background:white;
-padding:30px;
-border-radius:12px;
-box-shadow:0 10px 30px rgba(0,0,0,.08);
-text-align:center;
-transition:.3s;
-}
-
-.booking-card:hover{
-transform:translateY(-6px);
-box-shadow:0 15px 40px rgba(0,0,0,.15);
-}
-
-.booking-icon{
-font-size:36px;
-color:#2D8FE3;
-margin-bottom:15px;
-}
-<!-- ESTIMATE SECTION -->
-
-<section class="container">
-
-<h2>Transportation Cost Estimate</h2>
-
-<p class="center-text">
-Use the estimate tool below to get a quick transportation cost estimate.
-</p>
-
-<div class="card estimate-card">
-
-<input id="distance" type="number" placeholder="Distance (miles)">
-
-<select id="rideType">
-
-<option value="">Transportation Type</option>
-
-<option value="ambulatory">Ambulatory</option>
-
-<option value="wheelchair">Wheelchair</option>
-
-</select>
-
-<button onclick="calculateEstimate()" class="btn-primary">
-Calculate Estimate
-</button>
-
-<p id="estimate-result"></p>
-
-</div>
-
-</section>
-
-
-
-<!-- BOOKING FORM -->
-
-<section id="booking-form" class="container">
-
-<h2>Request Transportation</h2>
-
-<form class="booking-form">
-
-<label>Patient Name</label>
-<input type="text" required>
-
-<label>Phone Number</label>
-<input type="tel" required>
-
-<label>Appointment Date</label>
-<input type="date" required>
-
-<label>Appointment Time</label>
-<input type="time" required>
-
-<label>Transportation Type</label>
+<input type="email" placeholder="Email Address">
 
 <select required>
-
-<option value="">Select Transportation Type</option>
-
-<option>Wheelchair</option>
-
-<option>Ambulatory</option>
-
+<option value="">Rider Type</option>
+<option>Self</option>
+<option>Family Member</option>
+<option>Medical Facility</option>
 </select>
+</div>
 
+<div class="section">
+<h3>Trip Details</h3>
 
-<label>Pickup Address</label>
-<input type="text" required>
+<input type="text" placeholder="Pickup Address" required>
 
+<input type="text" placeholder="Destination (Hospital / Clinic)" required>
 
-<label>Destination Address</label>
-<input type="text" required>
+<input type="date" required>
 
+<input type="time" required>
 
-<label>Additional Notes</label>
+<select required>
+<option value="">Transport Type</option>
+<option>Ambulatory</option>
+<option>Wheelchair Transport</option>
+<option>Stretcher Transport</option>
+<option>Hospital Discharge</option>
+<option>Dialysis Transport</option>
+</select>
+</div>
 
-<textarea rows="4"></textarea>
+<div class="section">
+<h3>Mobility Assistance</h3>
 
+<select>
+<option>No Assistance Needed</option>
+<option>Wheelchair</option>
+<option>Walker</option>
+<option>Oxygen</option>
+<option>Escort Passenger</option>
+</select>
+</div>
 
-<button type="submit" class="btn-primary">
-Submit Ride Request
-</button>
+<div class="section">
+<h3>Payment Type</h3>
+
+<select>
+<option>Private Pay</option>
+<option>Medicaid Broker</option>
+<option>Insurance</option>
+<option>Facility Billing</option>
+</select>
+</div>
+
+<div class="section">
+<h3>Special Instructions</h3>
+
+<textarea placeholder="Gate code, escort passenger, oxygen tank, etc."></textarea>
+</div>
+
+<button type="submit">BOOK MY RIDE</button>
+
+<div class="confirmation" id="confirmMsg">
+Thank you! Your ride request has been submitted.  
+A dispatcher will contact you shortly to confirm your trip.
+</div>
 
 </form>
 
-</section>
-
-
-
-<!-- CALL TO ACTION -->
-
-<section class="cta-section">
-
-<div class="cta-container">
-
-<h2>Need Medical Transportation?</h2>
-
-<p>
-Schedule safe and reliable transportation with Noble Medic Wheels today.
-</p>
-
-<div class="cta-buttons">
-
-<a href="tel:2533749087" class="cta-call">
-📞 Call (253) 374-9087
-</a>
-
-<a href="booking.html" class="cta-book">
-Book Transportation
-</a>
-
+<div class="callbox">
+Need a ride today?  
+<br><br>
+Call Now:  
+<br>
+<a href="tel:1234567890">(123) 456-7890</a>
 </div>
 
-</div>
+<div class="trust">
 
-</section>
-
-
-
-<!-- FOOTER -->
-
-<footer class="site-footer">
-
-<div class="footer-container">
-
-
-<div class="footer-col">
-
-<h3>Noble Medic Wheels</h3>
-
-<p>
-Reliable non-emergency medical transportation for
-patients traveling to healthcare appointments,
-dialysis treatments, and hospital visits.
-</p>
-
-<div class="review-stars">
-★★★★★ <span>Trusted Transportation</span>
-</div>
-
-</div>
-
-
-
-<div class="footer-col">
-
-<h4>Transportation Services</h4>
+<h3>Why Choose Noble Medic Wheels</h3>
 
 <ul>
-
-<li>Wheelchair Transportation</li>
-
-<li>Ambulatory Transportation</li>
-
-<li>Dialysis Transportation</li>
-
-<li>Hospital Discharge</li>
-
-<li>Medical Appointments</li>
-
+<li>ADA wheelchair accessible vehicles</li>
+<li>Licensed and insured transportation service</li>
+<li>Professional and trained drivers</li>
+<li>Reliable and on-time pickups</li>
+<li>Serving King, Pierce, and Snohomish counties</li>
 </ul>
 
 </div>
 
-
-
-<div class="footer-col">
-
-<h4>Service Areas</h4>
-
-<ul>
-
-<li>Seattle</li>
-
-<li>Tacoma</li>
-
-<li>Auburn</li>
-
-<li>Kent</li>
-
-<li>Federal Way</li>
-
-<li>Renton</li>
-
-<li>Bellevue</li>
-
-</ul>
-
 </div>
-
-
-
-<div class="footer-col">
-
-<h4>Contact</h4>
-
-<p>📞 (253) 374-9087</p>
-
-<p>Serving King County • Snohomish County • Pierce County</p>
-
-<a class="footer-btn" href="booking.html">
-Book Transportation
-</a>
-
-</div>
-
-</div>
-
-
-
-<div class="footer-map">
-
-<iframe
-src="https://www.google.com/maps?q=Seattle+Washington&output=embed"
-loading="lazy">
-</iframe>
-
-</div>
-
-
-
-<div class="footer-bottom">
-
-<p>© 2026 Noble Medic Wheels</p>
-
-<p class="creator">
-Website created by
-<a href="https://cyber-node.com" target="_blank">Cyber-Node</a>
-</p>
-
-</div>
-
-</footer>
-
-
-
-<!-- FLOATING BUTTONS -->
-
-<a href="tel:2533749087" class="floating-call">
-📞 Call Now
-</a>
-
-<a href="booking.html" class="floating-book">
-Book Ride
-</a>
-
-
-
-<!-- ESTIMATE SCRIPT -->
 
 <script>
 
-function calculateEstimate() {
+document.getElementById("bookingForm").addEventListener("submit",function(e){
 
-let distance = document.getElementById("distance").value;
-let rideType = document.getElementById("rideType").value;
-let result = document.getElementById("estimate-result");
+e.preventDefault();
 
-if(distance === "" || rideType === ""){
-result.innerHTML = "Please enter distance and transportation type.";
-return;
-}
+document.getElementById("confirmMsg").style.display="block";
 
-let pricePerMile = 0;
+this.reset();
 
-if(rideType === "ambulatory"){
-pricePerMile = 3.50;
-}
-
-if(rideType === "wheelchair"){
-pricePerMile = 4.75;
-}
-
-let total = distance * pricePerMile;
-
-result.innerHTML =
-"Estimated Cost: $" + total.toFixed(2);
-
-}
+});
 
 </script>
-
-
 
 </body>
 </html>
