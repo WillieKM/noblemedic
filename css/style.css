@@ -413,3 +413,14 @@ align-items:center;
 justify-content:center;
 font-weight:bold;
 }
+@media(max-width:900px){
+
+.main-nav{
+display:none;
+}
+
+.nav-phone{
+display:none;
+}
+
+}
