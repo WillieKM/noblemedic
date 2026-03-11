@@ -1,360 +1,285 @@
 <!DOCTYPE html>
+
 <html lang="en">
 
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Noble Medic Wheels | Medical Transportation</title>
 
-<title>Noble Medic Wheels | Non-Emergency Medical Transportation</title>
+<style>
 
-<meta name="description"
-content="Reliable non-emergency medical transportation services in Seattle, Tacoma, Auburn, Kent and surrounding areas. Wheelchair, ambulatory and dialysis transportation.">
-
-<meta name="keywords"
-content="medical transportation Seattle, wheelchair transport Tacoma, dialysis transportation Auburn, hospital discharge transport Kent">
-
-<link rel="stylesheet" href="css/style.css">
-
-<link rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
-<script type="application/ld+json">
-{
- "@context": "https://schema.org",
- "@type": "TransportationService",
- "name": "Noble Medic Wheels",
- "url": "https://noblemedic.vercel.app",
- "telephone": "+1-253-374-9087",
- "serviceType": "Non-Emergency Medical Transportation",
- "areaServed": [
-  "Seattle WA",
-  "Tacoma WA",
-  "Auburn WA",
-  "Kent WA",
-  "King County WA"
- ]
+body{
+font-family:Arial, Helvetica, sans-serif;
+margin:0;
+background:#f4f7fb;
+color:#2A2A2A;
 }
-</script>
+
+header{
+background:#0F4C5C;
+color:white;
+padding:20px;
+}
+
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+max-width:1100px;
+margin:auto;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin-left:20px;
+font-weight:500;
+}
+
+.hero{
+background:linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)),
+url('https://images.unsplash.com/photo-1580281657527-47f249e5a5c3');
+background-size:cover;
+background-position:center;
+color:white;
+text-align:center;
+padding:120px 20px;
+}
+
+.hero h1{
+font-size:42px;
+margin-bottom:10px;
+}
+
+.hero p{
+font-size:18px;
+margin-bottom:25px;
+}
+
+.btn{
+background:#2D8FE3;
+color:white;
+padding:14px 28px;
+border-radius:6px;
+text-decoration:none;
+margin:5px;
+display:inline-block;
+}
+
+.btn2{
+background:#2BB673;
+}
+
+.section{
+max-width:1100px;
+margin:auto;
+padding:60px 20px;
+}
+
+.services{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+gap:25px;
+}
+
+.card{
+background:white;
+padding:25px;
+border-radius:10px;
+box-shadow:0 5px 20px rgba(0,0,0,.05);
+text-align:center;
+}
+
+.service-title{
+color:#0F4C5C;
+font-weight:bold;
+margin-bottom:10px;
+}
+
+.area{
+background:#eaf3fb;
+padding:50px 20px;
+text-align:center;
+}
+
+.testimonials{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:20px;
+}
+
+.testimonial{
+background:white;
+padding:20px;
+border-radius:10px;
+box-shadow:0 5px 20px rgba(0,0,0,.05);
+}
+
+.cta{
+background:#2BB673;
+color:white;
+text-align:center;
+padding:60px 20px;
+}
+
+footer{
+background:#0F4C5C;
+color:white;
+text-align:center;
+padding:30px;
+margin-top:40px;
+}
+
+</style>
 
 </head>
 
 <body>
 
+<header>
 
-<!-- TOP BAR -->
+<nav>
 
-<div class="top-bar">
-Serving King County • Snohomish County • Pierce County
-</div>
+<h2>Noble Medic Wheels</h2>
 
-
-
-<!-- HEADER -->
-
-<header class="main-header">
-
-<div class="nav-container">
-
-<div class="logo">
-<img src="images/logo.png" style="height:110px;">
-</div>
-<a href="index.html">
-<img src="images/logo.png" alt="Noble Medic Wheels Logo">
-</a>
-</div>
-
-<nav class="main-nav" id="mainNav">
-
+<div>
 <a href="index.html">Home</a>
-<a href="about.html">About</a>
-<a href="services.html">Services</a>
 <a href="booking.html">Book Ride</a>
-<a href="facilities.html">Facilities</a>
-<a href="contact.html">Contact</a>
+<a href="#">Services</a>
+<a href="#">Contact</a>
+</div>
 
 </nav>
 
-<div class="nav-cta">
-
-<a href="tel:2533749087" class="nav-phone">
-📞 (253) 374-9087
-</a>
-
-<a href="booking.html" class="nav-book">
-Book Ride
-</a>
-
-</div>
-
-<div class="menu-toggle" id="menuToggle">
-☰
-</div>
-
-</div>
-
 </header>
 
-
-
-<!-- HERO -->
-
 <section class="hero">
-
-<div class="hero-overlay">
 
 <h1>Reliable Non-Emergency Medical Transportation</h1>
 
 <p>
-Safe transportation for medical appointments,
-dialysis treatments, hospital discharges,
-and healthcare visits.
+Safe • On-Time • Wheelchair Accessible Medical Transportation
 </p>
 
-<a href="booking.html" class="hero-btn">
-Schedule Transportation
-</a>
+<a class="btn" href="booking.html">Book a Ride</a>
 
-</div>
+<a class="btn btn2" href="tel:1234567890">Call Now</a>
 
 </section>
 
+<section class="section">
 
+<h2 style="text-align:center;margin-bottom:40px;">
+Our Transportation Services
+</h2>
 
-<!-- TRUST SECTION -->
-
-<section class="section-light">
-
-<div class="container">
-
-<h2>Trusted Medical Transportation</h2>
-
-<p>
-Noble Medic Wheels provides dependable non-emergency
-medical transportation for patients traveling to healthcare
-appointments across Western Washington.
-</p>
-
-<div class="service-grid">
+<div class="services">
 
 <div class="card">
-<i class="fa-solid fa-shield-heart service-icon"></i>
-<h3>Safe Transportation</h3>
-<p>Professional drivers focused on patient safety.</p>
+<div class="service-title">Medical Appointments</div>
+Transportation to clinics and hospitals for scheduled visits.
 </div>
 
 <div class="card">
-<i class="fa-solid fa-clock service-icon"></i>
-<h3>On-Time Pickup</h3>
-<p>Reliable scheduling for important medical appointments.</p>
+<div class="service-title">Dialysis Transport</div>
+Reliable transportation for recurring dialysis treatments.
 </div>
 
 <div class="card">
-<i class="fa-solid fa-wheelchair service-icon"></i>
-<h3>Accessible Vehicles</h3>
-<p>Wheelchair accessible vans for mobility needs.</p>
+<div class="service-title">Hospital Discharge</div>
+Safe transport from hospitals back home or to facilities.
 </div>
 
+<div class="card">
+<div class="service-title">Wheelchair Transport</div>
+Accessible vehicles with ramps and secure seating.
+</div>
+
+<div class="card">
+<div class="service-title">Rehabilitation Visits</div>
+Transportation to physical therapy and recovery programs.
+</div>
+
+<div class="card">
+<div class="service-title">Senior Transportation</div>
+Comfortable rides for elderly patients and caregivers.
 </div>
 
 </div>
 
 </section>
 
-
-
-<!-- CTA -->
-
-<section class="section-gray">
-
-<div class="container">
-
-<h2>Need Medical Transportation?</h2>
-
-<p>
-Schedule safe and reliable transportation with
-Noble Medic Wheels today.
-</p>
-
-<div class="cta-buttons">
-
-<a href="booking.html" class="hero-btn">
-Book Transportation
-</a>
-
-<a href="tel:2533749087" class="call-btn">
-Call (253) 374-9087
-</a>
-
-</div>
-
-</div>
-
-</section>
-
-
-
-<!-- SERVICES -->
-
-<section class="container">
-
-<h2>Our Transportation Services</h2>
-
-<div class="service-grid">
-
-<div class="card">
-
-<i class="fa-solid fa-wheelchair service-icon"></i>
-
-<h3>Wheelchair Transportation</h3>
-
-<p>
-Accessible vehicles equipped with ramps and safety restraints
-for patients using wheelchairs.
-</p>
-
-</div>
-
-
-<div class="card">
-
-<i class="fa-solid fa-person-walking service-icon"></i>
-
-<h3>Ambulatory Transportation</h3>
-
-<p>
-Transportation for patients who can walk independently
-but require assistance traveling to appointments.
-</p>
-
-</div>
-
-
-<div class="card">
-
-<i class="fa-solid fa-heart-pulse service-icon"></i>
-
-<h3>Dialysis Transportation</h3>
-
-<p>
-Reliable recurring transportation for dialysis treatments.
-</p>
-
-</div>
-
-
-<div class="card">
-
-<i class="fa-solid fa-bed service-icon"></i>
-
-<h3>Hospital Discharge</h3>
-
-<p>
-Safe transportation from hospitals to home or
-assisted living facilities.
-</p>
-
-</div>
-
-</div>
-
-</section>
-
-
-
-<!-- SERVICE AREA -->
-
-<section class="container">
+<section class="area">
 
 <h2>Areas We Serve</h2>
 
 <p>
-Providing reliable non-emergency medical transportation
-throughout Western Washington.
+King County • Pierce County • Snohomish County
 </p>
 
-<div class="service-grid">
+<p>
+Seattle • Tacoma • Everett • Auburn • Kent • Federal Way
+</p>
 
-<div class="card">Seattle</div>
-<div class="card">Tacoma</div>
-<div class="card">Auburn</div>
-<div class="card">Kent</div>
-<div class="card">Renton</div>
-<div class="card">Bellevue</div>
+</section>
+
+<section class="section">
+
+<h2 style="text-align:center;margin-bottom:40px;">Patient Testimonials</h2>
+
+<div class="testimonials">
+
+<div class="testimonial">
+★★★★★  
+"Noble Medic Wheels always gets my father to dialysis on time. The drivers are very kind."
+</div>
+
+<div class="testimonial">
+★★★★★  
+"Reliable transportation for medical appointments. Highly recommended."
+</div>
+
+<div class="testimonial">
+★★★★★  
+"Very professional service and clean vehicles."
+</div>
 
 </div>
 
 </section>
 
+<section class="cta">
 
+<h2>Need Transportation Today?</h2>
 
-<!-- FOOTER -->
+<p>Book a ride or speak with our dispatch team.</p>
 
-<footer class="site-footer">
+<a class="btn" href="booking.html">Schedule a Ride</a>
 
-<div class="footer-container">
+<a class="btn btn2" href="tel:1234567890">Call Now</a>
 
-<div class="footer-col">
-<h3>Noble Medic Wheels</h3>
-<p>Reliable Non-Emergency Medical Transportation serving Western Washington.</p>
-</div>
+</section>
 
-<div class="footer-col">
-<h4>Quick Links</h4>
-<a href="index.html">Home</a>
-<a href="services.html">Services</a>
-<a href="booking.html">Book Ride</a>
-<a href="contact.html">Contact</a>
-</div>
+<footer>
 
-<div class="footer-col">
-<h4>Service Areas</h4>
-<p>King County</p>
-<p>Pierce County</p>
-<p>Snohomish County</p>
-</div>
+<p>
+Noble Medic Wheels
+</p>
 
-<div class="footer-col">
-<h4>Contact</h4>
-<p>📞 (253) 374-9087</p>
-<p>info@noblemedicwheels.com</p>
-</div>
+<p>
+Non-Emergency Medical Transportation
+</p>
 
-</div>
+<p>
+Serving King • Pierce • Snohomish Counties
+</p>
 
-<div class="footer-bottom">
-© 2026 Noble Medic Wheels
-</div>
+<p>
+Call: (123) 456-7890
+</p>
 
 </footer>
-
-
-
-<!-- FLOATING BUTTONS -->
-
-<a href="tel:2533749087" class="floating-call">
-📞 Call Now
-</a>
-
-<a href="booking.html" class="floating-book">
-Book Ride
-</a>
-
-
-
-<!-- MOBILE MENU SCRIPT -->
-
-<script>
-
-const toggle = document.getElementById("menuToggle");
-const nav = document.getElementById("mainNav");
-
-toggle.addEventListener("click", () => {
-nav.classList.toggle("show");
-});
-
-</script>
-
 
 </body>
 </html>
