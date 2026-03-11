@@ -19,8 +19,6 @@ content="medical transportation Seattle, wheelchair transport Tacoma, dialysis t
 <link rel="stylesheet"
 href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-<!-- Schema -->
-
 <script type="application/ld+json">
 {
  "@context": "https://schema.org",
@@ -40,16 +38,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
 </script>
 
 </head>
-<script>
 
-const toggle = document.querySelector(".menu-toggle");
-const nav = document.querySelector(".main-nav");
-
-toggle.addEventListener("click", () => {
-nav.classList.toggle("show");
-});
-
-</script>
 <body>
 
 
@@ -62,6 +51,7 @@ Serving King County • Snohomish County • Pierce County
 
 
 <!-- HEADER -->
+
 <header class="main-header">
 
 <div class="nav-container">
@@ -72,13 +62,15 @@ Serving King County • Snohomish County • Pierce County
 </a>
 </div>
 
-<nav class="main-nav">
+<nav class="main-nav" id="mainNav">
+
 <a href="index.html">Home</a>
 <a href="about.html">About</a>
 <a href="services.html">Services</a>
 <a href="booking.html">Book Ride</a>
 <a href="facilities.html">Facilities</a>
 <a href="contact.html">Contact</a>
+
 </nav>
 
 <div class="nav-cta">
@@ -93,12 +85,14 @@ Book Ride
 
 </div>
 
-<div class="menu-toggle">☰</div>
+<div class="menu-toggle" id="menuToggle">
+☰
+</div>
 
 </div>
 
 </header>
-</header>
+
 
 
 <!-- HERO -->
@@ -122,6 +116,11 @@ Schedule Transportation
 </div>
 
 </section>
+
+
+
+<!-- TRUST SECTION -->
+
 <section class="section-light">
 
 <div class="container">
@@ -161,34 +160,8 @@ appointments across Western Washington.
 </section>
 
 
-<!-- QUICK BOOKING -->
 
-<section class="container quick-book">
-
-<h2>Request Medical Transportation</h2>
-
-<form class="quick-book-form">
-
-<input type="text" placeholder="Pickup Location">
-
-<input type="text" placeholder="Destination">
-
-<input type="date">
-
-<select>
-
-<option>Wheelchair Transportation</option>
-<option>Ambulatory Transportation</option>
-<option>Dialysis Transportation</option>
-<option>Hospital Discharge</option>
-
-</select>
-
-<button type="submit">Request Ride</button>
-
-</form>
-
-</section>
+<!-- CTA -->
 
 <section class="section-gray">
 
@@ -216,6 +189,8 @@ Call (253) 374-9087
 </div>
 
 </section>
+
+
 
 <!-- SERVICES -->
 
@@ -276,175 +251,6 @@ Reliable recurring transportation for dialysis treatments.
 Safe transportation from hospitals to home or
 assisted living facilities.
 </p>
-
-</div>
-
-</div>
-
-</section>
-
-
-
-<!-- FLEET -->
-
-<section class="container">
-
-<h2>Our Medical Transportation Fleet</h2>
-
-<p>
-Our vehicles are equipped to provide safe and comfortable
-transportation for patients traveling to healthcare facilities.
-</p>
-
-<div class="fleet-grid">
-
-<div class="fleet-card">
-
-<img src="images/wheelchair-van.jpg" alt="Wheelchair Accessible Van">
-
-<h3>Wheelchair Accessible Vans</h3>
-
-<p>
-Vehicles equipped with ramps and secure wheelchair restraints.
-</p>
-
-</div>
-
-
-<div class="fleet-card">
-
-<img src="images/medical-transport.jpg" alt="Medical Transport Vehicle">
-
-<h3>Clean & Comfortable Vehicles</h3>
-
-<p>
-Well-maintained vehicles providing safe transportation
-for patients and seniors.
-</p>
-
-</div>
-
-
-<div class="fleet-card">
-
-<img src="images/patient-transport.jpg" alt="Medical Transportation Driver">
-
-<h3>Professional Drivers</h3>
-
-<p>
-Trained drivers focused on safety,
-punctuality and patient care.
-</p>
-
-</div>
-
-</div>
-
-</section>
-
-
-
-<!-- HOW IT WORKS -->
-
-<section class="container">
-
-<h2>How Our Transportation Service Works</h2>
-
-<div class="service-grid">
-
-<div class="card">
-
-<i class="fa-solid fa-calendar-check service-icon"></i>
-
-<h3>Schedule a Ride</h3>
-
-<p>
-Book transportation online or call our team
-to schedule your ride.
-</p>
-
-</div>
-
-
-<div class="card">
-
-<i class="fa-solid fa-van-shuttle service-icon"></i>
-
-<h3>Driver Pickup</h3>
-
-<p>
-Our professional driver arrives on time
-to transport the passenger safely.
-</p>
-
-</div>
-
-
-<div class="card">
-
-<i class="fa-solid fa-route service-icon"></i>
-
-<h3>Safe Transport</h3>
-
-<p>
-Passengers are transported safely to
-their healthcare destination.
-</p>
-
-</div>
-
-</div>
-
-</section>
-
-
-
-<!-- REVIEWS -->
-
-<section class="container">
-
-<h2>What Our Clients Say</h2>
-
-<div class="service-grid">
-
-<div class="card">
-
-★★★★★
-
-<p>
-"Excellent service and reliable transportation
-for my medical appointments."
-</p>
-
-<strong>– Patient Review</strong>
-
-</div>
-
-
-<div class="card">
-
-★★★★★
-
-<p>
-"Professional drivers and dependable rides
-for our dialysis patients."
-</p>
-
-<strong>– Healthcare Facility</strong>
-
-</div>
-
-
-<div class="card">
-
-★★★★★
-
-<p>
-"Clean vehicle and friendly driver.
-Highly recommended."
-</p>
-
-<strong>– Family Member</strong>
 
 </div>
 
@@ -531,6 +337,21 @@ throughout Western Washington.
 <a href="booking.html" class="floating-book">
 Book Ride
 </a>
+
+
+
+<!-- MOBILE MENU SCRIPT -->
+
+<script>
+
+const toggle = document.getElementById("menuToggle");
+const nav = document.getElementById("mainNav");
+
+toggle.addEventListener("click", () => {
+nav.classList.toggle("show");
+});
+
+</script>
 
 
 </body>
