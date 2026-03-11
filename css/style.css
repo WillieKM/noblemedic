@@ -450,3 +450,18 @@ display:block;
 display:flex;
 align-items:center;
 }
+@media(max-width:900px){
+
+.main-nav{
+display:none;
+}
+
+.nav-phone{
+display:none;
+}
+
+.logo img{
+height:45px;
+}
+
+}
