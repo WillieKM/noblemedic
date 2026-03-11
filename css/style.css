@@ -42,9 +42,8 @@ font-size:14px;
 /* =========================
 HEADER
 ========================= */
-
 .main-header{
-background:var(--secondary);
+background:#0F4C5C;
 position:sticky;
 top:0;
 z-index:1000;
@@ -57,7 +56,25 @@ margin:auto;
 display:flex;
 align-items:center;
 justify-content:space-between;
-padding:14px 20px;
+padding:10px 20px;
+}
+
+.main-nav{
+display:flex;
+gap:28px;
+align-items:center;
+}
+
+.main-nav a{
+color:white;
+text-decoration:none;
+font-weight:500;
+}
+
+.nav-cta{
+display:flex;
+gap:15px;
+align-items:center;
 }
 
 /* =========================
@@ -355,7 +372,9 @@ display:none;
 }
 
 .logo img{
-height:45px;
+height:55px;
+width:auto;
+display:block;
 }
 
 .footer-container{
