@@ -80,13 +80,16 @@ align-items:center;
 /* =========================
 LOGO
 ========================= */
+.logo{
+display:flex;
+align-items:center;
+}
 
 .logo img{
-height:140px;
+height:80px;
 width:auto;
 display:block;
 }
-
 /* =========================
 NAVIGATION
 ========================= */
