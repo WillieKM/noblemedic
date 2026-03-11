@@ -465,3 +465,34 @@ height:45px;
 }
 
 }
+.menu-toggle{
+display:none;
+font-size:28px;
+color:white;
+cursor:pointer;
+}
+
+/* MOBILE */
+
+@media(max-width:900px){
+
+.menu-toggle{
+display:block;
+}
+
+.main-nav{
+display:none;
+flex-direction:column;
+background:#0F4C5C;
+position:absolute;
+top:70px;
+left:0;
+width:100%;
+padding:20px;
+}
+
+.main-nav.show{
+display:flex;
+}
+
+}
