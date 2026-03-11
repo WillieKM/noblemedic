@@ -1,135 +1,42 @@
 <!DOCTYPE html>
 
 <html lang="en">
+
 <head>
 
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>About | Noble Medic Wheels</title>
 
-<style>
-
-body{
-font-family:Arial, Helvetica, sans-serif;
-margin:0;
-background:#f4f7fb;
-color:#2A2A2A;
-}
-
-header{
-background:#0F4C5C;
-color:white;
-padding:20px;
-}
-
-nav{
-display:flex;
-justify-content:space-between;
-align-items:center;
-max-width:1100px;
-margin:auto;
-}
-
-nav a{
-color:white;
-text-decoration:none;
-margin-left:20px;
-}
-
-.container{
-max-width:1100px;
-margin:auto;
-padding:60px 20px;
-}
-
-h1{
-color:#0F4C5C;
-}
-
-.grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-gap:30px;
-margin-top:30px;
-}
-
-.card{
-background:white;
-padding:25px;
-border-radius:10px;
-box-shadow:0 5px 20px rgba(0,0,0,.05);
-}
-
-.mission{
-background:#eaf3fb;
-padding:40px;
-border-radius:10px;
-margin-top:40px;
-}
-
-.stats{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
-gap:20px;
-margin-top:30px;
-}
-
-.stat{
-background:white;
-padding:20px;
-text-align:center;
-border-radius:10px;
-box-shadow:0 5px 20px rgba(0,0,0,.05);
-}
-
-.cta{
-background:#2BB673;
-color:white;
-text-align:center;
-padding:60px 20px;
-margin-top:60px;
-}
-
-.btn{
-background:#2D8FE3;
-color:white;
-padding:14px 28px;
-border-radius:6px;
-text-decoration:none;
-display:inline-block;
-margin-top:15px;
-}
-
-footer{
-background:#0F4C5C;
-color:white;
-text-align:center;
-padding:30px;
-margin-top:40px;
-}
-
-</style>
+<link rel="stylesheet" href="style.css">
 
 </head>
 
 <body>
 
-<header>
+<header class="main-header">
 
-<nav>
+<div class="nav-container">
 
-<h2>Noble Medic Wheels</h2>
+<div class="logo">
+<h2 style="color:white;">Noble Medic Wheels</h2>
+</div>
 
-<div>
+<nav class="main-nav">
 <a href="index.html">Home</a>
 <a href="booking.html">Book Ride</a>
 <a href="about.html">About</a>
 <a href="#">Contact</a>
-</div>
-
 </nav>
 
+</div>
+
 </header>
+
+<!-- ABOUT INTRO -->
+
+<section class="section">
 
 <div class="container">
 
@@ -137,58 +44,101 @@ margin-top:40px;
 
 <p>
 Noble Medic Wheels provides dependable non-emergency medical transportation
-for patients throughout King County, Pierce County, and Snohomish County.
-We focus on safe, comfortable, and on-time transportation for individuals
-who require assistance traveling to medical appointments.
+for patients across King County, Pierce County, and Snohomish County.
+Our focus is providing safe, comfortable, and reliable transportation
+for individuals who require assistance getting to medical appointments.
 </p>
 
-<div class="mission">
+<p>
+Transportation should never be a barrier to receiving healthcare.
+Our team is committed to helping patients arrive at their appointments
+on time and with the support they need.
+</p>
+
+</div>
+
+</section>
+
+<!-- MISSION -->
+
+<section class="section section-gray">
+
+<div class="container">
 
 <h2>Our Mission</h2>
 
 <p>
 Our mission is to ensure that every patient has access to reliable
 transportation for essential healthcare services.
-We believe transportation should never be a barrier to receiving care.
-Our drivers are trained to assist passengers with compassion,
-professionalism, and respect.
+We believe that dependable transportation plays a critical role
+in maintaining health and improving quality of life.
 </p>
 
 </div>
 
-<h2 style="margin-top:50px;">Why Choose Us</h2>
+</section>
 
-<div class="grid">
+<!-- WHY CHOOSE US -->
+
+<section class="section">
+
+<div class="container">
+
+<h2>Why Choose Noble Medic Wheels</h2>
+
+<div class="service-grid">
 
 <div class="card">
 <h3>Wheelchair Accessible Vehicles</h3>
-<p>Our fleet is equipped with ramps and secure wheelchair seating to ensure safe transport.</p>
+<p>
+Our fleet includes wheelchair-accessible vehicles designed
+for safe and comfortable transportation.
+</p>
 </div>
 
 <div class="card">
 <h3>Professional Drivers</h3>
-<p>Our drivers are trained to assist patients safely and respectfully.</p>
+<p>
+Our drivers are trained to provide compassionate assistance
+while maintaining the highest safety standards.
+</p>
 </div>
 
 <div class="card">
 <h3>Reliable Scheduling</h3>
-<p>We focus on punctual pickups and dependable scheduling.</p>
+<p>
+We prioritize punctual pickups and dependable transportation
+to help patients arrive on time.
+</p>
 </div>
 
 <div class="card">
-<h3>Comfortable Transportation</h3>
-<p>Clean, well-maintained vehicles provide a smooth and comfortable ride.</p>
+<h3>Comfortable Vehicles</h3>
+<p>
+Clean, well-maintained vehicles ensure every ride is smooth
+and comfortable for our passengers.
+</p>
 </div>
 
 </div>
 
-<h2 style="margin-top:50px;">Our Service Areas</h2>
+</div>
+
+</section>
+
+<!-- SERVICE AREAS -->
+
+<section class="section section-gray">
+
+<div class="container">
+
+<h2>Service Areas</h2>
 
 <p>
-We proudly provide transportation services across:
+We proudly provide transportation services throughout:
 </p>
 
-<ul>
+<ul style="margin-top:15px; line-height:1.8;">
 <li>Seattle</li>
 <li>Tacoma</li>
 <li>Auburn</li>
@@ -199,21 +149,31 @@ We proudly provide transportation services across:
 <li>Everett</li>
 </ul>
 
-<h2 style="margin-top:50px;">Our Impact</h2>
+</div>
 
-<div class="stats">
+</section>
 
-<div class="stat">
+<!-- IMPACT -->
+
+<section class="section">
+
+<div class="container">
+
+<h2>Our Impact</h2>
+
+<div class="service-grid">
+
+<div class="card">
 <h3>5000+</h3>
 <p>Medical Trips Completed</p>
 </div>
 
-<div class="stat">
+<div class="card">
 <h3>98%</h3>
 <p>On-Time Arrival</p>
 </div>
 
-<div class="stat">
+<div class="card">
 <h3>100%</h3>
 <p>Wheelchair Accessible Fleet</p>
 </div>
@@ -222,27 +182,75 @@ We proudly provide transportation services across:
 
 </div>
 
-<section class="cta">
+</section>
+
+<!-- CALL TO ACTION -->
+
+<section class="section section-gray">
+
+<div class="container" style="text-align:center;">
 
 <h2>Need Medical Transportation?</h2>
 
-<p>Book a ride today or contact our dispatch team.</p>
+<p>
+Schedule a ride today or contact our dispatch team
+for assistance.
+</p>
 
-<a class="btn" href="booking.html">Schedule Transportation</a>
+<div class="cta-buttons">
+
+<a class="hero-btn" href="booking.html">Schedule Transportation</a>
+
+<a class="call-btn" href="tel:1234567890">Call Now</a>
+
+</div>
+
+</div>
 
 </section>
 
-<footer>
+<!-- FOOTER -->
 
-<p>Noble Medic Wheels</p>
+<footer class="site-footer">
 
+<div class="footer-container">
+
+<div>
+<h4>Noble Medic Wheels</h4>
 <p>Non-Emergency Medical Transportation</p>
+</div>
 
-<p>Serving King • Pierce • Snohomish Counties</p>
+<div>
+<h4>Service Areas</h4>
+<ul>
+<li>King County</li>
+<li>Pierce County</li>
+<li>Snohomish County</li>
+</ul>
+</div>
 
-<p>Call: (123) 456-7890</p>
+<div>
+<h4>Quick Links</h4>
+<ul>
+<li><a href="index.html" style="color:white;">Home</a></li>
+<li><a href="booking.html" style="color:white;">Book Ride</a></li>
+<li><a href="about.html" style="color:white;">About</a></li>
+</ul>
+</div>
+
+<div>
+<h4>Contact</h4>
+<p>Phone: (123) 456-7890</p>
+</div>
+
+</div>
+
+<div class="footer-bottom">
+<p>© 2026 Noble Medic Wheels</p>
+</div>
 
 </footer>
 
 </body>
+
 </html>
