@@ -9,16 +9,16 @@ export const metadata = {
   title: {
     template: "%s | Noble Medic Wheels",
     default:
-      "Noble Medic Wheels — Non-Emergency Ambulance & Medical Transportation in King & Pierce County",
+      "Noble Medic Wheels — Non-Emergency Cabulance & Medical Transportation in King & Pierce County",
   },
   description:
-    "Safe, ADA-compliant non-emergency ambulance and medical transportation serving King, Pierce & Snohomish County — Seattle, Tacoma, Everett, Renton, Lynnwood, and more. Wheelchair rides, dialysis transport, and hospital discharges.",
+    "Safe, ADA-compliant non-emergency cabulance and medical transportation serving King, Pierce & Snohomish County — Seattle, Tacoma, Everett, Renton, Lynnwood, and more. Wheelchair rides, dialysis transport, and hospital discharges.",
   keywords: [
     "NEMT",
     "non-emergency medical transportation",
-    "non-emergency ambulance",
-    "ambulance service",
-    "ambulance transportation",
+    "non-emergency cabulance",
+    "cabulance service",
+    "cabulance transportation",
     "wheelchair transportation",
     "wheelchair van service",
     "dialysis transportation",
@@ -32,16 +32,16 @@ export const metadata = {
   openGraph: {
     type: "website",
     siteName: "Noble Medic Wheels",
-    title: "Noble Medic Wheels — Non-Emergency Ambulance & Medical Transportation",
+    title: "Noble Medic Wheels — Non-Emergency Cabulance & Medical Transportation",
     description:
-      "Safe, ADA-compliant non-emergency ambulance and medical transport serving King & Pierce County. Wheelchair rides, dialysis transport, and hospital discharges.",
+      "Safe, ADA-compliant non-emergency cabulance and medical transport serving King & Pierce County. Wheelchair rides, dialysis transport, and hospital discharges.",
     images: [{ url: "/logo.jpg", width: 400, height: 400 }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Noble Medic Wheels — Non-Emergency Ambulance & NEMT in King & Pierce County",
+    title: "Noble Medic Wheels — Non-Emergency Cabulance & NEMT in King & Pierce County",
     description:
-      "Safe, ADA-compliant non-emergency ambulance and medical transportation in King & Pierce County, Washington.",
+      "Safe, ADA-compliant non-emergency cabulance and medical transportation in King & Pierce County, Washington.",
   },
 };
 

@@ -39,7 +39,7 @@ export default function CityPage({ params }) {
           <p className="location-breadcrumb">
             <Link href="/service-area">Service Area</Link> &rsaquo; {data.county} &rsaquo; {data.city}
           </p>
-          <h1>Non-Emergency Ambulance & Medical Transportation in {data.city}, {data.state}</h1>
+          <h1>Non-Emergency Cabulance & Medical Transportation in {data.city}, {data.state}</h1>
           <p>{data.intro}</p>
           <div style={{ marginTop: "1.5rem", display: "flex", gap: "1rem", flexWrap: "wrap" }}>
             <Link href="/contact" className="btn-primary">Request a Ride in {data.city}</Link>

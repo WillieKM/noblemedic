@@ -1,11 +1,11 @@
 export const metadata = {
-  title: "Non-Emergency Ambulance, Wheelchair, Dialysis & Medical Transportation Services",
+  title: "Non-Emergency Cabulance, Wheelchair, Dialysis & Medical Transportation Services",
   description:
-    "Noble Medic Wheels offers non-emergency ambulance and ADA-compliant wheelchair rides, recurring dialysis transport, ambulatory appointment rides, and safe hospital discharge transportation across King & Pierce County.",
+    "Noble Medic Wheels offers non-emergency cabulance and ADA-compliant wheelchair rides, recurring dialysis transport, ambulatory appointment rides, and safe hospital discharge transportation across King & Pierce County.",
   openGraph: {
-    title: "Non-Emergency Ambulance & NEMT Services — Wheelchair, Dialysis & Hospital Transport",
+    title: "Non-Emergency Cabulance & NEMT Services — Wheelchair, Dialysis & Hospital Transport",
     description:
-      "Non-emergency ambulance transport, dialysis transport, wheelchair-accessible rides, ambulatory appointments, and hospital discharges across King & Pierce County.",
+      "Non-emergency cabulance transport, dialysis transport, wheelchair-accessible rides, ambulatory appointments, and hospital discharges across King & Pierce County.",
     url: "https://www.noblemedicwheels.com/services",
   },
 };
@@ -19,7 +19,7 @@ export default function ServicesPage() {
           <h1>Our Services</h1>
           <p>
             Noble Medic Wheels provides safe, reliable, and compassionate
-            non-emergency ambulance and medical transportation across King &
+            non-emergency cabulance and medical transportation across King &
             Pierce County.
           </p>
         </div>
