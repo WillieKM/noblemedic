@@ -1,9 +1,9 @@
 export const metadata = {
-  title: "NEMT Service Area — King, Pierce & Snohomish County, WA",
+  title: "Non-Emergency Ambulance & NEMT Service Area — King, Pierce & Snohomish County, WA",
   description:
-    "Noble Medic Wheels serves Seattle, Renton, Kent, Tacoma, Everett, Marysville, Lynnwood, and communities across King, Pierce, and Snohomish County with non-emergency medical transportation.",
+    "Noble Medic Wheels serves Seattle, Renton, Kent, Tacoma, Everett, Marysville, Lynnwood, and communities across King, Pierce, and Snohomish County with non-emergency ambulance and medical transportation.",
   openGraph: {
-    title: "Service Area — King, Pierce & Snohomish County NEMT",
+    title: "Service Area — King, Pierce & Snohomish County Non-Emergency Ambulance & NEMT",
     description:
       "Serving King, Pierce, and Snohomish County including Seattle, Tacoma, Everett, Renton, Lynnwood, Puyallup, and more.",
     url: "https://www.noblemedicwheels.com/service-area",

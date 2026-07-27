@@ -6,13 +6,13 @@ import ContactSection from "../components/ContactSection";
 
 export const metadata = {
   title:
-    "Noble Medic Wheels — NEMT in Seattle, Tacoma & King/Pierce County, WA",
+    "Noble Medic Wheels — Non-Emergency Ambulance & NEMT in Seattle, Tacoma & King/Pierce County, WA",
   description:
-    "Noble Medic Wheels provides safe, reliable non-emergency medical transportation across King & Pierce County. ADA-compliant wheelchair rides, dialysis transport, hospital discharges, and more.",
+    "Noble Medic Wheels provides safe, reliable non-emergency ambulance and medical transportation across King & Pierce County. ADA-compliant wheelchair rides, dialysis transport, hospital discharges, and more.",
   openGraph: {
-    title: "Noble Medic Wheels — Non-Emergency Medical Transportation",
+    title: "Noble Medic Wheels — Non-Emergency Ambulance & Medical Transportation",
     description:
-      "ADA-compliant NEMT serving Seattle, Tacoma, Renton, Kent, and all of King & Pierce County.",
+      "ADA-compliant non-emergency ambulance and NEMT serving Seattle, Tacoma, Renton, Kent, and all of King & Pierce County.",
     url: "https://www.noblemedicwheels.com",
   },
 };

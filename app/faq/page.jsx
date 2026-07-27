@@ -2,6 +2,7 @@ const faqSchema = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
   mainEntity: [
+    { "@type": "Question", name: "Are you an ambulance service?", acceptedAnswer: { "@type": "Answer", text: "Noble Medic Wheels provides non-emergency ambulance and medical transportation — safe, scheduled rides for dialysis, medical appointments, and hospital discharges. We are not a 911 emergency response service; for medical emergencies, please call 911." } },
     { "@type": "Question", name: "Do you offer wheelchair transportation?", acceptedAnswer: { "@type": "Answer", text: "Yes. All Noble Medic Wheels vehicles are ADA-compliant and equipped with hydraulic lifts and secure wheelchair locking systems to ensure safe and comfortable transport." } },
     { "@type": "Question", name: "Do you provide dialysis transportation?", acceptedAnswer: { "@type": "Answer", text: "Yes. We specialize in dialysis transportation, including recurring scheduled trips for patients attending regular treatment sessions." } },
     { "@type": "Question", name: "What areas do you serve?", acceptedAnswer: { "@type": "Answer", text: "We proudly serve patients throughout King, Pierce, and Snohomish County including Seattle, Tacoma, Everett, Renton, Lynnwood, Federal Way, and more." } },
@@ -15,13 +16,13 @@ const faqSchema = {
 };
 
 export const metadata = {
-  title: "Non-Emergency Medical Transportation FAQs",
+  title: "Non-Emergency Ambulance & Medical Transportation FAQs",
   description:
-    "Answers to common questions about Noble Medic Wheels NEMT services — wheelchair rides, dialysis transport, booking, insurance coverage, and service areas in King & Pierce County.",
+    "Answers to common questions about Noble Medic Wheels non-emergency ambulance and NEMT services — wheelchair rides, dialysis transport, booking, insurance coverage, and service areas in King & Pierce County.",
   openGraph: {
-    title: "NEMT FAQs — Noble Medic Wheels",
+    title: "Non-Emergency Ambulance & NEMT FAQs — Noble Medic Wheels",
     description:
-      "Common questions about booking wheelchair rides, dialysis transport, insurance coverage, and service areas in King & Pierce County.",
+      "Common questions about booking non-emergency ambulance and wheelchair rides, dialysis transport, insurance coverage, and service areas in King & Pierce County.",
     url: "https://www.noblemedicwheels.com/faq",
   },
 };
@@ -35,8 +36,8 @@ export default function FAQPage() {
         <div className="container">
           <h1>Frequently Asked Questions</h1>
           <p>
-            Answers to common questions about our non-emergency medical
-            transportation services.
+            Answers to common questions about our non-emergency ambulance and
+            medical transportation services.
           </p>
         </div>
       </section>
@@ -44,6 +45,17 @@ export default function FAQPage() {
       {/* FAQ CONTENT */}
       <section className="section-light">
         <div className="container faq-grid">
+          <div className="faq-card">
+            <h3>Are you an ambulance service?</h3>
+            <p>
+              Noble Medic Wheels provides non-emergency ambulance and medical
+              transportation — safe, scheduled rides for dialysis, medical
+              appointments, and hospital discharges. We are not a 911
+              emergency response service; for medical emergencies, please
+              call 911.
+            </p>
+          </div>
+
           <div className="faq-card">
             <h3>Do you offer wheelchair transportation?</h3>
             <p>
