@@ -2,9 +2,10 @@ import TestimonialsSection from "../../components/TestimonialsSection";
 import ReviewForm from "./ReviewForm";
 
 export const metadata = {
-  title: "Patient Reviews & Testimonials",
+  title: "Patient Reviews & Testimonials | Noble Medic Wheels",
   description:
-    "Read what patients and families say about Noble Medic Wheels, and share your own experience with our non-emergency medical transportation service.",
+    "Read what patients and families say about Noble Medic Wheels non-emergency cabulance and medical transportation, and share your own experience.",
+  alternates: { canonical: "/reviews" },
   openGraph: {
     title: "Patient Reviews — Noble Medic Wheels",
     description:

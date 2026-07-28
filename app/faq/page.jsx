@@ -16,9 +16,10 @@ const faqSchema = {
 };
 
 export const metadata = {
-  title: "Non-Emergency Cabulance & Medical Transportation FAQs",
+  title: "Non-Emergency Cabulance & NEMT FAQs | Noble Medic Wheels",
   description:
-    "Answers to common questions about Noble Medic Wheels non-emergency cabulance and NEMT services — wheelchair rides, dialysis transport, booking, insurance coverage, and service areas in King & Pierce County.",
+    "Answers to common questions about our non-emergency cabulance and NEMT services — wheelchair rides, dialysis transport, booking, and insurance coverage.",
+  alternates: { canonical: "/faq" },
   openGraph: {
     title: "Non-Emergency Cabulance & NEMT FAQs — Noble Medic Wheels",
     description:

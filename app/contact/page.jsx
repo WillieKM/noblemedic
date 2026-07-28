@@ -1,9 +1,10 @@
 import ContactForm from "./ContactForm";
 
 export const metadata = {
-  title: "Request a Non-Emergency Medical Ride",
+  title: "Request a Non-Emergency Cabulance Ride | Noble Medic Wheels",
   description:
-    "Schedule your non-emergency medical transportation with Noble Medic Wheels. Call or text 253-374-9087 or fill out the ride request form for service in King & Pierce County.",
+    "Schedule your non-emergency cabulance or medical transportation with Noble Medic Wheels. Call or text 253-374-9087, or request a ride online.",
+  alternates: { canonical: "/contact" },
   openGraph: {
     title: "Request a Ride — Noble Medic Wheels NEMT",
     description:

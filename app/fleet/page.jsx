@@ -1,7 +1,14 @@
 export const metadata = {
-  title: "Our Fleet | Noble Medic Wheels",
+  title: "Our Fleet | Non-Emergency Cabulance Vehicles | Noble Medic Wheels",
   description:
-    "ADA-compliant, professionally maintained vehicles designed for safe, comfortable non-emergency medical transportation.",
+    "ADA-compliant, professionally maintained cabulance and wheelchair vans built for safe, comfortable non-emergency medical transportation in King & Pierce County.",
+  alternates: { canonical: "/fleet" },
+  openGraph: {
+    title: "Our Fleet — Non-Emergency Cabulance Vehicles | Noble Medic Wheels",
+    description:
+      "ADA-compliant, professionally maintained cabulance and wheelchair vans serving King & Pierce County.",
+    url: "https://www.noblemedicwheels.com/fleet",
+  },
 };
 
 export default function FleetPage() {

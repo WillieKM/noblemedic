@@ -6,9 +6,10 @@ import ContactSection from "../components/ContactSection";
 
 export const metadata = {
   title:
-    "Noble Medic Wheels — Non-Emergency Cabulance & NEMT in Seattle, Tacoma & King/Pierce County, WA",
+    "Noble Medic Wheels | Cabulance & NEMT in Seattle & Tacoma, WA",
   description:
-    "Noble Medic Wheels provides safe, reliable non-emergency cabulance and medical transportation across King & Pierce County. ADA-compliant wheelchair rides, dialysis transport, hospital discharges, and more.",
+    "Safe, reliable non-emergency cabulance and medical transportation across King & Pierce County. ADA-compliant wheelchair rides, dialysis transport, and hospital discharges.",
+  alternates: { canonical: "/" },
   openGraph: {
     title: "Noble Medic Wheels — Non-Emergency Cabulance & Medical Transportation",
     description:

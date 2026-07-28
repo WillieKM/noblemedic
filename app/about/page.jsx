@@ -1,8 +1,9 @@
 import Link from "next/link";
 export const metadata = {
-  title: "About Noble Medic Wheels — Non-Emergency Cabulance & NEMT Provider in King & Pierce County",
+  title: "About Noble Medic Wheels | Non-Emergency Cabulance & NEMT",
   description:
-    "Noble Medic Wheels is a locally owned non-emergency cabulance and NEMT provider in King & Pierce County committed to safe, dignified, and punctual medical transportation for patients with mobility needs.",
+    "Noble Medic Wheels is a locally owned non-emergency cabulance and NEMT provider in King & Pierce County, committed to safe, dignified, punctual medical transportation.",
+  alternates: { canonical: "/about" },
   openGraph: {
     title: "About Noble Medic Wheels — Non-Emergency Cabulance & NEMT Provider",
     description:

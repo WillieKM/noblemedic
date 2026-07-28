@@ -9,10 +9,11 @@ export const metadata = {
   title: {
     template: "%s | Noble Medic Wheels",
     default:
-      "Noble Medic Wheels — Non-Emergency Cabulance & Medical Transportation in King & Pierce County",
+      "Noble Medic Wheels | Non-Emergency Cabulance & NEMT in WA",
   },
   description:
-    "Safe, ADA-compliant non-emergency cabulance and medical transportation serving King, Pierce & Snohomish County — Seattle, Tacoma, Everett, Renton, Lynnwood, and more. Wheelchair rides, dialysis transport, and hospital discharges.",
+    "Safe, ADA-compliant non-emergency cabulance and medical transportation across King, Pierce & Snohomish County, WA. Wheelchair rides, dialysis transport, and hospital discharges.",
+  alternates: { canonical: "/" },
   keywords: [
     "NEMT",
     "non-emergency medical transportation",

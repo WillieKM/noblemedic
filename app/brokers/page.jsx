@@ -1,7 +1,14 @@
 export const metadata = {
-  title: "For Brokers | Noble Medic Wheels",
+  title: "For Brokers & Care Partners | Noble Medic Wheels",
   description:
-    "Reliable, compliant non-emergency medical transportation partner serving King & Pierce County.",
+    "Reliable, compliant non-emergency cabulance and medical transportation partner for brokers, Medicaid, and managed care in King & Pierce County.",
+  alternates: { canonical: "/brokers" },
+  openGraph: {
+    title: "For Brokers & Care Partners | Noble Medic Wheels",
+    description:
+      "Reliable, compliant non-emergency cabulance and NEMT partner for brokers and care coordinators serving King & Pierce County.",
+    url: "https://www.noblemedicwheels.com/brokers",
+  },
 };
 
 export default function BrokersPage() {

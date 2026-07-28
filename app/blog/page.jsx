@@ -2,8 +2,9 @@ import Link from "next/link";
 import { posts } from "../../lib/blogPosts";
 
 export const metadata = {
-  title: "NEMT Resources & Articles",
-  description: "Helpful guides on non-emergency medical transportation in King, Pierce, and Snohomish County — dialysis transport, wheelchair rides, and choosing the right NEMT provider.",
+  title: "NEMT & Cabulance Resources | Noble Medic Wheels",
+  description: "Guides on non-emergency cabulance and medical transportation in King, Pierce, and Snohomish County — dialysis transport, wheelchair rides, and choosing a provider.",
+  alternates: { canonical: "/blog" },
   openGraph: {
     title: "NEMT Resources — Noble Medic Wheels",
     description: "Guides on medical transportation, dialysis transport, and NEMT services in Western Washington.",
