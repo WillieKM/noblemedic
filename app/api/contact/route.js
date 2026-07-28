@@ -4,6 +4,11 @@ import { NextResponse } from "next/server";
 export async function POST(request) {
   const d = await request.json();
 
+  if (d.company) {
+    // Honeypot tripped — silently accept without emailing to avoid tipping off the bot.
+    return NextResponse.json({ ok: true });
+  }
+
   if (!process.env.RESEND_API_KEY) {
     console.warn("RESEND_API_KEY not set — skipping email");
     return NextResponse.json({ ok: true });

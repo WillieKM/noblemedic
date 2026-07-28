@@ -19,6 +19,11 @@ export default function ReviewForm() {
     setSubmitting(true);
 
     const formData = new FormData(e.target);
+    if (formData.get("company")) {
+      // Honeypot field — bots fill hidden fields, real users never see this one.
+      setSubmitting(false);
+      return;
+    }
     const data = {
       name: formData.get("name"),
       location: formData.get("location"),
@@ -55,6 +60,14 @@ export default function ReviewForm() {
 
   return (
     <form className="review-form" onSubmit={handleSubmit}>
+      <input
+        type="text"
+        name="company"
+        autoComplete="off"
+        tabIndex={-1}
+        aria-hidden="true"
+        style={{ position: "absolute", left: "-9999px", width: "1px", height: "1px", opacity: 0 }}
+      />
       <div className="form-grid">
         <div>
           <label htmlFor="reviewer-name">Your Name</label>

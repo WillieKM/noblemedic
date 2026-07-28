@@ -3,6 +3,12 @@ import { NextResponse } from "next/server";
 
 export async function POST(request) {
   const d = await request.json();
+
+  if (d.company) {
+    // Honeypot tripped — silently accept without emailing to avoid tipping off the bot.
+    return NextResponse.json({ ok: true });
+  }
+
   const rating = Number(d.rating) || 0;
   const stars = "★".repeat(rating) + "☆".repeat(5 - rating);
 

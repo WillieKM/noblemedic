@@ -66,6 +66,10 @@ export default function Footer() {
 
       <div className="footer-bottom">
         © {new Date().getFullYear()} Noble Medic Wheels. All rights reserved.
+        {" "}&middot;{" "}
+        <Link href="/privacy">Privacy Policy</Link>
+        {" "}&middot;{" "}
+        <Link href="/terms">Terms of Service</Link>
       </div>
     </footer>
   );

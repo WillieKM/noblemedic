@@ -6,24 +6,44 @@ import { useRouter } from "next/navigation";
 export default function ContactForm() {
   const router = useRouter();
   const [submitting, setSubmitting] = useState(false);
+  const [error, setError] = useState("");
 
   async function handleSubmit(e) {
     e.preventDefault();
+    setError("");
     setSubmitting(true);
     const data = Object.fromEntries(new FormData(e.target));
+    if (data.company) {
+      // Honeypot field — bots fill hidden fields, real users never see this one.
+      setSubmitting(false);
+      return;
+    }
     try {
-      await fetch("/api/contact", {
+      const res = await fetch("/api/contact", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(data),
       });
-    } catch (_) {}
-    router.push("/thank-you");
+      if (!res.ok) throw new Error("Server error");
+      router.push("/thank-you");
+    } catch {
+      setError("Something went wrong submitting your request. Please try again or call us at 253-374-9087.");
+      setSubmitting(false);
+    }
   }
 
   return (
     <div className="contact-card">
       <form className="contact-form" onSubmit={handleSubmit}>
+        <input
+          type="text"
+          name="company"
+          autoComplete="off"
+          tabIndex={-1}
+          aria-hidden="true"
+          style={{ position: "absolute", left: "-9999px", width: "1px", height: "1px", opacity: 0 }}
+        />
+        {error && <p className="form-error">{error}</p>}
         <div className="form-grid">
           <div>
             <label htmlFor="name">Full Name</label>
