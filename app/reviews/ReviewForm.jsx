@@ -38,6 +38,9 @@ export default function ReviewForm() {
         body: JSON.stringify(data),
       });
       if (!res.ok) throw new Error("Server error");
+      if (typeof window.gtag === "function") {
+        window.gtag("event", "submit_review");
+      }
       setSubmitted(true);
     } catch {
       setError("Something went wrong. Please try again or call us at 253-374-9087.");
