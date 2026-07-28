@@ -2,6 +2,7 @@ import "./globals.css";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import Analytics from "../components/Analytics";
+import CallTracking from "../components/CallTracking";
 import { medicalBusinessSchema } from "../lib/schema";
 
 export const metadata = {
@@ -59,6 +60,7 @@ export default function RootLayout({ children }) {
           dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
         />
         <Analytics />
+        <CallTracking />
       </body>
     </html>
   );

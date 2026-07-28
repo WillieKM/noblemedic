@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { cities } from "../lib/locationData";
 
 export default function Footer() {
   return (
@@ -33,14 +34,11 @@ export default function Footer() {
         <div className="footer-col">
           <h4>Cities We Serve</h4>
           <ul>
-            <li><Link href="/locations/seattle">Seattle</Link></li>
-            <li><Link href="/locations/tacoma">Tacoma</Link></li>
-            <li><Link href="/locations/everett">Everett</Link></li>
-            <li><Link href="/locations/renton">Renton</Link></li>
-            <li><Link href="/locations/lynnwood">Lynnwood</Link></li>
-            <li><Link href="/locations/federal-way">Federal Way</Link></li>
-            <li><Link href="/locations/marysville">Marysville</Link></li>
-            <li><Link href="/locations/lakewood">Lakewood</Link></li>
+            {cities.map((c) => (
+              <li key={c.slug}>
+                <Link href={`/locations/${c.slug}`}>{c.city}</Link>
+              </li>
+            ))}
           </ul>
         </div>
 
