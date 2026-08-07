@@ -18,6 +18,40 @@ body {
   --brand-teal: #0ea5a4;
   --brand-light: #f8fafc;
 }
+
+/* Larger base text size sitewide (most sizing below is in rem, so this
+   scales text AND button/tap targets together) — easier reading for
+   older riders without a separate pass over every element. */
+html {
+  font-size: 112.5%;
+}
+
+/* Respect reduced-motion preference: disable animations/transitions
+   sitewide instead of just the new scroll-reveal effect, so anyone
+   sensitive to motion also gets the existing hover-lift effects
+   removed automatically. */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* ===== SCROLL-REVEAL (see components/Reveal.jsx) ===== */
+.reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.reveal-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
 /* ===== HEADER ===== */
 .site-header {
   background: var(--brand-navy);
@@ -153,14 +187,26 @@ footer a:hover {
 }
 
 /* hero-inner */
+@keyframes heroFadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 .hero-inner {
   max-width: 900px;
   margin: 0 auto;
+  animation: heroFadeInUp 0.8s ease both;
 }
 
 .hero-note {
   margin-top: 2rem;
-  opacity: 0.75;
+  opacity: 0.85;
   font-size: 0.9rem;
 }
 
@@ -991,7 +1037,7 @@ footer a:hover {
 
 .trust-label {
   font-size: 0.75rem;
-  color: rgba(255, 255, 255, 0.65);
+  color: rgba(255, 255, 255, 0.8);
   margin-top: 0.3rem;
   text-transform: uppercase;
   letter-spacing: 0.05em;

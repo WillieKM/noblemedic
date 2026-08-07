@@ -3,6 +3,7 @@ import ServicesSection from "../components/ServicesSection";
 import FleetSection from "../components/FleetSection";
 import TestimonialsSection from "../components/TestimonialsSection";
 import ContactSection from "../components/ContactSection";
+import Reveal from "../components/Reveal";
 
 export const metadata = {
   title:
@@ -25,25 +26,33 @@ export default function HomePage() {
 
       <section className="section-light">
         <div className="container">
-          <ServicesSection />
+          <Reveal>
+            <ServicesSection />
+          </Reveal>
         </div>
       </section>
 
       <section className="section-light">
         <div className="container">
-          <FleetSection />
+          <Reveal>
+            <FleetSection />
+          </Reveal>
         </div>
       </section>
 
       <section className="section-white">
         <div className="container">
-          <TestimonialsSection />
+          <Reveal>
+            <TestimonialsSection />
+          </Reveal>
         </div>
       </section>
 
       <section className="section-light">
         <div className="container">
-          <ContactSection />
+          <Reveal>
+            <ContactSection />
+          </Reveal>
         </div>
       </section>
     </>
