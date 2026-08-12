@@ -1,3 +1,5 @@
+import Reveal from "../../components/Reveal";
+
 export const metadata = {
   title: "Non-Emergency Cabulance & NEMT Service Area | King, Pierce & Snohomish Co.",
   description:
@@ -56,7 +58,7 @@ export default function ServiceAreaPage() {
       {/* COUNTY CARDS */}
       <section className="section-light">
         <div className="container">
-          <div className="county-grid">
+          <Reveal className="county-grid">
             {counties.map((county) => (
               <div
                 key={county.name}
@@ -73,14 +75,14 @@ export default function ServiceAreaPage() {
                 </ul>
               </div>
             ))}
-          </div>
+          </Reveal>
         </div>
       </section>
 
       {/* TRIP TYPES */}
       <section className="section-light">
         <div className="container">
-          <div className="boxed-card">
+          <Reveal className="boxed-card">
             <h2>Types of Trips We Support</h2>
             <ul className="list" style={{ marginTop: "1rem" }}>
               <li>Dialysis appointments (one-time &amp; recurring)</li>
@@ -90,7 +92,7 @@ export default function ServiceAreaPage() {
               <li>Wheelchair-accessible airport transportation</li>
               <li>Long-distance medical trips (case-by-case)</li>
             </ul>
-          </div>
+          </Reveal>
         </div>
       </section>
 

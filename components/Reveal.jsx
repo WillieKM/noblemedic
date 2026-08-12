@@ -2,7 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 
-export default function Reveal({ children, className = "" }) {
+export default function Reveal({ children, className = "", ...rest }) {
   const ref = useRef(null);
   const [armed, setArmed] = useState(false);
   const [visible, setVisible] = useState(false);
@@ -31,7 +31,7 @@ export default function Reveal({ children, className = "" }) {
   const revealClass = armed ? `reveal${visible ? " reveal-visible" : ""}` : "";
 
   return (
-    <div ref={ref} className={[revealClass, className].filter(Boolean).join(" ")}>
+    <div ref={ref} className={[revealClass, className].filter(Boolean).join(" ")} {...rest}>
       {children}
     </div>
   );

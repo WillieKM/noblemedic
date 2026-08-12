@@ -1,3 +1,5 @@
+import Reveal from "../../components/Reveal";
+
 export const metadata = {
   title: "Non-Emergency Cabulance & NEMT Services | Noble Medic Wheels",
   description:
@@ -28,7 +30,7 @@ export default function ServicesPage() {
 
       {/* SERVICES GRID */}
       <section className="container">
-        <div className="services-box-grid">
+        <Reveal className="services-box-grid">
           <div className="service-box">
             <h3>Dialysis Transportation</h3>
             <p>
@@ -60,7 +62,7 @@ export default function ServicesPage() {
               medical facilities with door-to-door support.
             </p>
           </div>
-        </div>
+        </Reveal>
       </section>
     </main>
   );

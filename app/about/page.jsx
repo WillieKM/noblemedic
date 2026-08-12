@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Reveal from "../../components/Reveal";
 export const metadata = {
   title: "About Noble Medic Wheels | Non-Emergency Cabulance & NEMT",
   description:
@@ -31,7 +32,7 @@ export default function AboutPage() {
       {/* CONTENT */}
       <section className="container narrow">
         {/* MISSION */}
-        <div className="content-block">
+        <Reveal className="content-block">
           <h2>Our Mission</h2>
           <p>
             Our mission is to provide safe, dependable, and compassionate
@@ -39,10 +40,10 @@ export default function AboutPage() {
             care. We believe transportation should never be a barrier to health,
             independence, or peace of mind.
           </p>
-        </div>
+        </Reveal>
 
         {/* WHY CHOOSE US */}
-        <div className="content-block">
+        <Reveal className="content-block">
           <h2>Why Choose Noble Medic Wheels</h2>
           <ul className="checklist">
             <li>Wheelchair-accessible, ADA-compliant vehicles</li>
@@ -51,10 +52,10 @@ export default function AboutPage() {
             <li>Clean and sanitized vehicles after every ride</li>
             <li>Locally owned and operated with personal accountability</li>
           </ul>
-        </div>
+        </Reveal>
 
         {/* CONTACT */}
-        <div className="contact-card">
+        <Reveal className="contact-card">
           <h3>Contact Us</h3>
           <p>
             <strong>Phone:</strong>{" "}
@@ -69,7 +70,7 @@ export default function AboutPage() {
           <p>
             <strong>Service Area:</strong> King & Pierce County
           </p>
-        </div>
+        </Reveal>
       </section>
     </main>
   );

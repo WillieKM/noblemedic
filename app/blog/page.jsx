@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { posts } from "../../lib/blogPosts";
+import Reveal from "../../components/Reveal";
 
 export const metadata = {
   title: "NEMT & Cabulance Resources | Noble Medic Wheels",
@@ -27,7 +28,7 @@ export default function BlogPage() {
 
       <section className="section-light">
         <div className="container">
-          <div className="blog-grid">
+          <Reveal className="blog-grid">
             {posts.map((post) => (
               <Link key={post.slug} href={`/blog/${post.slug}`} className="blog-card">
                 <div className="blog-date">
@@ -38,7 +39,7 @@ export default function BlogPage() {
                 <span className="blog-read-more">Read article &rarr;</span>
               </Link>
             ))}
-          </div>
+          </Reveal>
         </div>
       </section>
 

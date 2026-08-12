@@ -1,5 +1,6 @@
 import TestimonialsSection from "../../components/TestimonialsSection";
 import ReviewForm from "./ReviewForm";
+import Reveal from "../../components/Reveal";
 
 export const metadata = {
   title: "Patient Reviews & Testimonials | Noble Medic Wheels",
@@ -31,14 +32,16 @@ export default function ReviewsPage() {
       {/* TESTIMONIALS */}
       <section className="section-light">
         <div className="container">
-          <TestimonialsSection />
+          <Reveal>
+            <TestimonialsSection />
+          </Reveal>
         </div>
       </section>
 
       {/* SUBMIT A REVIEW */}
       <section className="section-light" style={{ background: "#f0f9ff" }}>
         <div className="container">
-          <div className="review-form-wrap">
+          <Reveal className="review-form-wrap">
             <div className="review-form-header">
               <h2 className="section-title">Share Your Experience</h2>
               <p className="section-subtitle">
@@ -49,7 +52,7 @@ export default function ReviewsPage() {
             <div className="contact-card" style={{ maxWidth: "700px" }}>
               <ReviewForm />
             </div>
-          </div>
+          </Reveal>
         </div>
       </section>
 

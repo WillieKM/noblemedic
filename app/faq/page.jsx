@@ -1,3 +1,5 @@
+import Reveal from "../../components/Reveal";
+
 const faqSchema = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
@@ -45,7 +47,7 @@ export default function FAQPage() {
 
       {/* FAQ CONTENT */}
       <section className="section-light">
-        <div className="container faq-grid">
+        <Reveal className="container faq-grid">
           <div className="faq-card">
             <h3>Are you a cabulance service?</h3>
             <p>
@@ -135,7 +137,7 @@ export default function FAQPage() {
               our website.
             </p>
           </div>
-        </div>
+        </Reveal>
       </section>
 
       {/* CTA */}

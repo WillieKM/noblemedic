@@ -1,6 +1,7 @@
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import { cities } from "../../../lib/locationData";
+import Reveal from "../../../components/Reveal";
 
 export async function generateStaticParams() {
   return cities.map((c) => ({ city: c.slug }));
@@ -56,7 +57,7 @@ export default function CityPage({ params }) {
           <p className="section-subtitle">
             Every service is provided with ADA-compliant vehicles and professionally trained drivers.
           </p>
-          <div className="services-box-grid">
+          <Reveal className="services-box-grid">
             {services.map((s) => (
               <div key={s.name} className="service-box">
                 <div className="card-icon">{s.icon}</div>
@@ -64,14 +65,14 @@ export default function CityPage({ params }) {
                 <p>{s.desc}</p>
               </div>
             ))}
-          </div>
+          </Reveal>
         </div>
       </section>
 
       {/* WHY CHOOSE US */}
       <section className="section-light" style={{ background: "#fff" }}>
         <div className="container">
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))", gap: "3rem", alignItems: "center" }}>
+          <Reveal style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))", gap: "3rem", alignItems: "center" }}>
             <div>
               <h2 className="section-title">Why {data.city} Residents Choose Us</h2>
               <ul className="checklist" style={{ marginTop: "1.5rem" }}>
@@ -95,7 +96,7 @@ export default function CityPage({ params }) {
                 Request a Ride Online
               </Link>
             </div>
-          </div>
+          </Reveal>
         </div>
       </section>
 
@@ -103,12 +104,12 @@ export default function CityPage({ params }) {
       {data.highlights && (
         <section className="section-light">
           <div className="container">
-            <div className="boxed-card">
+            <Reveal className="boxed-card">
               <h2>What We Cover in {data.city}</h2>
               <ul className="list" style={{ marginTop: "1rem" }}>
                 {data.highlights.map((h) => <li key={h}>{h}</li>)}
               </ul>
-            </div>
+            </Reveal>
           </div>
         </section>
       )}
@@ -118,7 +119,7 @@ export default function CityPage({ params }) {
         <section className="section-light">
           <div className="container">
             <h2 className="section-title">Also Serving Near {data.city}</h2>
-            <div className="county-grid" style={{ marginTop: "1.5rem" }}>
+            <Reveal className="county-grid" style={{ marginTop: "1.5rem" }}>
               {data.nearbyAreas.map((area) => {
                 const nearby = cities.find((c) => c.city === area);
                 return nearby ? (
@@ -133,7 +134,7 @@ export default function CityPage({ params }) {
                   </div>
                 );
               })}
-            </div>
+            </Reveal>
           </div>
         </section>
       )}

@@ -1,3 +1,5 @@
+import Reveal from "../../components/Reveal";
+
 export const metadata = {
   title: "For Brokers & Care Partners | Noble Medic Wheels",
   description:
@@ -31,7 +33,7 @@ export default function BrokersPage() {
         <div className="container">
           <h2>Why Partner With Us?</h2>
 
-          <div className="boxed-grid">
+          <Reveal className="boxed-grid">
             <div className="boxed-card">
               <h3>Contract Ready</h3>
               <p>Fully insured and prepared for broker and facility contracts.</p>
@@ -74,7 +76,7 @@ export default function BrokersPage() {
                 dispatch teams.
               </p>
             </div>
-          </div>
+          </Reveal>
         </div>
       </section>
 
@@ -83,7 +85,7 @@ export default function BrokersPage() {
         <div className="container">
           <h2>Compliance & Documentation</h2>
 
-          <div className="boxed-grid">
+          <Reveal className="boxed-grid">
             <div className="boxed-card">
               <h3>Licensing</h3>
               <p>Active business licensing compliant with NEMT regulations.</p>
@@ -113,7 +115,7 @@ export default function BrokersPage() {
               <h3>Training Certifications</h3>
               <p>Safety, mobility assistance, and service training records.</p>
             </div>
-          </div>
+          </Reveal>
 
           <p className="note">
             Digital copies can be provided during onboarding or uploaded to your
@@ -127,7 +129,7 @@ export default function BrokersPage() {
         <div className="container">
           <h2>Service Area</h2>
 
-          <div className="boxed-grid">
+          <Reveal className="boxed-grid">
             <div className="boxed-card">
               <h3>King County</h3>
               <ul>
@@ -157,7 +159,7 @@ export default function BrokersPage() {
                 scheduling, volume, and contract requirements.
               </p>
             </div>
-          </div>
+          </Reveal>
         </div>
       </section>
 

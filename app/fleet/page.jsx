@@ -1,3 +1,5 @@
+import Reveal from "../../components/Reveal";
+
 export const metadata = {
   title: "Our Fleet | Non-Emergency Cabulance Vehicles | Noble Medic Wheels",
   description:
@@ -27,7 +29,7 @@ export default function FleetPage() {
 
       {/* FLEET FEATURES */}
       <section className="container">
-        <div className="fleet-box-grid">
+        <Reveal className="fleet-box-grid">
           <div className="fleet-box">
             <h3>Wheelchair-Accessible Vans</h3>
             <p>
@@ -75,7 +77,7 @@ export default function FleetPage() {
               transportation services.
             </p>
           </div>
-        </div>
+        </Reveal>
 
         {/* CTA */}
         <div className="fleet-cta">
